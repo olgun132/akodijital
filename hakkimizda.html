@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <!-- Google Doğrulama Kodun -->
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
+    <meta name="author" content="AKO Digital">
+
+    <!-- SEO ETİKETLERİ: OTORİTE VE GÜVEN MIKNATISI -->
+    <title>Hakkımızda | Veri Odaklı Dijital Pazarlama ve SEO Ajansı | AKO Digital</title>
+    <meta name="description" content="İstanbul'un veri odaklı dijital pazarlama ajansı AKO Digital ile tanışın. SEO, Google Ads ve web tasarım uzmanlığımızla markanızı dijital dünyada zirveye taşıyoruz.">
+    <link rel="canonical" href="https://www.akodijital.com/hakkimizda.html">
+
+    <!-- FAVICON SİSTEMİ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- PERFORMANS: KRİTİK KAYNAK ÖNCELİKLENDİRME (HIZ 100 İÇİN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- OG Görselini (logolu olan) öncelikli yükle ki marka kimliği anında oluşsun -->
+    <link rel="preload" as="image" href="images/ako-digital-og.jpg" fetchpriority="high">
+
+    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (FOUC ENGELLEYİCİ VE PİKSEL KUSURSUZ NAVBAR) -->
+    <style>
+        :root { 
+            --brand-blue: #0A4D68; 
+            --accent-turquoise: #066a7a; 
+            --white: #FFFFFF; 
+            --dark-text: #051923; 
+            --light-gray: #F5F7FA; 
+        }
+        body { margin:0; font-family: 'Lato', sans-serif; line-height:1.8; color:var(--dark-text); background:#fff; display:block; overflow-x:hidden; }
+        
+        /* HEADER & NAVBAR: DİKEY HİZALAMA VE BOŞLUK STANDARDI (75PX) */
+        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
+        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
+        .navbar { display:flex; justify-content:space-between; align-items:center; height:100%; width:100%; }
+        .logo { font-family: 'Poppins', sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
+        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
+        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition:0.3s; line-height:1; display:flex; align-items:center; }
+        
+        /* PAGE HEADER (SİYAH YAZI PARLAMASI ENGELLEYİCİ) */
+        .page-header { background-color: var(--light-gray); padding: 70px 0; text-align: center; width: 100%; border-bottom: 1px solid #eee; }
+        .page-header h1 { color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 2.8rem; margin: 0; line-height: 1.2; font-weight: 800; }
+        .lead { font-size: 1.3rem; color: #555; margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 500; }
+
+        /* INFO BOX (SARKMA ÖNLEYİCİ) */
+        .info-box { display: flex; align-items: center; gap: 40px; background: #fff; padding: 45px; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; transition: 0.4s; }
+        .info-icon { flex-shrink: 0; width: 80px; height: 80px; background: var(--brand-blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; }
+
+        /* BUTONLAR (ÇAKIŞMA ÇÖZÜMÜ) */
+        .floating-btn { position:fixed!important; width:55px!important; height:55px!important; border-radius:50%!important; display:flex!important; align-items:center!important; justify-content:center!important; color:#fff!important; z-index:9999!important; text-decoration:none!important; box-shadow:0 4px 15px rgba(0,0,0,0.3)!important; transition:0.3s!important; }
+        .whatsapp-btn { bottom:25px!important; right:25px!important; background-color:#25D366!important; }
+        .scroll-top-btn { bottom:95px!important; right:25px!important; background-color:var(--brand-blue)!important; visibility:hidden; opacity:0; transition: 0.3s; }
+        .scroll-top-btn.visible { visibility:visible!important; opacity:1!important; }
+
+        @media (max-width:768px) { .nav-menu { display:none; } .page-header h1 { font-size: 2rem; } .info-box { flex-direction: column; text-align: center; } .logo { padding-right:0; } }
+    </style>
+
+    <!-- ASENKRON KAYNAKLAR (BEST PRACTICES 100) -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- SOSYAL MEDYA (Open Graph & Twitter) -->
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AKO Digital - Biz Kimiz? | Veri Odaklı Strateji Ajansı">
+    <meta property="og:description" content="Dijitalin geleceğini verilerle inşa ediyoruz. AKO Digital vizyonu ve uzman kadrosuyla tanışın.">
+    <meta property="og:url" content="https://www.akodijital.com/hakkimizda.html">
+    <meta property="og:site_name" content="AKO Digital">
+    <meta property="og:image" content="https://www.akodijital.com/images/ako-digital-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- DEVASA JSON-LD SCHEMA: MARKA OTORİTESİNİ MÜHÜRLEYEN YAPI -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "AKO Digital",
+          "url": "https://www.akodijital.com",
+          "logo": "https://www.akodijital.com/images/ako-digital-og.jpg",
+          "sameAs": [
+            "https://www.instagram.com/akodijital",
+            "https://www.linkedin.com/company/akodijital"
+          ]
+        },
+        {
+          "@type": "AboutPage",
+          "name": "Hakkımızda | AKO Digital",
+          "description": "AKO Digital'in vizyonu, misyonu ve dijital pazarlama alanındaki uzmanlık hikayesi."
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">AKO Digital</a>
+                <ul class="nav-menu">
+    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+    <li class="nav-item"><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
+    <!-- YENİ EKLENDİ -->
+    <li class="nav-item"><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+    <li class="nav-item"><a href="hakkimizda.html" class="nav-link active">Hakkımızda</a></li>
+    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+    <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+   <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+</ul>               
+       <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+        <div class="container">
+            <h1>Hakkımızda</h1>
+            <p class="lead">Biz, markanızın dijital yolculuğunda stratejik ortağınız olmak için buradayız.</p>
+        </div>
+    </section>
+
+        <section class="section-padding">
+            <div class="container content-section">
+
+                <!-- DEĞİŞİKLİK BURADA BAŞLIYOR -->
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-bullseye"></i> <!-- Vizyon İkonu -->
+                    </div>
+                    <div class="info-text">
+                        <h2>Vizyonumuz</h2>
+                        <p>Türkiye'de ve bölgede dijital pazarlama denildiğinde akla gelen ilk ajanslardan biri olmak, yenilikçi çözümlerimizle sektöre yön vermek ve başarı hikayeleriyle ilham kaynağı olmaktır.</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-flag"></i> <!-- Misyon İkonu -->
+                    </div>
+                    <div class="info-text">
+                        <h2>Misyonumuz</h2>
+                        <p>En güncel teknolojileri ve veri odaklı stratejileri kullanarak müşterilerimizin dijital pazarlama hedeflerine ulaşmalarını sağlamak, onlara ölçülebilir ve sürdürülebilir bir büyüme sunmaktır. Şeffaflık ve dürüstlük ilkelerimizden asla ödün vermeyiz.</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-users"></i> <!-- Ekibimiz İkonu -->
+                    </div>
+                    <div class="info-text">
+                        <h2>Ekibimiz</h2>
+                        <p>AKO Digital, alanlarında uzman, tutkulu ve dinamik bir ekipten oluşur. SEO uzmanları, web geliştiriciler, reklam stratejistleri ve içerik üreticilerimizle, projenizin her aşamasında yanınızdayız.</p>
+                    </div>
+                </div>
+
+                 <!-- DEĞİŞİKLİK BURADA BİTİYOR -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h3>AKO Digital</h3><p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p></div>
+                <div class="footer-col"><h3>Hizmetler</h3><ul><li><a href="hizmetlerimiz.html#seo">SEO</a></li><li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li><li><a href="hizmetlerimiz.html#ads">Google Ads</a></li><li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li></ul></div>
+                <div class="footer-col"><h3>Hızlı Menü</h3><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+                <div class="footer-col"><h3>İletişim</h3><p>info@akodigital.com</p><p>+90 545 821 39 22</p></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 AKO Digital. Tüm Hakları Saklıdır.</p></div>
+        </div>
+    </footer>
+<!-- YENİ EKLENEN BUTONLAR -->
+    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="floating-btn scroll-top-btn"><i class="fas fa-arrow-up"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>

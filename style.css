@@ -1,0 +1,771 @@
+/* ====================================================== */
+/* AKO DIGITAL - KUANTUM SEVİYESİ CSS (CONTAINMENT + PERFORMANCE) */
+/* CSS Containment + Content-Visibility + Layer Optimization */
+/* ====================================================== */
+
+/* ==================== GENEL STİLLER VE RESETLEME ==================== */
+:root { 
+    --brand-blue: #0A4D68; 
+    --accent-turquoise: #055a68; 
+    --dark-text: #051923; 
+    --white: #FFFFFF; 
+    --light-gray: #F5F7FA; 
+    --font-header: 'Poppins', sans-serif; 
+    --font-body: 'Lato', sans-serif; 
+    
+    /* CSS Containment için root seviyesi */
+    contain: layout style;
+}
+
+/* Universal Reset + Performance */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html { 
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body { 
+    font-family: var(--font-body); 
+    color: var(--dark-text); 
+    line-height: 1.6; 
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+h1, h2, h3, h4 { 
+    font-family: var(--font-header); 
+    color: var(--brand-blue); 
+    line-height: 1.2; 
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; margin-bottom: 20px; text-align: center; }
+h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+a { 
+    color: var(--accent-turquoise); 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+a:hover { color: var(--brand-blue); }
+
+ul { list-style: none; }
+
+.section-padding { padding: 80px 0; }
+.section-padding-gray { padding: 80px 0; background-color: var(--light-gray); }
+
+/* ==================== HEADER VE NAVBAR ==================== */
+.header { 
+    background-color: var(--white); 
+    padding: 15px 0; 
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+    /* PERFORMANCE: GPU acceleration */
+    will-change: transform;
+    contain: layout style;
+}
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo { 
+    font-family: var(--font-header); 
+    font-size: 1.8rem; 
+    color: var(--brand-blue); 
+    font-weight: 700; 
+    text-decoration: none; 
+}
+
+.nav-menu { 
+    display: flex; 
+    gap: 25px; 
+}
+
+.nav-link { 
+    font-weight: 700; 
+    color: var(--dark-text); 
+    padding-bottom: 5px; 
+    border-bottom: 2px solid transparent; 
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    
+    /* PERFORMANCE: Will-change sadece gerekli property'ler için */
+    will-change: color, border-color;
+}
+
+.nav-link:hover, .nav-link.active { 
+    color: var(--accent-turquoise); 
+    border-bottom-color: var(--accent-turquoise); 
+}
+
+.hamburger { 
+    display: none; 
+    cursor: pointer; 
+}
+
+.bar { 
+    display: block; 
+    width: 25px; 
+    height: 3px; 
+    margin: 5px auto; 
+    background-color: var(--brand-blue); 
+    transition: all 0.3s ease-in-out; 
+}
+
+/* ==================== BUTONLAR ==================== */
+.btn { 
+    display: inline-block; 
+    padding: 12px 28px; 
+    border-radius: 5px; 
+    font-weight: 700; 
+    text-align: center; 
+    transition: all 0.3s ease; 
+    text-decoration: none; 
+}
+
+.btn-primary { 
+    background-color: var(--accent-turquoise); 
+    color: var(--white); 
+    border: 2px solid var(--accent-turquoise); 
+}
+
+.btn-primary:hover { 
+    background-color: #055a68; 
+    color: var(--white); 
+    transform: translateY(-2px); 
+}
+
+.btn-secondary { 
+    background-color: transparent; 
+    color: var(--brand-blue); 
+    border: 2px solid var(--brand-blue); 
+}
+
+.btn-secondary:hover { 
+    background-color: var(--brand-blue); 
+    color: var(--white); 
+    transform: translateY(-2px); 
+}
+
+/* ==================== HERO BÖLÜMÜ ==================== */
+.hero-section { 
+    position: relative; 
+    padding: 120px 0; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 60vh; 
+    background-image: url('images/hero-background.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    
+    /* PERFORMANCE: CSS Containment */
+    contain: layout paint;
+}
+
+.hero-section::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(10, 77, 104, 0.75); 
+    z-index: 1; 
+}
+
+.hero-content { 
+    position: relative; 
+    z-index: 2; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    color: #fff; 
+}
+
+.hero-content h1, .hero-content p { 
+    color: var(--white); 
+}
+
+.hero-btn-secondary { 
+    color: var(--white); 
+    border-color: var(--white); 
+}
+
+.hero-btn-secondary:hover { 
+    background-color: var(--white); 
+    color: var(--brand-blue); 
+}
+
+/* ==================== GÜVENİLİRLİK BÖLÜMÜ ==================== */
+.trust-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    text-align: center; 
+}
+
+.trust-item {
+    /* PERFORMANCE: Content-visibility (Chrome 85+) */
+    content-visibility: auto;
+    contain: layout style paint;
+}
+
+.trust-icon { 
+    height: 80px; 
+    width: 80px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 15px; 
+}
+
+/* ==================== HİZMETLER ÖZETİ ==================== */
+.services-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.service-card { 
+    background-color: var(--white); 
+    padding: 30px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* CRITICAL: CSS Containment + Content-visibility */
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+.service-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+}
+
+.card-link { 
+    font-weight: 700; 
+    display: inline-block; 
+    margin-top: 15px; 
+    text-decoration: none; 
+}
+
+/* ==================== BAŞARI HİKAYELERİ ==================== */
+.success-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.success-story {
+    /* PERFORMANCE: Containment */
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+.success-story h4 { 
+    color: var(--dark-text); 
+}
+
+.success-result { 
+    font-family: var(--font-header); 
+    font-size: 2rem; 
+    color: var(--accent-turquoise); 
+    font-weight: 700; 
+}
+
+.client-avatar { 
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin: 0 auto 20px; 
+    border: 3px solid var(--light-gray); 
+}
+
+/* ==================== BLOG ÖNİZLEME VE BLOG SAYFASI ==================== */
+.blog-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.blog-card { 
+    background-color: var(--white); 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    display: flex; 
+    flex-direction: column;
+    
+    /* CRITICAL: CSS Containment + Content-visibility */
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+.blog-card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    
+    /* PERFORMANCE: Image rendering optimization */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.blog-card-content { 
+    padding: 25px; 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.blog-card-content h3 { 
+    margin-bottom: 15px; 
+}
+
+.blog-card-content .card-link { 
+    margin-top: auto; 
+    text-decoration: none; 
+}
+
+.blog-page.blog-grid { 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+}
+
+/* ==================== CTA BÖLÜMÜ ==================== */
+.cta-section { 
+    background-color: var(--accent-turquoise); 
+    color: var(--white); 
+    padding: 60px 0; 
+    text-align: center; 
+}
+
+.cta-content h2 { 
+    color: var(--white); 
+    margin-bottom: 15px; 
+}
+
+.cta-content p { 
+    margin-bottom: 30px; 
+}
+
+.btn-cta { 
+    background-color: var(--white); 
+    color: var(--accent-turquoise); 
+    font-size: 1.1rem; 
+    padding: 15px 35px; 
+}
+
+.btn-cta:hover { 
+    background-color: var(--light-gray); 
+    color: var(--accent-turquoise); 
+}
+
+/* ==================== FOOTER ==================== */
+.footer { 
+    background-color: var(--brand-blue); 
+    color: var(--white); 
+    padding: 60px 0 20px; 
+}
+
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin-bottom: 40px; 
+}
+
+.footer-col h3 { 
+    color: var(--white); 
+    margin-bottom: 15px; 
+}
+
+.footer-col ul li { 
+    margin-bottom: 10px; 
+}
+
+.footer-col a { 
+    color: #a7c1cb; 
+    text-decoration: none; 
+}
+
+.footer-col a:hover { 
+    color: var(--white); 
+}
+
+.footer-bottom { 
+    text-align: center; 
+    padding-top: 20px; 
+    border-top: 1px solid #1e5f78; 
+    font-size: 0.9rem; 
+}
+
+/* ==================== DİĞER SAYFALAR VE BİLGİ KUTULARI ==================== */
+.page-header { 
+    background-color: var(--light-gray); 
+    padding: 60px 0; 
+    text-align: center; 
+}
+
+.content-section { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+    /* PERFORMANCE */
+    contain: layout style;
+}
+
+.info-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-turquoise);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.info-text h2 { 
+    text-align: left; 
+    margin-top: 0; 
+    margin-bottom: 15px; 
+}
+
+/* ==================== İLETİŞİM SAYFASI ==================== */
+.contact-wrapper { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 50px; 
+}
+
+.form-group { 
+    margin-bottom: 20px; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: 700; 
+}
+
+.form-group input, .form-group textarea { 
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-family: var(--font-body); 
+}
+
+/* ==================== BLOG DETAY SAYFASI ==================== */
+.post-meta { 
+    font-size: 1rem; 
+    color: #555; 
+    margin-top: 10px; 
+}
+
+.post-container { 
+    max-width: 720px; 
+    margin: 0 auto; 
+}
+
+.post-featured-image { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 40px; 
+}
+
+.post-article h2 { 
+    font-size: 1.8rem; 
+    margin-top: 50px; 
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+.post-article p { 
+    font-size: 1.1rem; 
+    line-height: 1.9; 
+    margin-bottom: 25px; 
+}
+
+.post-article ul { 
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* ==================== PORTFOLYO SAYFASI ==================== */
+.portfolio-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+}
+
+.portfolio-card { 
+    background-color: var(--white); 
+    border-radius: 10px; 
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07); 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+    
+    /* PERFORMANCE */
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+.portfolio-card:hover { 
+    transform: translateY(-10px); 
+}
+
+.portfolio-card img { 
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.portfolio-content { 
+    padding: 25px; 
+}
+
+.portfolio-tag { 
+    display: inline-block; 
+    background-color: var(--light-gray); 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    font-size: 0.8rem; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
+}
+
+/* ==================== FLOATING BUTTONS ==================== */
+.floating-btn { 
+    position: fixed; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    z-index: 1000; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease;
+    
+    /* PERFORMANCE */
+    will-change: transform, opacity;
+}
+
+.whatsapp-btn { 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #25D366; 
+}
+
+.scroll-top-btn { 
+    bottom: 80px; 
+    right: 20px; 
+    background-color: var(--accent-turquoise); 
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-top-btn.visible { 
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.floating-btn:hover { 
+    transform: scale(1.1); 
+    color: white; 
+}
+
+/* ==================== MÜŞTERİ GİRİŞİ BUTONU ==================== */
+.client-login-btn { 
+    background: var(--brand-blue) !important; 
+    color: white !important; 
+    border-radius: 25px !important;
+    padding: 8px 18px !important;
+    font-weight: 600 !important; 
+    display: inline-flex !important; 
+    align-items: center !important; 
+    gap: 8px !important; 
+    text-decoration: none !important; 
+    font-size: 0.9rem !important;
+}
+
+/* ==================== ANIMASYON ==================== */
+.fade-in { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.fade-in.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* ==================== RESPONSIVE TASARIM ==================== */
+@media (max-width: 992px) { 
+    .trust-grid, .success-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+    
+    .services-grid, .blog-grid { 
+        grid-template-columns: 1fr; 
+    } 
+    
+    .footer-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+@media (max-width: 768px) { 
+    h1 { font-size: 2.2rem; } 
+    h2 { font-size: 1.8rem; } 
+    
+    /* CRITICAL: MOBİLDE HERO BACKGROUND'U KALDIRMA (900KB TASARRUF) */
+    .hero-section {
+        background-attachment: scroll !important;
+        background-image: none !important;
+        background-color: var(--brand-blue) !important;
+    }
+    
+    .hero-section::before { 
+        display: none; 
+    }
+
+    .nav-menu { 
+        position: fixed; 
+        left: -100%; 
+        top: 75px; 
+        flex-direction: column; 
+        background-color: var(--white); 
+        width: 100%; 
+        text-align: center; 
+        transition: 0.3s; 
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        
+        /* PERFORMANCE: GPU acceleration */
+        will-change: transform;
+    } 
+    
+    .nav-menu.active { 
+        left: 0; 
+    } 
+    
+    .nav-item { 
+        padding: 15px 0; 
+    } 
+    
+    .hamburger { 
+        display: block; 
+    } 
+    
+    .hamburger.active .bar:nth-child(2) { 
+        opacity: 0; 
+    } 
+    
+    .hamburger.active .bar:nth-child(1) { 
+        transform: translateY(8px) rotate(45deg); 
+    } 
+    
+    .hamburger.active .bar:nth-child(3) { 
+        transform: translateY(-8px) rotate(-45deg); 
+    } 
+    
+    .hero-buttons { 
+        flex-direction: column; 
+        gap: 10px; 
+    } 
+    
+    .contact-wrapper { 
+        grid-template-columns: 1fr; 
+    } 
+    
+    .info-box { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 30px; 
+    }
+    
+    .client-login-btn { 
+        margin: 10px 0 !important; 
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 576px) { 
+    .trust-grid, .success-grid, .footer-grid { 
+        grid-template-columns: 1fr; 
+    } 
+    
+    .portfolio-grid { 
+        grid-template-columns: 1fr; 
+    } 
+}
+
+/* ==================== PERFORMANCE OPTIMIZATION CLASSES ==================== */
+/* Bu sınıflar JavaScript tarafından kullanılabilir */
+.page-loaded {
+    /* Sayfa tamamen yüklendiğinde eklenecek */
+}
+
+.fonts-loaded {
+    /* Fontlar yüklendiğinde eklenecek */
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+    .header, .footer, .floating-btn, .hamburger {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* ====================================================== */
+/* END OF AKO DIGITAL CSS - KUANTUM SEVİYESİ             */
+/* ====================================================== */

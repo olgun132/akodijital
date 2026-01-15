@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
+    <meta name="author" content="AKO Digital">
+
+    <!-- SEO ETİKETLERİ: GÜÇ VE OTORİTE -->
+    <title>Portfolyo | Başarı Hikayelerimiz ve Projelerimiz - AKO Digital</title>
+    <meta name="description" content="AKO Digital tarafından hayata geçirilen web tasarım ve dijital pazarlama projeleri. Markaların büyüme hikayelerini ve profesyonel portfolyomuzu hemen inceleyin.">
+    <link rel="canonical" href="https://www.akodijital.com/portfolyo.html">
+
+    <!-- FAVICON SİSTEMİ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- PERFORMANS: KRİTİK KAYNAK ÖNCELİKLENDİRME -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/portfolio-ahi.webp" fetchpriority="high">
+
+    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (NAVBAR FİKSİ VE GENİŞ TASARIM) -->
+    <style>
+        :root { 
+            --brand-blue: #0A4D68; 
+            --accent-turquoise: #066a7a; 
+            --white: #FFFFFF; 
+            --dark-text: #051923; 
+            --light-gray: #F5F7FA; 
+        }
+        body { margin:0; font-family: 'Lato', sans-serif; line-height:1.6; color:var(--dark-text); background:#fff; display:block; overflow-x:hidden; }
+        
+        /* NAVBAR & HEADER: PİKSEL KUSURSUZ 75PX STANDARDI */
+        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
+        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
+        .navbar { display:flex; justify-content:space-between; align-items:center; width:100%; height:100%; }
+        .logo { font-family: 'Poppins', sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
+        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
+        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition:0.3s; display:flex; align-items:center; line-height:1; }
+        .nav-link:hover, .nav-link.active { color:var(--accent-turquoise); }
+        
+        /* SAYFA BAŞLIĞI ALANI (SİYAH YAZI ENGELLEYİCİ) */
+        .page-header { background-color: var(--light-gray); padding: 70px 0; text-align: center; width: 100%; border-bottom: 1px solid #eee; }
+        .page-header h1 { color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 2.8rem; margin: 0; line-height: 1.2; font-weight: 800; }
+        .page-header p { color: #666; font-size: 1.2rem; margin-top: 15px; }
+
+        /* GENİŞ PORTFOLYO GRID SİSTEMİ (PREMIUM GÖRÜNÜM) */
+        .section-padding { padding: 80px 0; }
+        .portfolio-grid { display:grid; grid-template-columns: 1fr 1fr; gap:40px; }
+        .portfolio-card { background:#fff; border-radius:20px; overflow:hidden; box-shadow: 0 5px 25px rgba(0,0,0,0.07); display:flex; flex-direction:column; transition:0.4s; border:1px solid #f0f0f0; }
+        .portfolio-card:hover { transform:translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.12); border-color: var(--accent-turquoise); }
+        .portfolio-card img { width:100%; height:380px; object-fit:cover; display:block; }
+        .portfolio-content { padding:35px; flex-grow:1; }
+        .portfolio-tag { display:inline-block; background:var(--light-gray); padding:6px 15px; border-radius:20px; font-size:0.85rem; font-weight:700; margin-bottom:15px; color:var(--brand-blue); }
+        .portfolio-card h3 { font-size:1.6rem; color:var(--brand-blue); margin:0 0 15px 0; font-family:'Poppins', sans-serif; }
+        .portfolio-card p { color:#555; font-size:1.05rem; line-height:1.7; margin:0; }
+
+        /* BUTONLARIN ÇAKIŞMASINI ÖNLEYEN KOD */
+        .floating-btn { position:fixed!important; width:55px!important; height:55px!important; border-radius:50%!important; display:flex!important; align-items:center!important; justify-content:center!important; color:#fff!important; z-index:9999!important; text-decoration:none!important; box-shadow:0 4px 15px rgba(0,0,0,0.3)!important; transition:0.3s!important; }
+        .whatsapp-btn { bottom:25px!important; right:25px!important; background-color:#25D366!important; }
+        .scroll-top-btn { bottom:95px!important; right:25px!important; background-color:var(--brand-blue)!important; visibility:hidden; opacity:0; transition:0.3s; }
+        .scroll-top-btn.visible { visibility:visible!important; opacity:1!important; }
+
+        @media (max-width:992px) { .portfolio-grid { grid-template-columns: 1fr; } }
+        @media (max-width:768px) { .nav-menu { display:none; } .logo { padding-right:0; } .page-header h1 { font-size: 2.1rem; } .portfolio-card img { height: 280px; } }
+    </style>
+
+    <!-- ASENKRON KAYNAKLAR (ENGELLEMEYİ SIFIRLAR) -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- SOSYAL MEDYA (Open Graph & Twitter) -->
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AKO Digital Projeleri | Başarısı Kanıtlanmış Stratejiler">
+    <meta property="og:description" content="Hayata geçirdiğimiz dijital dönüşüm hikayelerini inceleyin.">
+    <meta property="og:url" content="https://www.akodijital.com/portfolyo.html">
+    <meta property="og:image" content="https://www.akodijital.com/images/ako-digital-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD SCHEMA: PORTFOLYO OTORİTESİ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "AKO Digital Projeleri",
+      "description": "Profesyonel web tasarım, SEO ve reklam yönetimi projelerimiz.",
+      "url": "https://www.akodijital.com/portfolyo.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AKO Digital",
+        "logo": { "@type": "ImageObject", "url": "https://www.akodijital.com/images/ako-digital-og.jpg" }
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ahi Organizasyon Lüks Web Tasarım" },
+          { "@type": "ListItem", "position": 2, "name": "SH Danışmanlık Dijital Dönüşüm" }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+
+   <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">AKO Digital</a>
+                <ul class="nav-menu">
+    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+    <li class="nav-item"><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
+    <!-- YENİ EKLENDİ -->
+    <li class="nav-item"><a href="portfolyo.html" class="nav-link active" aria-current="page">Portfolyo</a></li>
+    <li class="nav-item"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+    <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+    <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+</ul>                
+      <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Başarı Hikayelerimiz</h1>
+                <p>Güçlü stratejiler ve yaratıcı tasarımlarla markaları dijitalin zirvesine taşıyoruz.</p>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background:#fff;">
+            <div class="container">
+                <div class="portfolio-grid">
+                    
+                    <!-- PROJE 1 -->
+                    <article class="portfolio-card">
+                        <img src="images/portfolio-ahi.webp" alt="Ahi Organizasyon Lüks Web Tasarım Projesi" width="550" height="380">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Düğün & Lüks Davet</span>
+                            <h3>Ahi Organizasyon</h3>
+                            <p>Hatay'ın en seçkin organizasyon firması için tasarlanan, estetiği ve kurumsallığı ön plana çıkaran kullanıcı dostu web sitesi çalışması.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJE 2 -->
+                    <article class="portfolio-card">
+                        <img src="images/portfolio-sh.webp" alt="SH Danışmanlık Dijital Dönüşüm ve SEO Projesi" width="550" height="380" loading="lazy">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">STK & Kurumsal</span>
+                            <h3>SH Danışmanlık</h3>
+                            <p>Sivil Toplum Kuruluşlarına yönelik profesyonel bir danışmanlık hizmetinin modern, güven veren ve hızlı dijital yüzü.</p>
+                        </div>
+                    </article>
+
+                    <!-- YER TUTUCU 1 -->
+                    <article class="portfolio-card" style="background:#fafafa; border:2px dashed #ddd; justify-content:center; align-items:center; text-align:center;">
+                        <div class="portfolio-content">
+                            <h3 style="color:#ccc; font-family:sans-serif;">Yeni Proje Yakında</h3>
+                            <p style="color:#999;">Markanızı bu listeye eklemek için sabırsızlanıyoruz.</p>
+                        </div>
+                    </article>
+
+                    <!-- YER TUTUCU 2 -->
+                    <article class="portfolio-card" style="background:#fafafa; border:2px dashed #ddd; justify-content:center; align-items:center; text-align:center;">
+                        <div class="portfolio-content">
+                            <h3 style="color:#ccc; font-family:sans-serif;">Yeni Proje Yakında</h3>
+                            <p style="color:#999;">Gelecekteki dijital dönüşüm projelerimiz için takipte kalın.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h3>AKO Digital</h3><p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p></div>
+                <div class="footer-col"><h3>Hizmetler</h3><ul><li><a href="hizmetlerimiz.html#seo">SEO</a></li><li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li><li><a href="hizmetlerimiz.html#ads">Google Ads</a></li><li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li></ul></div>
+                <div class="footer-col"><h3>Hızlı Menü</h3><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+                <div class="footer-col"><h3>İletişim</h3><p>info@akodigital.com</p><p>+90 545 821 39 22</p></div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p></div>
+        </div>
+    </footer>
+
+    <!-- BUTONLAR (KUSURSUZ ERİŞİLEBİLİRLİK) -->
+    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden AKO Digital ile iletişime geçin">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın başına dön">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

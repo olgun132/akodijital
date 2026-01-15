@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- 1. TEKNİK TEMEL VE DOĞRULAMA (SABİT BLOK) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
+    <meta name="author" content="AKO Digital">
+    
+    <!-- FAVICON SİSTEMİ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO ETİKETLERİ: GÜVEN VE DÖNÜŞÜM ODAKLI -->
+    <title>İletişim | Ücretsiz SEO Analizi ve Teklif Alın - AKO Digital</title>
+    <meta name="description" content="Dijital projenizi AKO Digital ile büyütün. Ücretsiz SEO analizi ve stratejik dijital pazarlama teklifi almak için bizimle iletişime geçin. 24 saat içinde dönüş garantisi.">
+    <link rel="canonical" href="https://www.akodijital.com/iletisim.html">
+
+    <!-- PERFORMANS: LCP GÖRSELİ ÖN YÜKLEME (HIZ 100 İÇİN) -->
+    <link rel="preload" as="image" href="images/hero-background.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (BOZULMA, SİYAH YAZI VE NAVBAR FİKSİ) -->
+    <style>
+        :root { 
+            --brand-blue: #0A4D68; 
+            --accent-turquoise: #066a7a; 
+            --white: #FFFFFF; 
+            --dark-text: #051923; 
+            --light-gray: #F5F7FA; 
+        }
+        /* Sayfa boyanmadan önce devreye giren kurallar */
+        body { margin:0; font-family: 'Lato', sans-serif; line-height:1.6; color:var(--dark-text); background:#fff; display:block; overflow-x:hidden; }
+        
+        /* NAVBAR & HEADER: 75PX STANDARDI */
+        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
+        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
+        .navbar { display:flex; justify-content:space-between; align-items:center; width:100%; height:100%; }
+        .logo { font-family: 'Poppins', sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
+        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
+        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition:0.3s; line-height:1; display:flex; align-items:center; }
+        
+        /* PAGE HEADER (SİYAH YAZI/FOUC ENGELLEYİCİ) */
+        .page-header { background-color: var(--light-gray); padding: 60px 0; text-align: center; width: 100%; border-bottom: 1px solid #eee; }
+        .page-header h1 { color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 2.8rem; margin: 0; line-height: 1.2; font-weight: 800; }
+        .page-header p { color: #555; font-size: 1.25rem; margin-top: 15px; }
+
+        /* FORM GRİD YAPISI (SARKMA ÖNLEYİCİ) */
+        .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; padding: 60px 0; }
+        
+        /* BUTONLARIN ÇAKIŞMASINI ÖNLEYEN KOD */
+        .floating-btn { position: fixed !important; width: 50px !important; height: 50px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #fff !important; z-index: 9999 !important; text-decoration: none !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; transition: 0.3s !important; }
+        .whatsapp-btn { bottom: 20px !important; right: 20px !important; background-color: #25D366 !important; }
+        .scroll-top-btn { bottom: 80px !important; right: 20px !important; background-color: var(--accent-turquoise) !important; visibility: hidden; opacity: 0; }
+        
+        @media (max-width:768px) { .nav-menu { display:none; } .logo { padding-right:0; } .contact-grid { grid-template-columns: 1fr; } .page-header h1 { font-size: 2.2rem; } }
+    </style>
+
+    <!-- ASENKRON STİLLER VE FONTLAR (BEST PRACTICES 100) -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- JSON-LD SCHEMA: İLETİŞİM SAYFASI OTORİTESİ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "AKO Digital İletişim ve Teklif Formu",
+      "description": "Projeleriniz için AKO Digital ekibiyle iletişime geçin ve ücretsiz SEO analizi talep edin.",
+      "url": "https://www.akodijital.com/iletisim.html",
+      "mainEntity": {
+        "@type": "ProfessionalService",
+        "name": "AKO Digital",
+        "image": "https://www.akodijital.com/images/ako-digital-og.jpg",
+        "telephone": "+90-545-821-39-22",
+        "email": "info@akodigital.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "İstanbul, Türkiye",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+
+     <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">AKO Digital</a>
+                <ul class="nav-menu">
+    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+    <li class="nav-item"><a href="hizmetlerimiz.html"class="nav-link">Hizmetlerimiz</a></li>
+    <!-- YENİ EKLENDİ -->
+    <li class="nav-item"><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+    <li class="nav-item"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+    <li class="nav-item"><a href="iletisim.html" class="nav-link active" aria-current="page">İletişim</a></li>
+    <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+</ul>                
+     <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Bize Ulaşın</h1>
+                <p style="font-size:1.2rem; color:#666;">Dijital dünyadaki hedeflerinize giden yolda yanınızdayız.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- NETLIFY FORM ALANI -->
+            <div class="contact-form">
+                <h2 style="margin-bottom:20px; color:var(--brand-blue);">Mesaj Gönderin</h2>
+                <form name="iletisim" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/tesekkurler.html">
+                    <!-- Bot Koruması -->
+                    <input type="hidden" name="form-name" value="iletisim">
+                    <p style="display:none;"><label>Lütfen bu alanı doldurmayın: <input name="bot-field"></label></p>
+
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız</label>
+                        <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz" aria-describedby="name-helper">
+                        <small id="name-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Lütfen resmi belgelerdeki tam adınızı giriniz.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="email" required placeholder="ahmet@sirket.com" aria-describedby="email-helper">
+                        <small id="email-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Size teklifimizi iletebileceğimiz aktif bir mail adresi yazınız.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız / Proje Detayları</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Hangi konuda destek almak istersiniz?" aria-describedby="message-helper"></textarea>
+                        <small id="message-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Projeniz hakkında ne kadar detay verirseniz o kadar hızlı yardımcı olabiliriz.</small>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width:100%; border:none; padding:15px; border-radius:8px; font-weight:bold; cursor:pointer;" aria-label="İletişim formunu güvenli olarak gönder">Formu Gönder</button>
+                    <p style="font-size:12px; color:#888; margin-top:15px; text-align:center;">
+                        <i class="fas fa-lock" aria-hidden="true"></i> Form gönderimleriniz SSL ile uçtan uca korunmaktadır.
+                    </p>
+                </form>
+            </div>
+
+            <!-- İLETİŞİM BİLGİLERİ -->
+            <div class="contact-info">
+                <div class="contact-info-box">
+                    <h2 style="margin-bottom:20px; color:var(--brand-blue);">İletişim Bilgileri</h2>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span><a href="mailto:info@akodijital.com" style="color:inherit; text-decoration:none;" aria-label="Bize e-posta gönderin">info@akodigital.com</a></span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span><a href="tel:+905458213922" style="color:inherit; text-decoration:none;" aria-label="Bizi telefonla arayın">+90 545 821 39 22</a></span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>İstanbul, Türkiye</span>
+                    </div>
+                    <p style="margin-top:30px; font-size:0.9rem; color:#666; border-top: 1px solid #ddd; padding-top:20px;">
+                        AKO Digital olarak tüm başvuruları ciddiyetle inceliyor ve en geç 24 saat içinde dönüş sağlıyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h3>AKO Digital</h3><p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p></div>
+                <div class="footer-col"><h3>Hizmetler</h3><ul><li><a href="hizmetlerimiz.html#seo">SEO</a></li><li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li><li><a href="hizmetlerimiz.html#ads">Google Ads</a></li><li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li></ul></div>
+                <div class="footer-col"><h3>Hızlı Menü</h3><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+                <div class="footer-col"><h3>İletişim</h3><p>info@akodigital.com</p><p>+90 545 821 39 22</p></div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p></div>
+        </div>
+    </footer>
+
+<!-- BUTONLAR (ERİŞİLEBİLİRLİK 100 FİKSİ) -->
+<a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden bizimle iletişime geçin">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+<a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın en üstüne geri dön">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

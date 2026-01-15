@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
+    <meta name="author" content="AKO Digital">
+    
+    <!-- ÖNEMLİ: Bu sayfa arama sonuçlarında çıkmamalı -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Mesajınız Başarıyla Alındı | AKO Digital</title>
+    
+    <!-- FAVICON SİSTEMİ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- KRİTİK CSS (NAVBAR DENGESİ VE TEŞEKKÜR KARTI) -->
+    <style>
+        :root { --brand-blue: #0A4D68; --accent-turquoise: #066a7a; --white: #FFFFFF; --dark-text: #051923; --light-gray: #F5F7FA; }
+        body { margin:0; font-family: sans-serif; line-height:1.6; color:var(--dark-text); background:var(--light-gray); display:block; overflow-x:hidden; }
+        
+        /* NAVBAR & HEADER: 75PX STANDARDI */
+        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
+        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
+        .navbar { display:flex; justify-content:space-between; align-items:center; height:100%; width:100%; }
+        .logo { font-family: sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
+        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
+        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition: 0.3s; }
+
+        /* TEŞEKKÜR KARTI */
+        .thanks-wrapper { min-height: calc(100vh - 150px); display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+        .thanks-card { background: #fff; padding: 60px 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); max-width: 600px; width: 100%; text-align: center; border: 1px solid #f0f0f0; }
+        .thanks-icon { font-size: 5rem; color: #25D366; margin-bottom: 25px; }
+        h1 { color: var(--brand-blue); margin: 0 0 20px 0; font-size: 2.2rem; font-weight: 800; }
+        p { color: #666; font-size: 1.1rem; margin-bottom: 30px; }
+        
+        .btn-home { display: inline-block; padding: 15px 35px; background: var(--brand-blue); color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; box-shadow: 0 8px 20px rgba(10, 77, 104, 0.2); }
+        .btn-home:hover { background: var(--accent-turquoise); transform: translateY(-3px); }
+
+        /* BUTONLARIN ÇAKIŞMASINI ÖNLEYEN KOD */
+        .floating-btn { position: fixed !important; width: 50px !important; height: 50px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #fff !important; z-index: 9999 !important; text-decoration: none !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; transition: 0.3s !important; }
+        .whatsapp-btn { bottom: 20px !important; right: 20px !important; background-color: #25D366 !important; }
+        .scroll-top-btn { bottom: 80px !important; right: 20px !important; background-color: var(--accent-turquoise) !important; visibility: hidden; opacity: 0; }
+        .scroll-top-btn.visible { visibility: visible !important; opacity: 1 !important; }
+
+        @media (max-width:768px){ .nav-menu{display:none} h1{font-size:1.8rem} .logo{padding-right:0} }
+    </style>
+
+    <!-- ASENKRON FONTLAR VE CSS -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Onay Menüsü">
+                <a href="index.html" class="logo" aria-label="AKO Digital Anasayfa">AKO Digital</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+                    <li><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
+                    <li><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+                </ul>               
+                <button type="button" class="hamburger" aria-label="Menüyü Aç" style="background:none; border:none; cursor:pointer;">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thanks-wrapper">
+        <div class="thanks-card">
+            <div class="thanks-icon">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+            </div>
+            <h1>🚀 Mesajınız Alındı!</h1>
+            <p>Bizimle iletişime geçtiğiniz için teşekkür ederiz. Ekibimiz detayları inceleyip en geç 24 saat içinde sizinle irtibata geçecektir.</p>
+            <p>Bu sırada dijital dünyadaki trendleri takip etmek için blog sayfamıza göz atabilirsiniz.</p>
+            <a href="index.html" class="btn-home" aria-label="Anasayfaya geri dön">Anasayfaya Dön</a>
+        </div>
+    </main>
+
+    <footer class="footer" style="background:var(--brand-blue); color:#fff; padding:60px 0 20px; text-align:center;">
+        <div class="container">
+            <p>© 2026 AKO Digital | Veri Odaklı Stratejik Çözüm Ortağınız.</p>
+        </div>
+    </footer>
+
+    <!-- BUTONLAR (KUSURSUZ ERİŞİLEBİLİRLİK) -->
+    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden iletişime geçin">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın başına dön">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

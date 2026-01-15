@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- KUANTUM KATMANI V4: FIX - FETCHPRIORITY + LCP OPTİMİZASYONU       -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw">
+    <meta name="author" content="AKO Digital">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- CRITICAL FIX: HERO IMAGE PRELOAD WITH FETCHPRIORITY HIGH           -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <link rel="preload" fetchpriority="high" as="image" href="images/hero-background.webp" type="image/webp">
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- RESOURCE HINTS - DNS PREFETCH & PRECONNECT                          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://wa.me">
+
+    <title>AKO Digital | İstanbul Dijital Pazarlama ve SEO Ajansı - Veri Odaklı Stratejiler</title>
+    <meta name="description" content="AKO Digital; veri odaklı SEO, web tasarım ve Google Ads stratejileri ile markanızı dijitalin zirvesine taşır. Ücretsiz analiz için hemen tıklayın.">
+    <link rel="canonical" href="https://www.akodijital.com/">
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- SPECULATION RULES API                                               -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "source": "list",
+          "urls": ["hizmetlerimiz.html", "iletisim.html"]
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- KRİTİK CSS - ABOVE THE FOLD (CLS FIX İÇİN GÜNCELLENDİ)            -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <style>
+        :root{--brand-blue:#0A4D68;--accent-turquoise:#055a68;--white:#fff;--dark-text:#051923}
+        *{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+        body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:var(--dark-text);background:#fff;overflow-x:hidden}
+        
+        /* HEADER - CLS FIX: SABİT YÜKSEK */
+        .header{background:#fff;height:75px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.05);display:flex;align-items:center;contain:layout style;will-change:transform}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%}
+        .navbar{display:flex;justify-content:space-between;align-items:center;height:75px}
+        .logo{font-size:1.8rem;color:var(--brand-blue);font-weight:700;text-decoration:none;line-height:1;letter-spacing:-.5px}
+        .nav-menu{display:flex;gap:20px;list-style:none;align-items:center;margin:0;padding:0}
+        .nav-link{font-weight:700;color:var(--dark-text);text-decoration:none;font-size:1rem;transition:color .2s;will-change:color}
+        .nav-link:hover{color:var(--accent-turquoise)}
+        .client-login-btn{background:var(--brand-blue)!important;color:#fff!important;padding:8px 18px!important;border-radius:25px!important;font-size:.85rem!important;display:inline-flex;align-items:center;gap:6px;font-weight:600}
+        
+        /* HERO SECTION - LCP FIX: ASPECT RATIO İLE CLS ÖNLEYİCİ */
+        .hero-section{
+            min-height:65vh;
+            background:var(--brand-blue) url('images/hero-background.webp') center/cover fixed;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:#fff;
+            padding:80px 20px;
+            contain:layout paint;
+            position:relative;
+            /* CLS FIX: ASPECT RATIO */
+            aspect-ratio:16/9;
+        }
+        .hero-section::before{content:'';position:absolute;inset:0;background-color:rgba(10,77,104,0.75);z-index:1}
+        .hero-content{position:relative;z-index:2;max-width:800px}
+        h1{font-size:clamp(2rem,5vw,3rem);margin:0;line-height:1.1;font-weight:800;letter-spacing:-1px;color:#fff}
+        .hero-content p{color:#fff;font-size:1.1rem;margin:20px 0}
+        
+        /* BUTTONS */
+        .btn{display:inline-block;padding:12px 28px;border-radius:5px;font-weight:700;text-align:center;transition:all .3s ease;text-decoration:none;font-size:1rem}
+        .btn-primary{background-color:var(--accent-turquoise);color:#fff;border:2px solid var(--accent-turquoise)}
+        .btn-secondary{background-color:transparent;color:#fff;border:2px solid #fff}
+        .hero-buttons{display:flex;gap:15px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+        
+        .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+        .fade-in.visible{opacity:1;transform:translateY(0)}
+        .hamburger{display:none;background:0 0;border:0;cursor:pointer;padding:10px}
+        .bar{display:block;width:25px;height:3px;margin:5px 0;background:var(--brand-blue);transition:all .3s}
+        
+        /* MOBİL - CLS ve LCP FIX */
+        @media (max-width:768px){
+            h1{font-size:2rem}
+            .hero-section{
+                background-attachment:scroll!important;
+                background-image:none!important;
+                background-color:var(--brand-blue)!important;
+                min-height:50vh;
+                aspect-ratio:auto;
+            }
+            .hero-section::before{background-color:rgba(10,77,104,0.9)}
+            .nav-menu{display:none}
+        }
+    </style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- ASYNC FONT & CSS LOADING                                            -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap"></noscript>
+    
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- TRUST GRAPH & ENTITY AUTHORITY                                      -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.akodijital.com/#organization",
+          "name": "AKO Digital",
+          "url": "https://www.akodijital.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.akodijital.com/images/ako-digital-og.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "sameAs": [
+            "https://www.wikidata.org/wiki/Q948639",
+            "https://schema.org/ProfessionalService",
+            "https://dbpedia.org/page/Digital_marketing"
+          ],
+          "telephone": "+90-545-821-39-22",
+          "email": "info@akodigital.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "İstanbul",
+            "addressCountry": "TR"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "47",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.akodijital.com/#webpage",
+          "url": "https://www.akodijital.com",
+          "name": "AKO Digital - Dijital Pazarlama ve SEO Ajansı",
+          "isPartOf": {"@id": "https://www.akodijital.com/#organization"},
+          "about": {"@id": "https://www.akodijital.com/#organization"},
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.akodijital.com/images/hero-background.webp"
+          },
+          "inLanguage": "tr-TR"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+     <header class="header">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Ana Menü">
+                <a href="index.html" class="logo" aria-label="AKO Digital Anasayfa">AKO Digital</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" aria-current="page">Anasayfa</a></li>
+                    <li><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
+                    <li><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    <li>
+                        <a href="portal.html" class="nav-link client-login-btn">
+                            <i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi
+                        </a>
+                    </li>
+                </ul>
+                
+                <button class="hamburger" type="button" aria-label="Menüyü Aç" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Markanızı Dijitalin Zirvesine Taşıyan Veri Odaklı Stratejiler</h1>
+                <p class="fade-in" style="font-size:1.25rem;margin-top:25px">Potansiyel müşterilerinize doğru kanallarda ulaşıyor ve işletmenizi büyütüyoruz.</p>
+                <div class="fade-in" style="margin-top:35px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap">
+                    <a href="iletisim.html" class="btn" style="background:var(--accent-turquoise);color:#fff;padding:15px 30px;border-radius:5px;font-weight:700;text-decoration:none">Ücretsiz SEO Analizi</a>
+                    <a href="hizmetlerimiz.html" class="btn" style="border:2px solid #fff;color:#fff;padding:13px 30px;border-radius:5px;font-weight:700;text-decoration:none">Hizmetlerimiz</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section section-padding">
+            <div class="container">
+                <h2 class="section-title fade-in">Başarınız İçin Tasarlanmış Bir Ortaklık</h2>
+                <div class="trust-grid">
+                    <div class="trust-item fade-in">
+                        <img src="images/icon-data.webp" alt="Veri Odaklı Yaklaşım" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
+                        <h3>Veri Odaklı Yaklaşım</h3>
+                        <p>Varsayımlarla değil, verilerle hareket ederiz.</p>
+                    </div>
+                    <div class="trust-item fade-in">
+                        <img src="images/icon-transparent.webp" alt="Şeffaf Süreç" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
+                        <h3>Şeffaf Süreç</h3>
+                        <p>Tüm süreçler hakkında düzenli bilgilendirir, anlaşılır raporlar sunarız.</p>
+                    </div>
+                    <div class="trust-item fade-in">
+                        <img src="images/icon-team.webp" alt="Uzman SEO Ekibi" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
+                        <h3>Uzman Ekip</h3>
+                        <p>Alanında deneyimli ve sertifikalı uzmanlardan oluşan ekiple çalışırsınız.</p>
+                    </div>
+                    <div class="trust-item fade-in">
+                        <img src="images/icon-results.webp" alt="Sonuç Odaklı Çözümler" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
+                        <h3>Sonuç Odaklı Çözümler</h3>
+                        <p>Bizim için asıl başarı, yatırım getirisidir (ROI).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-summary-section section-padding-gray">
+            <div class="container">
+                <h2 class="section-title fade-in">Büyümenizi Sağlayacak Dijital Çözümlerimiz</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <h3>SEO (Arama Motoru Optimizasyonu)</h3>
+                        <p>Google'da üst sıralara çıkarak potansiyel müşterilerinizin sizi bulmasını sağlayın.</p>
+                        <a href="hizmetlerimiz.html#seo" class="card-link">Daha Fazla Bilgi →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <h3>Web Tasarım ve Geliştirme</h3>
+                        <p>Kullanıcı dostu, mobil uyumlu ve modern web siteleri ile dijital kimliğinizi güçlendirin.</p>
+                        <a href="hizmetlerimiz.html#web" class="card-link">Daha Fazla Bilgi →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <h3>Google Ads Yönetimi</h3>
+                        <p>Doğru hedefleme ile reklam bütçenizden maksimum verimi alın.</p>
+                        <a href="hizmetlerimiz.html#ads" class="card-link">Daha Fazla Bilgi →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-section section-padding">
+            <div class="container">
+                <h2 class="section-title fade-in">Rakamlarla Kanıtlanmış Başarılar</h2>
+                <div class="success-grid">
+                    <article class="success-story fade-in">
+                        <img src="images/client-avatar-1.webp" alt="Müşteri Başarı Hikayesi" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
+                        <h3>Organik Trafik Artışı</h3>
+                        <p class="success-result">6 Ayda %250 Artış</p>
+                    </article>
+                    <article class="success-story fade-in">
+                        <img src="images/client-avatar-2.webp" alt="Reklam Performansı" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
+                        <h3>Reklam Geri Dönüşümü</h3>
+                        <p class="success-result">12 Kat Artış</p>
+                    </article>
+                    <article class="success-story fade-in">
+                        <img src="images/client-avatar-3.webp" alt="Dönüşüm Optimizasyonu" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
+                        <h3>Dönüşüm Oranı</h3>
+                        <p class="success-result">%78 İyileşme</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-preview-section section-padding-gray">
+            <div class="container">
+                <h2 class="section-title fade-in">Bilgi Merkezimizden Son Yazılar</h2>
+                <div class="blog-grid">
+                    <article class="blog-card fade-in">
+                        <img src="images/blog-thumb-1.webp" alt="SEO Analizi" width="300" height="200" loading="lazy" decoding="async">
+                        <div class="blog-card-content">
+                            <h3>SEO Uyumlu Makale Nasıl Yazılır?</h3>
+                            <a href="blog-post-1.html" class="card-link">Okumaya Devam Et →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card fade-in">
+                        <img src="images/blog-thumb-2.webp" alt="2026 Trendleri" width="300" height="200" loading="lazy" decoding="async">
+                        <div class="blog-card-content">
+                            <h3>2026 Yılı Dijital Pazarlama Trendleri</h3>
+                            <a href="blog-post-2.html" class="card-link">Okumaya Devam Et →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card fade-in">
+                        <img src="images/blog-thumb-3.webp" alt="Site Hızı" width="300" height="200" loading="lazy" decoding="async">
+                        <div class="blog-card-content">
+                            <h3>Web Sitenizin Hızını Artırmak İçin 5 İpucu</h3>
+                            <a href="blog-post-3.html" class="card-link">Okumaya Devam Et →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Projenizi Hayata Geçirmeye Hazır mısınız?</h2>
+                    <p>Dijital dünyada bir adım öne çıkmak için uzman ekibimizle tanışın.</p>
+                    <a href="iletisim.html" class="btn btn-cta">ŞİMDİ TEKLİF ALIN</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AKO Digital</h3>
+                    <p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Hizmetler</h3>
+                    <ul>
+                        <li><a href="hizmetlerimiz.html#seo">SEO</a></li>
+                        <li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li>
+                        <li><a href="hizmetlerimiz.html#ads">Google Ads</a></li>
+                        <li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hızlı Menü</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>İletişim</h3>
+                    <p>info@akodigital.com</p>
+                    <p>+90 545 821 39 22</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden iletişime geçin">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın başına dön">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+    <!-- SERVICE WORKER -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js', {scope: '/'}).catch(()=>{});
+        }
+    </script>
+
+    <!-- MAIN SCRIPT -->
+    <script defer src="script.js"></script>
+</body>
+</html>

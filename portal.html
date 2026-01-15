@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- 1. TEKNİK TEMEL VE DOĞRULAMA (SABİT BLOK) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ÖNEMLİ: Portal sayfası özeldir, Google'da çıkmaması için noindex yapıldı -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
+    <meta name="author" content="AKO Digital">
+    
+    <!-- FAVICON SİSTEMİ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Müşteri Portali | AKO Digital</title>
+
+    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (NAVBAR VE PORTAL DÜZENİ) -->
+    <style>
+        :root { 
+            --brand-blue: #0A4D68; 
+            --accent-turquoise: #066a7a; 
+            --white: #FFFFFF; 
+            --dark-text: #051923; 
+            --light-gray: #F5F7FA; 
+        }
+        body { margin:0; font-family: sans-serif; line-height:1.6; background: linear-gradient(180deg, #0A4D68 0%, #051923 100%); min-height:100vh; color:var(--dark-text); overflow-x:hidden; }
+        
+        /* NAVBAR & HEADER: 75PX STANDARDI */
+        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
+        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
+        .navbar { display:flex; justify-content:space-between; align-items:center; height:100%; width:100%; }
+        .logo { font-family: sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
+        
+        /* PORTAL KARTI DÜZENİ */
+        .portal-wrapper { display: flex; align-items: center; justify-content: center; padding: 60px 20px; min-height: calc(100vh - 150px); }
+        .portal-card { background: white; max-width: 500px; width: 100%; border-radius: 20px; padding: 40px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); text-align: center; }
+        .portal-header { margin-bottom: 30px; }
+        .portal-header h1 { font-size: 1.5rem; color: var(--brand-blue); margin-bottom: 10px; font-weight: 800; }
+        .welcome-box { background: #f0f4f8; padding: 20px; border-radius: 12px; border-left: 4px solid var(--brand-blue); font-size: 0.95rem; text-align: left; margin-bottom: 30px; color: #444; line-height: 1.6; }
+        
+        /* MÜŞTERİ LİSTESİ BUTONLARI */
+        .client-btn { display: flex; align-items: center; padding: 18px 20px; background: white; border: 2px solid #e2e8f0; border-radius: 15px; text-decoration: none; color: var(--dark-text); transition: 0.3s; margin-bottom: 15px; text-align: left; }
+        .client-btn:hover { transform: translateY(-3px); border-color: var(--brand-blue); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .client-icon { width: 40px; height: 40px; background: var(--brand-blue); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.1rem; flex-shrink: 0; }
+        .client-info b { display: block; font-size: 1rem; color: var(--brand-blue); }
+        .client-info span { font-size: 0.85rem; color: #718096; }
+
+        .portal-footer { margin-top: 30px; font-size: 0.85rem; color: #a0aec0; border-top: 1px solid #eee; padding-top: 20px; }
+
+        @media (max-width:768px) { .logo { padding-right:0; } .portal-card { padding: 30px 20px; } }
+    </style>
+
+    <!-- ASENKRON KAYNAKLAR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Header (Sitenin geneliyle uyumlu hale getirildi) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Portal Menü">
+                <a href="index.html" class="logo">AKO Digital</a>
+                <a href="index.html" style="text-decoration:none; color:var(--accent-turquoise); font-weight:bold; font-size:0.9rem;">
+                    <i class="fas fa-chevron-left"></i> Siteye Dön
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="portal-wrapper">
+        <div class="portal-card">
+            <div class="portal-header">
+                <h1>Müşteri Portali</h1>
+                <p style="color:#718096; font-size:0.9rem;">Profesyonel Yönetim Paneline Hoş Geldiniz</p>
+            </div>
+
+            <div class="welcome-box">
+                <strong>Sayın İş Ortağımız,</strong><br><br>
+                Bu güvenli alan üzerinden projenizin yönetim ekranına erişebilirsiniz. Tüm hesaplar birbirinden tamamen bağımsız ve SSL sertifikası ile korunmaktadır.
+            </div>
+
+            <div class="client-list">
+                <!-- MÜŞTERİ 1 -->
+                <a href="https://www.shdanismanlik.com/admin" class="client-btn" target="_blank" rel="noopener">
+                    <div class="client-icon">SH</div>
+                    <div class="client-info">
+                        <b>SH Danışmanlık</b>
+                        <span>Yönetim Paneli Girişi</span>
+                    </div>
+                    <i class="fas fa-chevron-right" style="margin-left:auto; color:#cbd5e0;"></i>
+                </a>
+                
+                <!-- Yeni müşterileri buraya ekleyebilirsin -->
+            </div>
+
+            <div class="portal-footer">
+                Herhangi bir teknik sorun için:<br>
+                <strong>info@akodigital.com</strong><br><br>
+                © 2026 AKO Digital. Tüm Hakları Saklıdır.
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
