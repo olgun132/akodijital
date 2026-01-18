@@ -376,12 +376,27 @@
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </a>
     
-    <!-- SERVICE WORKER -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js', {scope: '/'}).catch(()=>{});
-        }
-    </script>
+    <!-- SERVICE WORKER KAYDI (İLERİ SEVİYE - AKO DIGITAL) -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js', {scope: '/'})
+                .then(reg => {
+                    // Arka planda yeni bir versiyon olup olmadığını denetle
+                    reg.onupdatefound = () => {
+                        const installingWorker = reg.installing;
+                        installingWorker.onstatechange = () => {
+                            if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                // Kullanıcıya site güncellendi bilgisini konsoldan veriyoruz
+                                console.log('🚀 AKO Digital: Yeni içerik hazır, bir sonraki ziyarette aktif olacak.');
+                            }
+                        };
+                    };
+                })
+                .catch(err => console.error('SW Kayıt Hatası:', err));
+        });
+    }
+</script>
 
     <!-- MAIN SCRIPT -->
     <script defer src="script.js"></script>
