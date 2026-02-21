@@ -120,40 +120,32 @@
         <section class="section-padding">
     <div class="container">
         <div class="contact-grid">
-            <!-- NETLIFY FORM ALANI -->
-            <div class="contact-form">
-                <h2 style="margin-bottom:20px; color:var(--brand-blue);">Mesaj Gönderin</h2>
-                <form name="iletisim" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/tesekkurler.html">
-                    <!-- Bot Koruması -->
-                    <input type="hidden" name="form-name" value="iletisim">
-                    <p style="display:none;"><label>Lütfen bu alanı doldurmayın: <input name="bot-field"></label></p>
 
-                    <div class="form-group">
-                        <label for="name">Adınız Soyadınız</label>
-                        <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz" aria-describedby="name-helper">
-                        <small id="name-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Lütfen resmi belgelerdeki tam adınızı giriniz.</small>
-                    </div>
+            <form name="iletisim" method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="f7d39b74-fd11-4e67-a582-5907a42954fe">
+    <input type="hidden" name="subject" value="AKO Digital - Yeni İletişim Formu">
+    <input type="hidden" name="redirect" value="https://www.akodijital.com/tesekkurler.html">
+    <input type="checkbox" name="botcheck" style="display:none;">
 
-                    <div class="form-group">
-                        <label for="email">E-posta Adresiniz</label>
-                        <input type="email" id="email" name="email" required placeholder="ahmet@sirket.com" aria-describedby="email-helper">
-                        <small id="email-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Size teklifimizi iletebileceğimiz aktif bir mail adresi yazınız.</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mesajınız / Proje Detayları</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Hangi konuda destek almak istersiniz?" aria-describedby="message-helper"></textarea>
-                        <small id="message-helper" style="display:block; font-size:11px; color:#666; margin-top:5px;">Projeniz hakkında ne kadar detay verirseniz o kadar hızlı yardımcı olabiliriz.</small>
-                    </div>
-
-                    <button type="submit" class="btn-primary" style="width:100%; border:none; padding:15px; border-radius:8px; font-weight:bold; cursor:pointer;" aria-label="İletişim formunu güvenli olarak gönder">Formu Gönder</button>
-                    <p style="font-size:12px; color:#888; margin-top:15px; text-align:center;">
-                        <i class="fas fa-lock" aria-hidden="true"></i> Form gönderimleriniz SSL ile uçtan uca korunmaktadır.
-                    </p>
-                </form>
-            </div>
-
-            <!-- İLETİŞİM BİLGİLERİ -->
+    <div class="form-group">
+        <label for="name">Adınız Soyadınız</label>
+        <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz">
+    </div>
+    <div class="form-group">
+        <label for="email">E-posta Adresiniz</label>
+        <input type="email" id="email" name="email" required placeholder="ahmet@sirket.com">
+    </div>
+    <div class="form-group">
+        <label for="message">Mesajınız / Proje Detayları</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Hangi konuda destek almak istersiniz?"></textarea>
+    </div>
+    <button type="submit" class="btn-primary" style="width:100%; border:none; padding:15px; border-radius:8px; font-weight:bold; cursor:pointer;">Formu Gönder</button>
+    <p style="font-size:12px; color:#888; margin-top:15px; text-align:center;">
+        <i class="fas fa-lock"></i> Form gönderimleriniz SSL ile uçtan uca korunmaktadır.
+    </p>
+</form>
+</div>
+                           <!-- İLETİŞİM BİLGİLERİ -->
             <div class="contact-info">
                 <div class="contact-info-box">
                     <h2 style="margin-bottom:20px; color:var(--brand-blue);">İletişim Bilgileri</h2>
