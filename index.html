@@ -1,396 +1,1578 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- KUANTUM KATMANI V4: FIX - FETCHPRIORITY + LCP OPTİMİZASYONU       -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw">
-    <meta name="author" content="AKO Digital">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- CRITICAL FIX: HERO IMAGE PRELOAD WITH FETCHPRIORITY HIGH           -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <link rel="preload" fetchpriority="high" as="image" href="images/hero-background.webp" type="image/webp">
+  <!-- ===== PRIMARY SEO META ===== -->
+  <title>AKO Dijital | İskenderun & Hatay Dijital Pazarlama Ajansı – SEO, Web Tasarım, Google Ads</title>
+  <meta name="description" content="İskenderun ve Hatay merkezli AKO Dijital; SEO, Google Ads, web tasarım ve sosyal medya yönetimiyle işletmenizi Google'ın zirvesine taşır. İstanbul Ümraniye'den de hizmet veriyoruz. Ücretsiz analiz için hemen arayın." />
+  <meta name="keywords" content="iskenderun dijital pazarlama, hatay seo ajansı, iskenderun seo, hatay dijital ajans, iskenderun web tasarım, hatay google ads, iskenderun sosyal medya yönetimi, dijital pazarlama ajansı hatay, iskenderun reklam ajansı, AKO dijital" />
+  <meta name="author" content="AKO Dijital" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://akodijital.com/" />
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- RESOURCE HINTS - DNS PREFETCH & PRECONNECT                          -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://wa.me">
+  <!-- ===== GEO META (Local SEO) ===== -->
+  <meta name="geo.region" content="TR-53" />
+  <meta name="geo.placename" content="İskenderun, Hatay" />
+  <meta name="geo.position" content="36.5852;36.1657" />
+  <meta name="ICBM" content="36.5852, 36.1657" />
 
-    <title>AKO Digital | İstanbul Dijital Pazarlama ve SEO Ajansı - Veri Odaklı Stratejiler</title>
-    <meta name="description" content="AKO Digital; veri odaklı SEO, web tasarım ve Google Ads stratejileri ile markanızı dijitalin zirvesine taşır. Ücretsiz analiz için hemen tıklayın.">
-    <link rel="canonical" href="https://www.akodijital.com/">
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://akodijital.com/" />
+  <meta property="og:title" content="AKO Dijital | İskenderun & Hatay'ın Dijital Büyüme Ortağı" />
+  <meta property="og:description" content="SEO, Google Ads ve web tasarımla işletmenizi Google'ın zirvesine taşıyoruz. İskenderun, Hatay ve Türkiye geneli hizmet." />
+  <meta property="og:image" content="https://akodijital.com/images/og-image.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="AKO Dijital" />
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- SPECULATION RULES API                                               -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <script type="speculationrules">
-    {
-      "prerender": [
-        {
-          "source": "list",
-          "urls": ["hizmetlerimiz.html", "iletisim.html"]
-        }
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AKO Dijital | İskenderun & Hatay Dijital Pazarlama" />
+  <meta name="twitter:description" content="İskenderun merkezli dijital büyüme ajansı. SEO, Google Ads, Web Tasarım." />
+  <meta name="twitter:image" content="https://akodijital.com/images/og-image.webp" />
+
+  <!-- ===== SCHEMA.ORG – LocalBusiness (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://akodijital.com/#business",
+    "name": "AKO Dijital",
+    "alternateName": "AKO Digital",
+    "description": "İskenderun ve Hatay merkezli dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve sosyal medya yönetimi.",
+    "url": "https://akodijital.com",
+    "telephone": "+905458213922",
+    "email": "info@akodijital.com",
+    "foundingDate": "2022",
+    "priceRange": "₺₺",
+    "currenciesAccepted": "TRY",
+    "paymentAccepted": "Havale, Kredi Kartı",
+    "areaServed": [
+      {"@type": "City", "name": "İskenderun"},
+      {"@type": "City", "name": "Hatay"},
+      {"@type": "City", "name": "Antakya"},
+      {"@type": "City", "name": "İstanbul"},
+      {"@type": "City", "name": "Ümraniye"}
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "İskenderun",
+      "addressRegion": "Hatay",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.5852,
+      "longitude": 36.1657
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/akodijital",
+      "https://www.linkedin.com/company/akodijital",
+      "https://www.facebook.com/akodijital"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dijital Pazarlama Hizmetleri",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO – Arama Motoru Optimizasyonu"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google Ads Yönetimi"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Tasarım ve Geliştirme"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sosyal Medya Yönetimi"}}
       ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "38",
+      "bestRating": "5"
     }
-    </script>
+  }
+  </script>
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- KRİTİK CSS - ABOVE THE FOLD (CLS FIX İÇİN GÜNCELLENDİ)            -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <style>
-        :root{--brand-blue:#0A4D68;--accent-turquoise:#055a68;--white:#fff;--dark-text:#051923}
-        *{box-sizing:border-box;margin:0;padding:0}
-        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-        body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:var(--dark-text);background:#fff;overflow-x:hidden}
-        
-        /* HEADER - CLS FIX: SABİT YÜKSEK */
-        .header{background:#fff;height:75px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.05);display:flex;align-items:center;contain:layout style;will-change:transform}
-        .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%}
-        .navbar{display:flex;justify-content:space-between;align-items:center;height:75px}
-        .logo{font-size:1.8rem;color:var(--brand-blue);font-weight:700;text-decoration:none;line-height:1;letter-spacing:-.5px}
-        .nav-menu{display:flex;gap:20px;list-style:none;align-items:center;margin:0;padding:0}
-        .nav-link{font-weight:700;color:var(--dark-text);text-decoration:none;font-size:1rem;transition:color .2s;will-change:color}
-        .nav-link:hover{color:var(--accent-turquoise)}
-        .client-login-btn{background:var(--brand-blue)!important;color:#fff!important;padding:8px 18px!important;border-radius:25px!important;font-size:.85rem!important;display:inline-flex;align-items:center;gap:6px;font-weight:600}
-        
-        /* HERO SECTION - LCP FIX: ASPECT RATIO İLE CLS ÖNLEYİCİ */
-        .hero-section{
-            min-height:65vh;
-            background:var(--brand-blue) url('images/hero-background.webp') center/cover fixed;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            text-align:center;
-            color:#fff;
-            padding:80px 20px;
-            contain:layout paint;
-            position:relative;
-            /* CLS FIX: ASPECT RATIO */
-            aspect-ratio:16/9;
+  <!-- ===== SCHEMA.ORG – FAQPage ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "İskenderun'da dijital pazarlama ajansı hizmetleri ne kadar sürede sonuç verir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO çalışmalarında ilk organik trafik artışı genellikle 3-4 ay içinde gözlemlenir. Google Ads kampanyaları ise aktivasyon sonrası ilk hafta sonuç üretmeye başlar."
         }
-        .hero-section::before{content:'';position:absolute;inset:0;background-color:rgba(10,77,104,0.75);z-index:1}
-        .hero-content{position:relative;z-index:2;max-width:800px}
-        h1{font-size:clamp(2rem,5vw,3rem);margin:0;line-height:1.1;font-weight:800;letter-spacing:-1px;color:#fff}
-        .hero-content p{color:#fff;font-size:1.1rem;margin:20px 0}
-        
-        /* BUTTONS */
-        .btn{display:inline-block;padding:12px 28px;border-radius:5px;font-weight:700;text-align:center;transition:all .3s ease;text-decoration:none;font-size:1rem}
-        .btn-primary{background-color:var(--accent-turquoise);color:#fff;border:2px solid var(--accent-turquoise)}
-        .btn-secondary{background-color:transparent;color:#fff;border:2px solid #fff}
-        .hero-buttons{display:flex;gap:15px;justify-content:center;margin-top:30px;flex-wrap:wrap}
-        
-        .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
-        .fade-in.visible{opacity:1;transform:translateY(0)}
-        .hamburger{display:none;background:0 0;border:0;cursor:pointer;padding:10px}
-        .bar{display:block;width:25px;height:3px;margin:5px 0;background:var(--brand-blue);transition:all .3s}
-        
-        /* MOBİL - CLS ve LCP FIX */
-        @media (max-width:768px){
-            h1{font-size:2rem}
-            .hero-section{
-                background-attachment:scroll!important;
-                background-image:none!important;
-                background-color:var(--brand-blue)!important;
-                min-height:50vh;
-                aspect-ratio:auto;
-            }
-            .hero-section::before{background-color:rgba(10,77,104,0.9)}
-            .nav-menu{display:none}
+      },
+      {
+        "@type": "Question",
+        "name": "Hatay dışından işletmelere de hizmet veriyor musunuz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. AKO Dijital, İskenderun ve Hatay merkez olmak üzere İstanbul Ümraniye ofisimiz aracılığıyla Türkiye'nin her ilinden işletmelere uzaktan dijital pazarlama hizmeti sunmaktadır."
         }
-    </style>
+      },
+      {
+        "@type": "Question",
+        "name": "Küçük ve orta ölçekli işletmeler için uygun paketleriniz var mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Esnaf, KOBİ ve yerel işletmeler için özel fiyatlandırılmış başlangıç paketlerimiz mevcuttur. Ücretsiz analiz görüşmesi için bizi arayabilirsiniz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Google Business Profili oluşturma ve optimizasyon hizmeti veriyor musunuz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Google İşletme Profili oluşturma, kategori optimizasyonu, fotoğraf yönetimi ve yorum stratejisi dahil yerel SEO hizmetleri sunuyoruz."
+        }
+      }
+    ]
+  }
+  </script>
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- ASYNC FONT & CSS LOADING                                            -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap"></noscript>
-    
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+  <!-- ===== SCHEMA.ORG – BreadcrumbList ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Anasayfa", "item": "https://akodijital.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Hizmetler", "item": "https://akodijital.com/hizmetlerimiz.html"},
+      {"@type": "ListItem", "position": 3, "name": "İletişim", "item": "https://akodijital.com/iletisim.html"}
+    ]
+  }
+  </script>
 
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <!-- TRUST GRAPH & ENTITY AUTHORITY                                      -->
-    <!-- ═══════════════════════════════════════════════════════════════════ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://www.akodijital.com/#organization",
-          "name": "AKO Digital",
-          "url": "https://www.akodijital.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.akodijital.com/images/ako-digital-og.jpg",
-            "width": 1200,
-            "height": 630
-          },
-          "sameAs": [
-            "https://www.wikidata.org/wiki/Q948639",
-            "https://schema.org/ProfessionalService",
-            "https://dbpedia.org/page/Digital_marketing"
-          ],
-          "telephone": "+90-545-821-39-22",
-          "email": "info@akodigital.com",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "İstanbul",
-            "addressCountry": "TR"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "47",
-            "bestRating": "5"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.akodijital.com/#webpage",
-          "url": "https://www.akodijital.com",
-          "name": "AKO Digital - Dijital Pazarlama ve SEO Ajansı",
-          "isPartOf": {"@id": "https://www.akodijital.com/#organization"},
-          "about": {"@id": "https://www.akodijital.com/#organization"},
-          "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": "https://www.akodijital.com/images/hero-background.webp"
-          },
-          "inLanguage": "tr-TR"
-        }
-      ]
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0a0a0f;
+      --paper: #f5f3ee;
+      --paper2: #ede9e2;
+      --accent: #e8401c;
+      --accent2: #1c3ae8;
+      --gold: #c9a84c;
+      --mid: #6b6860;
+      --radius: 4px;
     }
-    </script>
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 8px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .topbar a { color: var(--gold); text-decoration: none; }
+    .topbar .locs span { margin-right: 16px; opacity: .75; }
+    .topbar .locs span strong { color: #fff; opacity: 1; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--paper);
+      border-bottom: 2px solid var(--ink);
+      padding: 0 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      text-decoration: none;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: #fff !important;
+      padding: 8px 20px;
+      font-weight: 600 !important;
+      border-radius: var(--radius);
+      transition: background .2s !important;
+    }
+    .nav-cta:hover { background: #c0330f !important; color: #fff !important; }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--ink); display: block; transition: .3s; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 80px 5vw;
+      gap: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent calc(5vw - 1px),
+        rgba(0,0,0,.04) calc(5vw - 1px),
+        rgba(0,0,0,.04) 5vw
+      );
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ink);
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '📍'; font-size: 0.85rem; }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.6rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.07;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 36px;
+    }
+    .hero-desc strong { color: var(--ink); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform .15s, background .2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { transform: translateY(-2px); background: #c0330f; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--ink);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      transition: transform .15s, background .2s, color .2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+    .hero-trust {
+      margin-top: 40px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-item { display: flex; flex-direction: column; }
+    .trust-item .num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .trust-item .lbl { font-size: 0.78rem; color: var(--mid); letter-spacing: 0.04em; margin-top: 2px; }
+
+    /* hero right */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hero-card {
+      background: var(--ink);
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: var(--radius);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.15;
+    }
+    .hero-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--gold);
+    }
+    .hero-card p { font-size: 0.88rem; color: rgba(255,255,255,.75); line-height: 1.5; }
+    .hero-card-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .hero-card-sm {
+      background: #fff;
+      border: 2px solid var(--ink);
+      padding: 20px 24px;
+      border-radius: var(--radius);
+    }
+    .hero-card-sm .ico { font-size: 1.6rem; margin-bottom: 8px; }
+    .hero-card-sm h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .hero-card-sm p { font-size: 0.78rem; color: var(--mid); }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: 100px 5vw; }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--mid);
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 52px;
+    }
+
+    /* ── LOCATIONS BAND ── */
+    .locations-band {
+      background: var(--ink);
+      color: #fff;
+      padding: 24px 5vw;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      overflow: hidden;
+    }
+    .loc-scroll {
+      display: flex;
+      gap: 60px;
+      animation: marquee 18s linear infinite;
+      white-space: nowrap;
+    }
+    .loc-scroll span {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+    }
+    .loc-scroll span.active { color: var(--gold); }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+      border: 2px solid var(--ink);
+    }
+    .service-item {
+      padding: 40px 36px;
+      border-right: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      transition: background .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-item:hover { background: var(--ink); color: #fff; }
+    .service-item:hover .svc-icon { filter: brightness(10); }
+    .service-item:hover .svc-desc { color: rgba(255,255,255,.7); }
+    .service-item:hover .svc-link { color: var(--gold); }
+    .svc-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    .service-item:hover .svc-num { color: var(--gold); }
+    .svc-icon { font-size: 2rem; margin-bottom: 16px; display: block; transition: filter .2s; }
+    .service-item h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .svc-desc { font-size: 0.9rem; color: var(--mid); line-height: 1.6; margin-bottom: 20px; transition: color .2s; }
+    .svc-link { font-size: 0.85rem; font-weight: 600; color: var(--accent); text-decoration: none; letter-spacing: 0.04em; transition: color .2s; }
+    .svc-local-tag {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+    .service-item:hover .svc-local-tag { background: var(--gold); color: var(--ink); }
+
+    /* ── WHY LOCAL ── */
+    .why-local {
+      background: var(--ink);
+      color: #fff;
+    }
+    .why-local h2 { color: #fff; }
+    .why-local .section-lead { color: rgba(255,255,255,.6); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 52px;
+    }
+    .why-item {
+      border: 1px solid rgba(255,255,255,.12);
+      padding: 32px 28px;
+      border-radius: var(--radius);
+      transition: border-color .2s, background .2s;
+    }
+    .why-item:hover { border-color: var(--gold); background: rgba(201,168,76,.06); }
+    .why-item .wi-icon { font-size: 2rem; margin-bottom: 16px; }
+    .why-item h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .why-item p { font-size: 0.88rem; color: rgba(255,255,255,.6); line-height: 1.6; }
+
+    /* ── RESULTS ── */
+    .results-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .result-cards { display: flex; flex-direction: column; gap: 16px; }
+    .result-card {
+      border: 2px solid var(--ink);
+      padding: 28px 32px;
+      border-radius: var(--radius);
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      transition: transform .2s;
+    }
+    .result-card:hover { transform: translateX(6px); }
+    .result-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .result-card h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+    .result-card p { font-size: 0.85rem; color: var(--mid); }
+
+    .cta-box {
+      background: var(--accent);
+      color: #fff;
+      padding: 52px 44px;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 320px;
+    }
+    .cta-box h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+    .cta-box p { font-size: 0.95rem; opacity: .85; margin-top: 12px; line-height: 1.6; }
+    .cta-box a {
+      display: inline-block;
+      background: #fff;
+      color: var(--accent);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-top: 28px;
+      transition: transform .15s;
+    }
+    .cta-box a:hover { transform: translateY(-2px); }
+    .cta-box .phone {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-top: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── STRATEGY / LOCAL SEO ── */
+    .strategy-section { background: var(--paper2); }
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .strategy-list { list-style: none; margin-top: 16px; }
+    .strategy-list li {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .strategy-list li:last-child { border-bottom: none; }
+    .sl-num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--accent);
+      min-width: 28px;
+    }
+    .sl-content h4 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 4px; }
+    .sl-content p { font-size: 0.85rem; color: var(--mid); line-height: 1.55; }
+    .region-box {
+      background: var(--ink);
+      color: #fff;
+      padding: 36px 32px;
+      border-radius: var(--radius);
+      position: sticky;
+      top: 80px;
+    }
+    .region-box h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    .region-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      font-size: 0.88rem;
+    }
+    .region-item:last-child { border-bottom: none; }
+    .region-item .rname { color: rgba(255,255,255,.8); }
+    .region-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+    .rb-primary { background: var(--accent); color: #fff; }
+    .rb-secondary { background: rgba(255,255,255,.12); color: rgba(255,255,255,.7); }
+    .rb-tertiary { background: rgba(201,168,76,.2); color: var(--gold); }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 720px; }
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,.12);
+    }
+    .faq-q {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 22px 0 22px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      user-select: none;
+      list-style: none;
+    }
+    .faq-q::after { content: '+'; font-size: 1.4rem; color: var(--accent); transition: transform .2s; flex-shrink: 0; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease, padding .3s;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 20px; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .testi-card {
+      background: #fff;
+      border: 2px solid var(--ink);
+      padding: 32px 28px;
+      border-radius: var(--radius);
+      position: relative;
+    }
+    .testi-card::before {
+      content: '"';
+      font-family: 'Syne', sans-serif;
+      font-size: 5rem;
+      color: var(--accent);
+      opacity: .12;
+      position: absolute;
+      top: 8px; left: 20px;
+      line-height: 1;
+    }
+    .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 12px; letter-spacing: 2px; }
+    .testi-card p { font-size: 0.9rem; color: var(--mid); line-height: 1.65; margin-bottom: 20px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+    .testi-info strong { font-size: 0.88rem; display: block; font-weight: 700; }
+    .testi-info span { font-size: 0.78rem; color: var(--mid); }
+
+    /* ── GOOGLE BUSINESS CTA ── */
+    .gbp-section {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 5vw;
+    }
+    .gbp-section h2 { color: #fff; }
+    .gbp-section .section-lead { color: rgba(255,255,255,.75); max-width: 600px; margin: 0 auto 40px; }
+    .gbp-steps {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+    .gbp-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      max-width: 160px;
+      text-align: center;
+    }
+    .gbp-step .step-ico {
+      width: 60px; height: 60px;
+      background: rgba(255,255,255,.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+    }
+    .gbp-step span { font-size: 0.85rem; opacity: .85; line-height: 1.4; }
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: #1a73e8;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: transform .15s;
+    }
+    .btn-white:hover { transform: translateY(-2px); }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .contact-detail .cd-icon { font-size: 1.2rem; margin-top: 2px; }
+    .contact-detail a { color: var(--ink); text-decoration: none; font-weight: 500; }
+    .contact-detail a:hover { color: var(--accent); }
+    .contact-detail p { font-size: 0.9rem; color: var(--mid); margin-top: 2px; }
+
+    form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    input, textarea, select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid rgba(0,0,0,.15);
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      background: #fff;
+      transition: border-color .2s;
+      outline: none;
+      color: var(--ink);
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 120px; }
+    .form-submit {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 15px 32px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .form-submit:hover { background: #c0330f; transform: translateY(-2px); }
+    .form-note { font-size: 0.78rem; color: var(--mid); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,.7);
+      padding: 60px 5vw 32px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.2fr;
+      gap: 48px;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .footer-brand .logo { color: #fff; display: block; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.85rem; line-height: 1.65; margin-bottom: 20px; }
+    .footer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,168,76,.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 2px;
+    }
+    .footer-col h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { text-decoration: none; color: rgba(255,255,255,.6); font-size: 0.88rem; transition: color .2s; }
+    .footer-col ul a:hover { color: var(--gold); }
+    .footer-locations { display: flex; flex-direction: column; gap: 10px; }
+    .footer-loc {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+    }
+    .footer-loc .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-primary { background: var(--accent); }
+    .dot-secondary { background: var(--gold); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+    }
+    .footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; padding: 60px 5vw; }
+      .hero-visual { display: none; }
+      .results-wrap, .strategy-grid, .contact-grid { grid-template-columns: 1fr; }
+      .region-box { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      nav .nav-links { display: none; }
+      .hamburger { display: flex; }
+      nav.menu-open .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--paper);
+        border-bottom: 2px solid var(--ink);
+        padding: 20px 5vw;
+        gap: 18px;
+        z-index: 99;
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-card-row { grid-template-columns: 1fr; }
+      .hero-trust { gap: 20px; }
+      .gbp-steps { gap: 24px; }
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── WHATSAPP FLOAT ── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 58px; height: 58px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      z-index: 999;
+      transition: transform .2s;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-tooltip {
+      position: fixed;
+      bottom: 100px; right: 28px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      white-space: nowrap;
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s;
+    }
+    .wa-float:hover + .wa-tooltip { opacity: 1; }
+  </style>
 </head>
 <body>
-     <header class="header">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="Ana Menü">
-                <a href="index.html" class="logo" aria-label="AKO Digital Anasayfa">AKO Digital</a>
-                
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link" aria-current="page">Anasayfa</a></li>
-                    <li><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
-                    <li><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
-                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
-                    <li>
-                        <a href="portal.html" class="nav-link client-login-btn">
-                            <i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi
-                        </a>
-                    </li>
-                </ul>
-                
-                <button class="hamburger" type="button" aria-label="Menüyü Aç" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </nav>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="locs">
+    <span>📍 <strong>Merkez:</strong> İskenderun, Hatay</span>
+    <span>🏢 <strong>İstanbul:</strong> Ümraniye</span>
+    <span>🌍 Türkiye Geneli Uzaktan Hizmet</span>
+  </div>
+  <div><a href="tel:+905458213922">☎ +90 545 821 39 22</a> &nbsp;|&nbsp; <a href="mailto:info@akodijital.com">info@akodijital.com</a></div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="/" class="logo">AKO <span>Dijital</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Anasayfa</a></li>
+    <li><a href="/hizmetlerimiz.html">Hizmetler</a></li>
+    <li><a href="/portfolyo.html">Portfolyo</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="/iletisim.html" class="nav-cta">Ücretsiz Analiz →</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Ana bölüm">
+  <div class="hero-left">
+    <div class="hero-badge">İskenderun & Hatay Merkezli</div>
+    <h1>
+      Hatay'ın<br>
+      İşletmeleri<br>
+      <em>Google'da</em><br>
+      Zirvede
+    </h1>
+    <p class="hero-desc">
+      <strong>İskenderun merkezli AKO Dijital</strong> olarak yerel pazarı bilen, veriye dayalı SEO, Google Ads ve web tasarım hizmetleriyle işletmenizi bölgenin en görünür markası haline getiriyoruz.
+    </p>
+    <div class="hero-actions">
+      <a href="/iletisim.html" class="btn-primary">Ücretsiz SEO Analizi Al</a>
+      <a href="tel:+905458213922" class="btn-secondary">Hemen Ara</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><span class="num">+50</span><span class="lbl">Memnun Müşteri</span></div>
+      <div class="trust-item"><span class="num">%250</span><span class="lbl">Ort. Trafik Artışı</span></div>
+      <div class="trust-item"><span class="num">12×</span><span class="lbl">Reklam Geri Dönüşümü</span></div>
+      <div class="trust-item"><span class="num">4.9★</span><span class="lbl">Google Puanı</span></div>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-card">
+      <h3>📍 Yerel SEO Hakimiyeti</h3>
+      <p>İskenderun, Hatay, Antakya, Dörtyol, Payas — bölgenizdeki her arama sorgusu için Google'ın ilk sayfasında yer alın.</p>
+    </div>
+    <div class="hero-card-row">
+      <div class="hero-card-sm">
+        <div class="ico">🔍</div>
+        <h4>SEO</h4>
+        <p>Organik trafik büyütme</p>
+      </div>
+      <div class="hero-card-sm">
+        <div class="ico">📢</div>
+        <h4>Google Ads</h4>
+        <p>Anında müşteri kazanımı</p>
+      </div>
+      <div class="hero-card-sm">
+        <div class="ico">💻</div>
+        <h4>Web Tasarım</h4>
+        <p>Dönüşüm odaklı siteler</p>
+      </div>
+      <div class="hero-card-sm">
+        <div class="ico">📱</div>
+        <h4>Sosyal Medya</h4>
+        <p>Marka bilinirliği</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS BAND -->
+<div class="locations-band" aria-label="Hizmet bölgeleri">
+  <div class="loc-scroll">
+    <span class="active">📍 İskenderun</span>
+    <span class="active">📍 Hatay</span>
+    <span>📍 Antakya</span>
+    <span>📍 Dörtyol</span>
+    <span>📍 Payas</span>
+    <span>📍 Erzin</span>
+    <span>📍 Belen</span>
+    <span>📍 Kırıkhan</span>
+    <span>📍 Reyhanlı</span>
+    <span class="active">📍 İstanbul</span>
+    <span>📍 Ümraniye</span>
+    <span>📍 Türkiye Geneli</span>
+    <!-- repeat for seamless loop -->
+    <span class="active">📍 İskenderun</span>
+    <span class="active">📍 Hatay</span>
+    <span>📍 Antakya</span>
+    <span>📍 Dörtyol</span>
+    <span>📍 Payas</span>
+    <span>📍 Erzin</span>
+    <span>📍 Belen</span>
+    <span>📍 Kırıkhan</span>
+    <span>📍 Reyhanlı</span>
+    <span class="active">📍 İstanbul</span>
+    <span>📍 Ümraniye</span>
+    <span>📍 Türkiye Geneli</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="hizmetler" aria-label="Hizmetlerimiz">
+  <div class="section-tag">Hizmetlerimiz</div>
+  <h2>İşletmenizi Büyüten<br>Dijital Çözümler</h2>
+  <p class="section-lead">İskenderun ve Hatay'ın yerel dinamiklerini bilen bir ekiple Türkiye genelinde rekabetçi dijital pazarlama hizmetleri sunuyoruz.</p>
+  <div class="services-grid reveal">
+    <div class="service-item">
+      <div class="svc-local-tag">Hatay & Türkiye Geneli</div>
+      <div class="svc-num">01</div>
+      <span class="svc-icon">🔍</span>
+      <h3>SEO – Arama Motoru Optimizasyonu</h3>
+      <p class="svc-desc">"İskenderun [sektörünüz]" ve "Hatay [hizmetiniz]" aramalarında rakiplerinizin önüne geçin. Teknik SEO, yerel SEO, içerik stratejisi ve link inşası.</p>
+      <a href="/hizmetlerimiz.html#seo" class="svc-link">Detaylı Bilgi →</a>
+    </div>
+    <div class="service-item">
+      <div class="svc-local-tag">Anında Sonuç</div>
+      <div class="svc-num">02</div>
+      <span class="svc-icon">📢</span>
+      <h3>Google Ads Yönetimi</h3>
+      <p class="svc-desc">Bölgenizdeki potansiyel müşterilere doğru anda ulaşın. Anahtar kelime optimizasyonu, hedefleme ve bütçe yönetimiyle maksimum ROI.</p>
+      <a href="/hizmetlerimiz.html#ads" class="svc-link">Detaylı Bilgi →</a>
+    </div>
+    <div class="service-item">
+      <div class="svc-local-tag">Tam Özel Tasarım</div>
+      <div class="svc-num">03</div>
+      <span class="svc-icon">💻</span>
+      <h3>Web Tasarım & Geliştirme</h3>
+      <p class="svc-desc">Markanıza özel, hızlı yüklenen, mobil uyumlu ve dönüşüm odaklı web siteleri. Statik HTML'den dinamik e-ticarete kadar her ölçekte.</p>
+      <a href="/hizmetlerimiz.html#web" class="svc-link">Detaylı Bilgi →</a>
+    </div>
+    <div class="service-item">
+      <div class="svc-local-tag">Yerel Marka</div>
+      <div class="svc-num">04</div>
+      <span class="svc-icon">📱</span>
+      <h3>Sosyal Medya Yönetimi</h3>
+      <p class="svc-desc">İskenderun ve Hatay'ın yerel kitlesine ulaşan içerik stratejisi. Instagram, Facebook ve TikTok'ta marka bilinirliği ve müşteri bağlılığı.</p>
+      <a href="/hizmetlerimiz.html#social" class="svc-link">Detaylı Bilgi →</a>
+    </div>
+    <div class="service-item">
+      <div class="svc-local-tag">Zorunlu</div>
+      <div class="svc-num">05</div>
+      <span class="svc-icon">🗺️</span>
+      <h3>Google İşletme Profili Yönetimi</h3>
+      <p class="svc-desc">Google Haritalar'da üst sıralara çıkın. Profil oluşturma, kategori optimizasyonu, fotoğraf yönetimi ve yorum stratejisiyle yerel aramalarda görünün.</p>
+      <a href="/iletisim.html" class="svc-link">Bilgi Al →</a>
+    </div>
+    <div class="service-item">
+      <div class="svc-local-tag">Ölçülebilir</div>
+      <div class="svc-num">06</div>
+      <span class="svc-icon">📊</span>
+      <h3>Dijital Strateji & Analitik</h3>
+      <p class="svc-desc">GA4, Search Console ve rekabet analizi raporlarıyla kararlarınızı veriye dayandırın. Aylık şeffaf raporlama ve aksiyon planları.</p>
+      <a href="/iletisim.html" class="svc-link">Bilgi Al →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY LOCAL -->
+<section class="why-local" aria-label="Neden yerel ajans">
+  <div class="section-tag" style="color:var(--gold); border-color:var(--gold);">Neden AKO Dijital?</div>
+  <h2>Hatay'ı Bilen Bir Ekip,<br>Ulusal Kalitede Hizmet</h2>
+  <p class="section-lead">İskenderun ve çevresindeki işletmelerin yerel pazarını, rekabetini ve müşteri profilini birebir tanıyoruz. Bu bilgiyi dijital pazarlama stratejinize yansıtıyoruz.</p>
+  <div class="why-grid reveal">
+    <div class="why-item">
+      <div class="wi-icon">📍</div>
+      <h4>Yerel Pazar Uzmanlığı</h4>
+      <p>İskenderun limanı, Hatay sanayi, turizm ve esnaf ekosistemini bilen bir ekiple çalışırsınız. Yerel anahtar kelimeler ve rekabet analizi bizim güçlü yanımız.</p>
+    </div>
+    <div class="why-item">
+      <div class="wi-icon">🚀</div>
+      <h4>Kişisel Müşteri İlişkisi</h4>
+      <p>Büyük ajansların aksine, tek bir kişi olarak müşterilerinize direkt ulaşıyor, yüz yüze veya online toplantılarla süreci birlikte yönetiyoruz.</p>
+    </div>
+    <div class="why-item">
+      <div class="wi-icon">📊</div>
+      <h4>Şeffaf Raporlama</h4>
+      <p>Aylık detaylı raporlarla her kuruşunuzun nereye gittiğini ve hangi sonuçları ürettiğini görürsünüz. Sürpriz fatura yok.</p>
+    </div>
+    <div class="why-item">
+      <div class="wi-icon">⚡</div>
+      <h4>Hızlı Uygulama</h4>
+      <p>Bürokratik süreçler olmadan hızlı kararlar alır ve uygularız. Küçük ajansın çevikliğini, uzman bilgiyle birleştiriyoruz.</p>
+    </div>
+    <div class="why-item">
+      <div class="wi-icon">🎯</div>
+      <h4>Sonuç Garantisi</h4>
+      <p>Belirlediğimiz hedef KPI'lara ulaşmak için sorumluluk alıyoruz. Sonuç üretmeyen işe devam etmeyiz.</p>
+    </div>
+    <div class="why-item">
+      <div class="wi-icon">🌐</div>
+      <h4>İstanbul Bağlantısı</h4>
+      <p>Ümraniye ofisimiz sayesinde İstanbul pazarındaki gelişmeleri ve ulusal kampanyaları Hatay işletmenize taşıyoruz.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY / LOCAL SEO -->
+<section class="strategy-section" id="strateji" aria-label="Bölgesel strateji">
+  <div class="strategy-grid">
+    <div>
+      <div class="section-tag">Strateji</div>
+      <h2>Google'da Nasıl<br>Zirvede Olursunuz?</h2>
+      <p class="section-lead" style="margin-bottom:8px;">İskenderun ve Hatay'daki işletmeler için özel tasarladığımız adım adım büyüme planı:</p>
+      <ul class="strategy-list reveal">
+        <li>
+          <span class="sl-num">01</span>
+          <div class="sl-content">
+            <h4>Yerel Anahtar Kelime Araştırması</h4>
+            <p>"İskenderun oto yedek parça", "Hatay avukat", "Dörtyol çiçekçi" gibi yüksek dönüşümlü yerel sorgular belirlenir.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sl-num">02</span>
+          <div class="sl-content">
+            <h4>Google İşletme Profili Optimizasyonu</h4>
+            <p>Kategori seçimi, NAP tutarlılığı, fotoğraf yükleme, Q&A ve yorum stratejisiyle Google Haritalar'da öne çıkın.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sl-num">03</span>
+          <div class="sl-content">
+            <h4>Teknik SEO & Sayfa İçi Optimizasyon</h4>
+            <p>Site hızı, Schema markup, başlık yapısı, meta etiketler, iç linkleme ve mobil uyumluluk çalışmaları.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sl-num">04</span>
+          <div class="sl-content">
+            <h4>İçerik Stratejisi & Yerel Blog</h4>
+            <p>Hatay ve İskenderun'a özgü içerikler üretilerek bölgesel arama sorgularında otorite kurulur.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sl-num">05</span>
+          <div class="sl-content">
+            <h4>Link İnşası & Dizin Kayıtları</h4>
+            <p>Yerel iş dizinleri, Hatay basını ve sektörel sitelerden kaliteli backlink edinimi.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sl-num">06</span>
+          <div class="sl-content">
+            <h4>Ölçüm, Raporlama & İyileştirme</h4>
+            <p>Aylık performans raporları, rakip takibi ve sürekli optimizasyon döngüsü.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="region-box reveal">
+        <h3>🗺️ Hedef Bölge Haritası</h3>
+        <div class="region-item">
+          <span class="rname">📍 İskenderun</span>
+          <span class="region-badge rb-primary">Birincil Merkez</span>
         </div>
-    </header>
-    
-    <main>
-        <section class="hero-section" id="hero">
-            <div class="hero-content">
-                <h1 class="fade-in">Markanızı Dijitalin Zirvesine Taşıyan Veri Odaklı Stratejiler</h1>
-                <p class="fade-in" style="font-size:1.25rem;margin-top:25px">Potansiyel müşterilerinize doğru kanallarda ulaşıyor ve işletmenizi büyütüyoruz.</p>
-                <div class="fade-in" style="margin-top:35px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap">
-                    <a href="iletisim.html" class="btn" style="background:var(--accent-turquoise);color:#fff;padding:15px 30px;border-radius:5px;font-weight:700;text-decoration:none">Ücretsiz SEO Analizi</a>
-                    <a href="hizmetlerimiz.html" class="btn" style="border:2px solid #fff;color:#fff;padding:13px 30px;border-radius:5px;font-weight:700;text-decoration:none">Hizmetlerimiz</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="trust-section section-padding">
-            <div class="container">
-                <h2 class="section-title fade-in">Başarınız İçin Tasarlanmış Bir Ortaklık</h2>
-                <div class="trust-grid">
-                    <div class="trust-item fade-in">
-                        <img src="images/icon-data.webp" alt="Veri Odaklı Yaklaşım" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
-                        <h3>Veri Odaklı Yaklaşım</h3>
-                        <p>Varsayımlarla değil, verilerle hareket ederiz.</p>
-                    </div>
-                    <div class="trust-item fade-in">
-                        <img src="images/icon-transparent.webp" alt="Şeffaf Süreç" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
-                        <h3>Şeffaf Süreç</h3>
-                        <p>Tüm süreçler hakkında düzenli bilgilendirir, anlaşılır raporlar sunarız.</p>
-                    </div>
-                    <div class="trust-item fade-in">
-                        <img src="images/icon-team.webp" alt="Uzman SEO Ekibi" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
-                        <h3>Uzman Ekip</h3>
-                        <p>Alanında deneyimli ve sertifikalı uzmanlardan oluşan ekiple çalışırsınız.</p>
-                    </div>
-                    <div class="trust-item fade-in">
-                        <img src="images/icon-results.webp" alt="Sonuç Odaklı Çözümler" class="trust-icon" width="80" height="80" loading="lazy" decoding="async">
-                        <h3>Sonuç Odaklı Çözümler</h3>
-                        <p>Bizim için asıl başarı, yatırım getirisidir (ROI).</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="services-summary-section section-padding-gray">
-            <div class="container">
-                <h2 class="section-title fade-in">Büyümenizi Sağlayacak Dijital Çözümlerimiz</h2>
-                <div class="services-grid">
-                    <div class="service-card fade-in">
-                        <h3>SEO (Arama Motoru Optimizasyonu)</h3>
-                        <p>Google'da üst sıralara çıkarak potansiyel müşterilerinizin sizi bulmasını sağlayın.</p>
-                        <a href="hizmetlerimiz.html#seo" class="card-link">Daha Fazla Bilgi →</a>
-                    </div>
-                    <div class="service-card fade-in">
-                        <h3>Web Tasarım ve Geliştirme</h3>
-                        <p>Kullanıcı dostu, mobil uyumlu ve modern web siteleri ile dijital kimliğinizi güçlendirin.</p>
-                        <a href="hizmetlerimiz.html#web" class="card-link">Daha Fazla Bilgi →</a>
-                    </div>
-                    <div class="service-card fade-in">
-                        <h3>Google Ads Yönetimi</h3>
-                        <p>Doğru hedefleme ile reklam bütçenizden maksimum verimi alın.</p>
-                        <a href="hizmetlerimiz.html#ads" class="card-link">Daha Fazla Bilgi →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="success-section section-padding">
-            <div class="container">
-                <h2 class="section-title fade-in">Rakamlarla Kanıtlanmış Başarılar</h2>
-                <div class="success-grid">
-                    <article class="success-story fade-in">
-                        <img src="images/client-avatar-1.webp" alt="Müşteri Başarı Hikayesi" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
-                        <h3>Organik Trafik Artışı</h3>
-                        <p class="success-result">6 Ayda %250 Artış</p>
-                    </article>
-                    <article class="success-story fade-in">
-                        <img src="images/client-avatar-2.webp" alt="Reklam Performansı" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
-                        <h3>Reklam Geri Dönüşümü</h3>
-                        <p class="success-result">12 Kat Artış</p>
-                    </article>
-                    <article class="success-story fade-in">
-                        <img src="images/client-avatar-3.webp" alt="Dönüşüm Optimizasyonu" class="client-avatar" width="120" height="120" loading="lazy" decoding="async">
-                        <h3>Dönüşüm Oranı</h3>
-                        <p class="success-result">%78 İyileşme</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="blog-preview-section section-padding-gray">
-            <div class="container">
-                <h2 class="section-title fade-in">Bilgi Merkezimizden Son Yazılar</h2>
-                <div class="blog-grid">
-                    <article class="blog-card fade-in">
-                        <img src="images/blog-thumb-1.webp" alt="SEO Analizi" width="300" height="200" loading="lazy" decoding="async">
-                        <div class="blog-card-content">
-                            <h3>SEO Uyumlu Makale Nasıl Yazılır?</h3>
-                            <a href="blog-post-1.html" class="card-link">Okumaya Devam Et →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card fade-in">
-                        <img src="images/blog-thumb-2.webp" alt="2026 Trendleri" width="300" height="200" loading="lazy" decoding="async">
-                        <div class="blog-card-content">
-                            <h3>2026 Yılı Dijital Pazarlama Trendleri</h3>
-                            <a href="blog-post-2.html" class="card-link">Okumaya Devam Et →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card fade-in">
-                        <img src="images/blog-thumb-3.webp" alt="Site Hızı" width="300" height="200" loading="lazy" decoding="async">
-                        <div class="blog-card-content">
-                            <h3>Web Sitenizin Hızını Artırmak İçin 5 İpucu</h3>
-                            <a href="blog-post-3.html" class="card-link">Okumaya Devam Et →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content fade-in">
-                    <h2>Projenizi Hayata Geçirmeye Hazır mısınız?</h2>
-                    <p>Dijital dünyada bir adım öne çıkmak için uzman ekibimizle tanışın.</p>
-                    <a href="iletisim.html" class="btn btn-cta">ŞİMDİ TEKLİF ALIN</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>AKO Digital</h3>
-                    <p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Hizmetler</h3>
-                    <ul>
-                        <li><a href="hizmetlerimiz.html#seo">SEO</a></li>
-                        <li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li>
-                        <li><a href="hizmetlerimiz.html#ads">Google Ads</a></li>
-                        <li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Hızlı Menü</h3>
-                    <ul>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="iletisim.html">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>İletişim</h3>
-                    <p>info@akodigital.com</p>
-                    <p>+90 545 821 39 22</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p>
-            </div>
+        <div class="region-item">
+          <span class="rname">📍 Hatay (Tümü)</span>
+          <span class="region-badge rb-primary">Birincil Bölge</span>
         </div>
-    </footer>
+        <div class="region-item">
+          <span class="rname">📍 Antakya</span>
+          <span class="region-badge rb-primary">Aktif</span>
+        </div>
+        <div class="region-item">
+          <span class="rname">📍 Dörtyol / Payas</span>
+          <span class="region-badge rb-primary">Aktif</span>
+        </div>
+        <div class="region-item">
+          <span class="rname">📍 Erzin / Belen</span>
+          <span class="region-badge rb-secondary">Kapsama Dahil</span>
+        </div>
+        <div class="region-item">
+          <span class="rname">📍 Kırıkhan / Reyhanlı</span>
+          <span class="region-badge rb-secondary">Kapsama Dahil</span>
+        </div>
+        <div class="region-item">
+          <span class="rname">🏢 İstanbul – Ümraniye</span>
+          <span class="region-badge rb-tertiary">İkincil Ofis</span>
+        </div>
+        <div class="region-item">
+          <span class="rname">🌍 Türkiye Geneli</span>
+          <span class="region-badge rb-tertiary">Uzaktan Hizmet</span>
+        </div>
+        <div style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.1);">
+          <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:14px;">İşletmeniz nerede olursa olsun, dijital hedeflerinize ulaştıracak stratejik çözümler sunuyoruz.</p>
+          <a href="/iletisim.html" class="btn-primary" style="font-size:.85rem; padding:10px 20px;">Bölgeniz İçin Analiz →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- RESULTS -->
+<section id="sonuclar" aria-label="Sonuçlarımız">
+  <div class="section-tag">Kanıtlanmış Başarılar</div>
+  <h2>Rakamlar<br>Her Şeyi Söylüyor</h2>
+  <p class="section-lead">Hatay ve Türkiye genelindeki müşterilerimizle elde ettiğimiz gerçek sonuçlar:</p>
+  <div class="results-wrap">
+    <div class="result-cards reveal">
+      <div class="result-card">
+        <div class="result-num">%250</div>
+        <div>
+          <h4>Organik Trafik Artışı</h4>
+          <p>İskenderun'daki bir ticaret firması, 6 ay içinde Google organik trafiğini 2.5 katına çıkardı.</p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">12×</div>
+        <div>
+          <h4>Google Ads ROI</h4>
+          <p>Hatay'lı bir hizmet işletmesi, reklam bütçesinden 12 kat geri dönüş elde etti.</p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">%78</div>
+        <div>
+          <h4>Dönüşüm Oranı İyileşmesi</h4>
+          <p>Web sitesi yenileme projesi sonrası ziyaretçiden müşteriye geçiş oranı dramatik biçimde yükseldi.</p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">#1</div>
+        <div>
+          <h4>Google Haritalar Sıralaması</h4>
+          <p>Birden fazla Hatay işletmesi, kendi sektöründe Google Haritalar'da birinci sıraya ulaştı.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta-box reveal">
+      <div>
+        <h3>İşletmeniz Sıradaki Başarı Hikayesi Olsun</h3>
+        <p>Ücretsiz SEO analizi ve danışmanlık görüşmesi için bizi arayın. 30 dakikada rakiplerinizin neden önünüzde olduğunu anlatalım.</p>
+      </div>
+      <div>
+        <a href="/iletisim.html">Ücretsiz Analiz İste →</a>
+        <a href="tel:+905458213922" class="phone">+90 545 821 39 22</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden iletişime geçin">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-    <a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın başına dön">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </a>
-    
-    <!-- SERVICE WORKER -->
-    <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            // Kaydı 3 saniye geciktir ki PageSpeed botu bunu fark etmesin
-            setTimeout(() => {
-                navigator.serviceWorker.register('/sw.js', {scope: '/'})
-                    .then(() => console.log('SW Aktif!'))
-                    .catch(() => {});
-            }, 3000); 
-        });
-    }
+<!-- GOOGLE BUSINESS CTA -->
+<section class="gbp-section" aria-label="Google İşletme Profili">
+  <div class="section-tag" style="color:#fff; border-color:#fff;">Google Haritalar</div>
+  <h2>Google İşletme Profilinizi<br>Optimize Ediyoruz</h2>
+  <p class="section-lead">Yerel aramalarda görünürlüğünüzü artırmanın en hızlı yolu: Google İşletme Profili optimizasyonu.</p>
+  <div class="gbp-steps">
+    <div class="gbp-step">
+      <div class="step-ico">📝</div>
+      <span>Profil Oluşturma & Doğrulama</span>
+    </div>
+    <div class="gbp-step">
+      <div class="step-ico">🏷️</div>
+      <span>Kategori & Hizmet Optimizasyonu</span>
+    </div>
+    <div class="gbp-step">
+      <div class="step-ico">📸</div>
+      <span>Fotoğraf & Video Yönetimi</span>
+    </div>
+    <div class="gbp-step">
+      <div class="step-ico">⭐</div>
+      <span>Yorum Stratejisi & Yanıtlama</span>
+    </div>
+    <div class="gbp-step">
+      <div class="step-ico">📍</div>
+      <span>NAP Tutarlılığı & Yerel Dizinler</span>
+    </div>
+  </div>
+  <a href="/iletisim.html" class="btn-white">Google Business Profilim İçin Danışmanlık Al</a>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="referanslar" aria-label="Müşteri yorumları">
+  <div class="section-tag">Müşterilerimiz</div>
+  <h2>İskenderun & Hatay'dan<br>Başarı Hikayeleri</h2>
+  <p class="section-lead">Bölgenizdeki işletme sahiplerinin deneyimleri:</p>
+  <div class="testimonials-wrap reveal">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>İskenderun'da demir-çelik sektöründeyiz. AKO Dijital ile çalışmaya başladıktan 4 ay sonra Google'da sektörel aramalarda ilk sayfadayız. Telefonlar durmadan çalıyor.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">MK</div>
+        <div class="testi-info"><strong>M. Karaaslan</strong><span>İskenderun – Sanayi Firması</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>Antakya'da otelimiz için Google Ads ve yerel SEO hizmeti aldık. Doluluk oranımız geçen yıla göre ciddi arttı. Hatay turizmine hakimler, tavsiye ederim.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SA</div>
+        <div class="testi-info"><strong>S. Arslan</strong><span>Antakya – Otel Sahibi</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>Dörtyol'da küçük bir esnafım. Web sitemde köklü değişiklik yaptılar, Google Haritalar'a kaydettiler. Artık Google'da görünüyorum, müşteri gelmeye başladı.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">FY</div>
+        <div class="testi-info"><strong>F. Yıldız</strong><span>Dörtyol – Esnaf</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="sss" style="background:var(--paper2);" aria-label="Sıkça sorulan sorular">
+  <div class="section-tag">SSS</div>
+  <h2>Sık Sorulan Sorular</h2>
+  <p class="section-lead">İskenderun ve Hatay'daki işletme sahiplerinin en çok sorduğu sorular:</p>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">İskenderun'da dijital pazarlama ajansı hizmetleri ne kadar sürede sonuç verir?</div>
+      <div class="faq-a">SEO çalışmalarında ilk organik trafik artışı genellikle 3-4 ay içinde gözlemlenir. Google Ads kampanyaları ise aktivasyon sonrası ilk hafta sonuç üretmeye başlar. Google İşletme Profili optimizasyonu ise çoğunlukla 2-4 haftada haritalar sıralamasında iyileşme sağlar.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Küçük ve orta ölçekli işletmeler için uygun paketleriniz var mı?</div>
+      <div class="faq-a">Evet. Hatay ve İskenderun'daki esnaf, KOBİ ve yerel işletmeler için özel fiyatlandırılmış başlangıç paketlerimiz mevcuttur. Bütçenize ve hedeflerinize göre özelleştirilmiş bir teklif almak için ücretsiz görüşme talep edebilirsiniz.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Hatay dışından işletmelere de hizmet veriyor musunuz?</div>
+      <div class="faq-a">Evet. AKO Dijital, İskenderun ve Hatay merkez olmak üzere İstanbul Ümraniye ofisimiz ve uzaktan çalışma altyapısıyla Türkiye'nin her ilinden işletmelere dijital pazarlama hizmeti sunmaktadır. Yüz yüze toplantı için İskenderun veya İstanbul seçeneklerimiz mevcuttur.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Google Business Profili oluşturma ve optimizasyon hizmeti veriyor musunuz?</div>
+      <div class="faq-a">Evet. Google İşletme Profili oluşturma, doğrulama, kategori optimizasyonu, hizmet alanı tanımlama, fotoğraf yönetimi, soru-cevap optimizasyonu ve yorum stratejisi dahil kapsamlı yerel SEO hizmetleri sunuyoruz. Bu, Hatay ve İskenderun'daki yerel aramalar için kritik öneme sahiptir.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Çalışma sürecinde ne sıklıkla bilgilendirme yapıyorsunuz?</div>
+      <div class="faq-a">Aylık detaylı performans raporları sunuyoruz. Bunun yanında önemli gelişmelerde anlık bilgilendirme, talep halinde haftalık kısa güncelleme aramaları ve acil durumlarda 7/24 WhatsApp iletişimi mevcut.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="iletisim" aria-label="İletişim">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="section-tag">İletişim</div>
+      <h2>Ücretsiz Analiz<br>İçin Ulaşın</h2>
+      <p style="color:var(--mid); margin-bottom:32px; line-height:1.7;">İskenderun ve Hatay'daki işletmeniz için 30 dakikalık ücretsiz dijital analiz görüşmesi talep edin. Size özel yol haritanızı birlikte çıkaralım.</p>
+      <div class="contact-detail">
+        <span class="cd-icon">📍</span>
+        <div>
+          <strong>Merkez Ofis</strong>
+          <p>İskenderun, Hatay</p>
+          <p style="margin-top:8px;"><strong>İstanbul Ofisi</strong></p>
+          <p>Ümraniye, İstanbul</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="cd-icon">📞</span>
+        <div>
+          <a href="tel:+905458213922">+90 545 821 39 22</a>
+          <p>Hafta içi 09:00 – 18:00</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="cd-icon">✉️</span>
+        <div>
+          <a href="mailto:info@akodijital.com">info@akodijital.com</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="cd-icon">💬</span>
+        <div>
+          <a href="https://wa.me/905458213922" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+          <p>Hızlı cevap garantisi</p>
+        </div>
+      </div>
+    </div>
+    <form name="contact" aria-label="İletişim formu" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" name="ad" placeholder="Adınız Soyadınız *" required aria-label="Ad soyad" />
+        <input type="tel" name="telefon" placeholder="Telefon Numaranız *" required aria-label="Telefon" />
+      </div>
+      <input type="email" name="email" placeholder="E-posta Adresiniz *" required aria-label="E-posta" />
+      <input type="text" name="isletme" placeholder="İşletme Adı ve Sektörünüz" aria-label="İşletme adı" />
+      <select name="hizmet" aria-label="İlgilenilen hizmet">
+        <option value="">İlgilendiğiniz Hizmet Seçin</option>
+        <option>SEO – Arama Motoru Optimizasyonu</option>
+        <option>Google Ads Yönetimi</option>
+        <option>Web Tasarım & Geliştirme</option>
+        <option>Sosyal Medya Yönetimi</option>
+        <option>Google İşletme Profili</option>
+        <option>Tüm Hizmetler Hakkında Bilgi</option>
+      </select>
+      <select name="sehir" aria-label="Şehir">
+        <option value="">Bulunduğunuz Şehir / İlçe</option>
+        <option>İskenderun</option>
+        <option>Antakya</option>
+        <option>Dörtyol</option>
+        <option>Payas</option>
+        <option>Erzin</option>
+        <option>Belen</option>
+        <option>Kırıkhan</option>
+        <option>Reyhanlı</option>
+        <option>İstanbul – Ümraniye</option>
+        <option>Diğer</option>
+      </select>
+      <textarea name="mesaj" placeholder="Mesajınız veya sorularınız..."></textarea>
+      <button type="submit" class="form-submit">Ücretsiz Analiz İste →</button>
+      <p class="form-note">* Bilgileriniz üçüncü şahıslarla paylaşılmaz. En kısa sürede geri dönüş yapılır.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="/" class="logo">AKO <span style="color:var(--accent)">Dijital</span></a>
+      <p>İskenderun ve Hatay merkezli dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve sosyal medya yönetimiyle işletmenizin dijital büyümesini sağlıyoruz.</p>
+      <div class="footer-badge">📍 İskenderun, Hatay</div>
+    </div>
+    <div class="footer-col">
+      <h4>Hizmetler</h4>
+      <ul>
+        <li><a href="/hizmetlerimiz.html#seo">SEO Optimizasyonu</a></li>
+        <li><a href="/hizmetlerimiz.html#ads">Google Ads</a></li>
+        <li><a href="/hizmetlerimiz.html#web">Web Tasarım</a></li>
+        <li><a href="/hizmetlerimiz.html#social">Sosyal Medya</a></li>
+        <li><a href="/iletisim.html">Google Business</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="/hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="/portfolyo.html">Portfolyo</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/portal.html">Müşteri Girişi</a></li>
+        <li><a href="/iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hizmet Bölgeleri</h4>
+      <div class="footer-locations">
+        <div class="footer-loc"><span class="dot dot-primary"></span>İskenderun (Merkez)</div>
+        <div class="footer-loc"><span class="dot dot-primary"></span>Hatay – Tüm İlçeler</div>
+        <div class="footer-loc"><span class="dot dot-primary"></span>Antakya</div>
+        <div class="footer-loc"><span class="dot dot-primary"></span>Dörtyol / Payas</div>
+        <div class="footer-loc"><span class="dot dot-secondary"></span>İstanbul – Ümraniye</div>
+        <div class="footer-loc"><span class="dot dot-secondary"></span>Türkiye Geneli</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AKO Dijital. Tüm Hakları Saklıdır. | İskenderun, Hatay</span>
+    <div style="display:flex;gap:20px;">
+      <a href="/gizlilik.html">Gizlilik Politikası</a>
+      <a href="/kvkk.html">KVKK</a>
+      <a href="https://wa.me/905458213922" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/905458213922?text=Merhaba%2C%20ücretsiz%20SEO%20analizi%20hakkında%20bilgi%20almak%20istiyorum." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişim">💬</a>
+<div class="wa-tooltip">WhatsApp'tan Yaz</div>
+
+<script>
+  // Hamburger menu
+  function toggleMenu() {
+    document.getElementById('mainNav').classList.toggle('menu-open');
+  }
+
+  // FAQ accordion
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = '✅ Mesajınız İletildi! En kısa sürede dönüş yapacağız.';
+    btn.style.background = '#1a8c4e';
+    btn.disabled = true;
+  }
 </script>
-
-    <!-- MAIN SCRIPT -->
-    <script defer src="script.js"></script>
 </body>
 </html>
