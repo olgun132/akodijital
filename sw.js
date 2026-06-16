@@ -11,8 +11,8 @@ const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/style.css',
-    '/script.js',
+    '/css/style.css',
+    '/js/script.js',
     '/images/favicon.png'
 ];
 

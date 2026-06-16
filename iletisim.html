@@ -1,196 +1,694 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- 1. TEKNİK TEMEL VE DOĞRULAMA (SABİT BLOK) -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
-    <meta name="author" content="AKO Digital">
-    
-    <!-- FAVICON SİSTEMİ -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="shortcut icon" href="images/favicon.png">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="index, follow">
+ <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw">
+ <meta name="author" content="Hüseyin Olgun – AKO Dijital">
+ <meta name="theme-color" content="#0A4D68">
 
-    <!-- SEO ETİKETLERİ: GÜVEN VE DÖNÜŞÜM ODAKLI -->
-    <title>İletişim | Ücretsiz SEO Analizi ve Teklif Alın - AKO Digital</title>
-    <meta name="description" content="Dijital projenizi AKO Digital ile büyütün. Ücretsiz SEO analizi ve stratejik dijital pazarlama teklifi almak için bizimle iletişime geçin. 24 saat içinde dönüş garantisi.">
-    <link rel="canonical" href="https://www.akodijital.com/iletisim.html">
+ <link rel="icon" type="image/png" href="images/favicon.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- PERFORMANS: LCP GÖRSELİ ÖN YÜKLEME (HIZ 100 İÇİN) -->
-    <link rel="preload" as="image" href="images/hero-background.webp" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <title>İletişim | Ücretsiz SEO Analizi | AKO Dijital</title>
+ <meta name="description" content="İskenderun'da dijital projeniz için AKO Dijital ile iletişime geçin. Ücretsiz SEO analizi ve teklif alın.">
+ <link rel="canonical" href="https://www.akodijital.com/iletisim.html">
 
-    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (BOZULMA, SİYAH YAZI VE NAVBAR FİKSİ) -->
-    <style>
-        :root { 
-            --brand-blue: #0A4D68; 
-            --accent-turquoise: #066a7a; 
-            --white: #FFFFFF; 
-            --dark-text: #051923; 
-            --light-gray: #F5F7FA; 
-        }
-        /* Sayfa boyanmadan önce devreye giren kurallar */
-        body { margin:0; font-family: 'Lato', sans-serif; line-height:1.6; color:var(--dark-text); background:#fff; display:block; overflow-x:hidden; }
-        
-        /* NAVBAR & HEADER: 75PX STANDARDI */
-        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
-        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
-        .navbar { display:flex; justify-content:space-between; align-items:center; width:100%; height:100%; }
-        .logo { font-family: 'Poppins', sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
-        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
-        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition:0.3s; line-height:1; display:flex; align-items:center; }
-        
-        /* PAGE HEADER (SİYAH YAZI/FOUC ENGELLEYİCİ) */
-        .page-header { background-color: var(--light-gray); padding: 60px 0; text-align: center; width: 100%; border-bottom: 1px solid #eee; }
-        .page-header h1 { color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 2.8rem; margin: 0; line-height: 1.2; font-weight: 800; }
-        .page-header p { color: #555; font-size: 1.25rem; margin-top: 15px; }
+ <!-- Open Graph -->
+ <meta property="og:locale" content="tr_TR">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="İletişim | Ücretsiz SEO Analizi – AKO Dijital İskenderun">
+ <meta property="og:description" content="İskenderun ve Hatay'da ücretsiz SEO analizi ve dijital pazarlama teklifi. 24 saat içinde yanıt garantisi.">
+ <meta property="og:url" content="https://www.akodijital.com/iletisim.html">
+ <meta property="og:site_name" content="AKO Dijital">
+ <meta property="og:image" content="https://www.akodijital.com/images/ako-digital-og.jpg">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+ <!-- Twitter Card -->
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="İletişim | Ücretsiz SEO Analizi – AKO Dijital İskenderun">
+ <meta name="twitter:description" content="İskenderun ve Hatay'da ücretsiz SEO analizi ve dijital pazarlama teklifi. 24 saat içinde yanıt garantisi.">
+ <meta name="twitter:image" content="https://www.akodijital.com/images/ako-digital-og.jpg">
 
-        /* FORM GRİD YAPISI (SARKMA ÖNLEYİCİ) */
-        .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; padding: 60px 0; }
-        
-        /* BUTONLARIN ÇAKIŞMASINI ÖNLEYEN KOD */
-        .floating-btn { position: fixed !important; width: 50px !important; height: 50px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #fff !important; z-index: 9999 !important; text-decoration: none !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; transition: 0.3s !important; }
-        .whatsapp-btn { bottom: 20px !important; right: 20px !important; background-color: #25D366 !important; }
-        .scroll-top-btn { bottom: 80px !important; right: 20px !important; background-color: var(--accent-turquoise) !important; visibility: hidden; opacity: 0; }
-        
-        @media (max-width:768px) { .nav-menu { display:none; } .logo { padding-right:0; } .contact-grid { grid-template-columns: 1fr; } .page-header h1 { font-size: 2.2rem; } }
-    </style>
+ <!-- ===== SCHEMA ===== -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@graph": [
+ {
+ "@type": "ContactPage",
+ "@id": "https://www.akodijital.com/iletisim.html",
+ "url": "https://www.akodijital.com/iletisim.html",
+ "name": "İletişim | Ücretsiz SEO Analizi – AKO Dijital",
+ "description": "İskenderun ve Hatay'da ücretsiz SEO analizi ve dijital pazarlama teklifi. 24 saat içinde yanıt garantisi.",
+ "inLanguage": "tr",
+ "isPartOf": {"@id": "https://www.akodijital.com/#website"},
+ "about": {"@id": "https://www.akodijital.com/#organization"},
+ "breadcrumb": {
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {"@type": "ListItem","position": 1,"name": "Anasayfa","item": "https://www.akodijital.com/"},
+ {"@type": "ListItem","position": 2,"name": "İletişim","item": "https://www.akodijital.com/iletisim.html"}
+ ]
+ }
+ },
+ {
+ "@type": "LocalBusiness",
+ "@id": "https://www.akodijital.com/#organization",
+ "name": "AKO Dijital",
+ "url": "https://www.akodijital.com",
+ "telephone": "+90-545-821-39-22",
+ "email": "info@akodijital.com",
+ "contactPoint": [
+ {
+ "@type": "ContactPoint",
+ "telephone": "+90-545-821-39-22",
+ "contactType": "customer service",
+ "availableLanguage": "Turkish",
+ "contactOption": "TollFree",
+ "areaServed": "TR"
+ },
+ {
+ "@type": "ContactPoint",
+ "contactType": "sales",
+ "email": "info@akodijital.com",
+ "availableLanguage": "Turkish"
+ }
+ ],
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "Cumhuriyet Mahallesi Sondurak Caddesi Kömür Sokak No: 2",
+ "addressLocality": "Payas",
+ "addressRegion": "Hatay",
+ "postalCode": "31900",
+ "addressCountry": "TR"
+ },
+ "geo": {
+ "@type": "GeoCoordinates",
+ "latitude": 36.5867,
+ "longitude": 36.1740
+ },
+ "openingHoursSpecification": [
+ {
+ "@type": "OpeningHoursSpecification",
+ "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+ "opens": "09:00",
+ "closes": "18:00"
+ }
+ ],
+ "areaServed": [
+ {"@type": "City","name": "İskenderun"},
+ {"@type": "City","name": "Antakya"},
+ {"@type": "City","name": "Dörtyol"},
+ {"@type": "City","name": "Payas"},
+ {"@type": "AdministrativeArea","name": "Hatay"}
+ ],
+ "sameAs": [
+ "https://www.instagram.com/akodijital",
+ "https://www.linkedin.com/company/akodijital"
+ ]
+ },
+ {
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "Teklif almak ücretsiz mi?",
+ "acceptedAnswer": {"@type": "Answer","text": "Evet, ücretsiz 30 dakikalık keşif görüşmesi ve site analizi hiçbir taahhüt olmadan sunulmaktadır."}
+ },
+ {
+ "@type": "Question",
+ "name": "Ne kadar sürede geri dönüş yapıyorsunuz?",
+ "acceptedAnswer": {"@type": "Answer","text": "Tüm form başvurularına en geç 24 saat içinde dönüş yapıyoruz. WhatsApp mesajlarına genellikle 2 saat içinde yanıt veriyoruz."}
+ },
+ {
+ "@type": "Question",
+ "name": "İskenderun dışındaki işletmelere de hizmet veriyor musunuz?",
+ "acceptedAnswer": {"@type": "Answer","text": "Evet. İskenderun merkez olmak üzere Antakya, Dörtyol, Payas, Erzin, Arsuz ve tüm Hatay işletmelerine hizmet veriyoruz. Uzaktan çalışma ile Türkiye genelinde de destek sağlıyoruz."}
+ }
+ ]
+ }
+ ]
+ }
+ </script>
 
-    <!-- ASENKRON STİLLER VE FONTLAR (BEST PRACTICES 100) -->
-    <link rel="stylesheet" href="style.css" media="all">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <style>
+ :root{
+ --brand-blue:#0A4D68;
+ --brand-dark:#051923;
+ --accent:#055a68;
+ --accent-light:#0a7a8f;
+ --white:#fff;
+ --light-gray:#F5F7FA;
+ --border:#e2e8f0;
+ --text-muted:#64748b;
+ --success:#16a34a;
+ --error:#dc2626;
+ }
+ *{box-sizing:border-box;margin:0;padding:0}
+ html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+ body{font-family:'Lato',sans-serif;line-height:1.7;color:var(--brand-dark);background:#fff;overflow-x:hidden}
 
-    <!-- JSON-LD SCHEMA: İLETİŞİM SAYFASI OTORİTESİ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "AKO Digital İletişim ve Teklif Formu",
-      "description": "Projeleriniz için AKO Digital ekibiyle iletişime geçin ve ücretsiz SEO analizi talep edin.",
-      "url": "https://www.akodijital.com/iletisim.html",
-      "mainEntity": {
-        "@type": "ProfessionalService",
-        "name": "AKO Digital",
-        "image": "https://www.akodijital.com/images/ako-digital-og.jpg",
-        "telephone": "+90-545-821-39-22",
-        "email": "info@akodigital.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "İstanbul, Türkiye",
-          "addressLocality": "İstanbul",
-          "addressCountry": "TR"
-        }
-      }
-    }
-    </script>
+ /* ── HEADER ── */
+ .header{background:#fff;height:75px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.07);display:flex;align-items:center}
+ .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%}
+ .navbar{display:flex;justify-content:space-between;align-items:center;height:75px}
+ .logo{font-family:'Poppins',sans-serif;font-size:1.8rem;color:var(--brand-blue);font-weight:800;text-decoration:none;letter-spacing:-.5px}
+ .nav-menu{display:flex;gap:22px;list-style:none;align-items:center;margin:0;padding:0}
+ .nav-link{font-family:'Lato',sans-serif;font-weight:700;color:var(--brand-dark);text-decoration:none;font-size:.95rem;transition:color .2s;padding-bottom:3px;border-bottom:2px solid transparent}
+ .nav-link:hover,.nav-link.active{color:var(--accent);border-bottom-color:var(--accent)}
+ .client-login-btn{background:var(--brand-blue)!important;color:#fff!important;padding:9px 20px!important;border-radius:25px!important;font-size:.85rem!important;display:inline-flex;align-items:center;gap:6px;font-weight:700;border-bottom:none!important}
+ .client-login-btn:hover{background:var(--accent)!important}
+ .hamburger{display:none;background:0;border:0;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+ .bar{display:block;width:25px;height:2.5px;background:var(--brand-blue);border-radius:2px;transition:all .3s}
+
+ /* ── PAGE HEADER ── */
+ .page-header{background:linear-gradient(135deg,var(--brand-blue) 0%,var(--accent) 100%);padding:70px 0;text-align:center;position:relative;overflow:hidden}
+ .page-header::before{content:'';position:absolute;top:-30%;right:-5%;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.04)}
+ .breadcrumb{display:flex;align-items:center;justify-content:center;gap:8px;font-size:.83rem;color:rgba(255,255,255,.65);margin-bottom:16px}
+ .breadcrumb a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s}
+ .breadcrumb a:hover{color:#fff}
+ .breadcrumb i{font-size:.7rem}
+ .page-header h1{font-family:'Poppins',sans-serif;font-size:2.7rem;color:#fff;font-weight:800;line-height:1.2;margin-bottom:14px}
+ .page-header p{color:rgba(255,255,255,.82);font-size:1.05rem;max-width:560px;margin:0 auto}
+
+ /* ── TRUST STRIP ── */
+ .trust-strip{background:#fff;border-bottom:1px solid var(--border);padding:20px 0}
+ .trust-strip-inner{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+ .trust-item{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--text-muted);font-weight:600}
+ .trust-item i{color:var(--accent-light);font-size:1rem}
+
+ /* ── CONTACT LAYOUT ── */
+ .contact-section{padding:70px 0}
+ .contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start}
+
+ /* ── FORM ── */
+ .form-card{background:#fff;border-radius:16px;padding:42px;box-shadow:0 4px 30px rgba(10,77,104,.08);border:1px solid var(--border)}
+ .form-card h2{font-family:'Poppins',sans-serif;font-size:1.6rem;color:var(--brand-blue);font-weight:800;margin-bottom:6px}
+ .form-subtitle{color:var(--text-muted);font-size:.93rem;margin-bottom:28px}
+ .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ .form-group{margin-bottom:18px}
+ .form-group label{display:block;font-weight:700;font-size:.88rem;color:var(--brand-dark);margin-bottom:6px}
+ .form-group label span{color:var(--error);font-size:.8rem}
+ .form-group input,
+ .form-group select,
+ .form-group textarea{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:.93rem;color:var(--brand-dark);background:#fff;transition:border .2s,box-shadow .2s;outline:none;appearance:none}
+ .form-group input:focus,
+ .form-group select:focus,
+ .form-group textarea:focus{border-color:var(--accent-light);box-shadow:0 0 0 3px rgba(10,122,143,.1)}
+ .form-group textarea{resize:vertical;min-height:120px}
+ .form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+ .form-group input::placeholder,
+ .form-group textarea::placeholder{color:#aab8c2}
+ .submit-btn{width:100%;padding:15px;background:linear-gradient(135deg,var(--brand-blue),var(--accent-light));color:#fff;border:none;border-radius:8px;font-family:'Lato',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;transition:all .3s;display:flex;align-items:center;justify-content:center;gap:10px;letter-spacing:.3px}
+ .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(10,77,104,.3)}
+ .form-privacy{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--text-muted);margin-top:12px;justify-content:center}
+ .form-privacy i{color:var(--success)}
+ .form-success{display:none;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:24px;text-align:center;margin-top:20px}
+ .form-success i{font-size:2rem;color:var(--success);margin-bottom:10px}
+ .form-success h4{font-family:'Poppins',sans-serif;color:var(--success);margin-bottom:6px}
+ .form-success p{color:#166534;font-size:.9rem}
+
+ /* ── INFO PANEL ── */
+ .info-panel{}
+ .contact-info-card{background:var(--light-gray);border-radius:14px;padding:32px;margin-bottom:22px;border:1px solid var(--border)}
+ .contact-info-card h3{font-family:'Poppins',sans-serif;font-size:1.1rem;color:var(--brand-blue);font-weight:700;margin-bottom:20px}
+ .info-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+ .info-item:last-child{margin-bottom:0}
+ .info-icon{width:42px;height:42px;border-radius:10px;background:var(--brand-blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+ .info-label{font-size:.78rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+ .info-value{font-size:.93rem;color:var(--brand-dark);font-weight:600;line-height:1.4}
+ .info-value a{color:var(--accent);text-decoration:none;transition:color .2s}
+ .info-value a:hover{color:var(--accent-light)}
+ .hours-card{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--border);margin-bottom:22px}
+ .hours-card h3{font-family:'Poppins',sans-serif;font-size:1rem;color:var(--brand-blue);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+ .hours-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:.9rem}
+ .hours-row:last-child{border-bottom:none;padding-bottom:0}
+ .hours-day{color:var(--text-muted);font-weight:600}
+ .hours-time{font-weight:700;color:var(--brand-dark)}
+ .hours-badge{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;background:#f0fdf4;color:var(--success);padding:3px 10px;border-radius:20px;font-weight:700;border:1px solid #bbf7d0}
+ .hours-badge i{font-size:.65rem}
+ .whatsapp-card{background:linear-gradient(135deg,#075e54,#128c7e);border-radius:14px;padding:26px;color:#fff;text-align:center;text-decoration:none;display:block;transition:transform .3s;margin-bottom:22px}
+ .whatsapp-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(7,94,84,.3)}
+ .whatsapp-card i{font-size:2rem;margin-bottom:10px;display:block}
+ .whatsapp-card h4{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;margin-bottom:6px}
+ .whatsapp-card p{font-size:.85rem;opacity:.88}
+ .map-card{border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+ .map-card iframe{display:block;width:100%;height:400px;border:none;filter:grayscale(20%)}
+ .map-caption{padding:12px 16px;background:var(--light-gray);font-size:.82rem;color:var(--text-muted);display:flex;align-items:center;gap:6px}
+ .map-caption i{color:var(--accent-light)}
+
+ /* ── FAQ MINI ── */
+ .faq-section{padding:60px 0 0;background:#fff}
+ .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+ .faq-card{background:var(--light-gray);border-radius:12px;padding:26px;border:1px solid var(--border)}
+ .faq-card h4{font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--brand-blue);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+ .faq-card h4 i{color:var(--accent-light);font-size:.9rem}
+ .faq-card p{font-size:.88rem;color:#555;line-height:1.7}
+
+ /* ── FOOTER ── */
+ .footer{background:var(--brand-dark);color:#a7c1cb;padding:0}
+ .footer-top{padding:60px 0 50px}
+ .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.4fr;gap:40px}
+ .footer-brand .footer-logo{font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:14px}
+ .footer-brand p{font-size:.9rem;line-height:1.8;max-width:260px;color:#8aacba}
+ .footer-col h4{color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;position:relative;padding-bottom:10px}
+ .footer-col h4::after{content:'';position:absolute;bottom:0;left:0;width:28px;height:2px;background:var(--accent-light)}
+ .footer-col ul{list-style:none;padding:0;margin:0}
+ .footer-col ul li{margin-bottom:9px}
+ .footer-col ul li a{color:#8aacba;text-decoration:none;font-size:.9rem;transition:all .2s;display:flex;align-items:center;gap:6px}
+ .footer-col ul li a:hover{color:#fff;padding-left:4px}
+ .footer-col ul li a i{font-size:.7rem;color:var(--accent-light)}
+ .footer-contact-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:13px;font-size:.88rem;color:#8aacba}
+ .footer-contact-item i{color:var(--accent-light);margin-top:3px;font-size:.9rem;flex-shrink:0}
+ .footer-contact-item a{color:#8aacba;text-decoration:none;transition:color .2s}
+ .footer-contact-item a:hover{color:#fff}
+ .footer-hours{background:rgba(255,255,255,.04);border-radius:8px;padding:14px 16px;margin-top:16px;border:1px solid rgba(255,255,255,.07)}
+ .footer-hours p{font-size:.82rem;color:#8aacba;margin:0;display:flex;align-items:center;gap:8px}
+ .footer-hours p i{color:#4ade80}
+ .footer-social{display:flex;gap:10px;margin-top:20px}
+ .social-link{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.07);color:#8aacba;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .2s;font-size:.9rem;border:1px solid rgba(255,255,255,.08)}
+ .social-link:hover{background:var(--accent-light);color:#fff;border-color:var(--accent-light);transform:translateY(-2px)}
+ .footer-newsletter{margin-top:20px}
+ .footer-newsletter p{font-size:.85rem;color:#8aacba;margin-bottom:10px}
+ .newsletter-form{display:flex;gap:8px}
+ .newsletter-form input{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:9px 12px;color:#fff;font-size:.85rem;font-family:'Lato',sans-serif;outline:none;transition:border .2s}
+ .newsletter-form input::placeholder{color:#6b8fa0}
+ .newsletter-form input:focus{border-color:var(--accent-light)}
+ .newsletter-form button{background:var(--accent-light);color:#fff;border:none;border-radius:6px;padding:9px 16px;cursor:pointer;font-weight:700;font-size:.83rem;transition:background .2s;white-space:nowrap}
+ .newsletter-form button:hover{background:#0996ae}
+ .footer-divider{border:none;border-top:1px solid rgba(255,255,255,.07);margin:0}
+ .footer-bottom{padding:20px 0}
+ .footer-bottom-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+ .footer-bottom p{font-size:.84rem;color:#6b8fa0;margin:0}
+ .footer-bottom-links{display:flex;gap:20px}
+ .footer-bottom-links a{color:#6b8fa0;text-decoration:none;font-size:.84rem;transition:color .2s}
+ .footer-bottom-links a:hover{color:#fff}
+ .footer-badge{display:flex;align-items:center;gap:6px;font-size:.8rem;color:#6b8fa0}
+ .footer-badge i{color:#4ade80;font-size:.75rem}
+
+ /* ── FLOATING ── */
+ .floating-btn{position:fixed;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:9999;box-shadow:0 4px 14px rgba(0,0,0,.25);text-decoration:none;transition:all .3s;font-size:1.25rem}
+ .whatsapp-btn{bottom:22px;right:22px;background:#25D366}
+ .whatsapp-btn:hover{background:#1db954;transform:scale(1.1)}
+ .scroll-top-btn{bottom:86px;right:22px;background:var(--accent);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+ .scroll-top-btn.visible{opacity:1;visibility:visible}
+
+ /* ── MOBILE ── */
+ @media(max-width:768px){
+ .nav-menu{display:none;position:fixed;top:75px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);z-index:999}
+ .nav-menu.open{display:flex}
+ .nav-link{padding:12px 0;border-bottom:1px solid var(--border)!important;width:100%}
+ .client-login-btn{margin-top:10px;justify-content:center}
+ .hamburger{display:flex}
+ .contact-grid{grid-template-columns:1fr}
+ .form-row{grid-template-columns:1fr}
+ .faq-grid{grid-template-columns:1fr}
+ .trust-strip-inner{gap:20px}
+ .footer-grid{grid-template-columns:1fr 1fr}
+ .footer-brand{grid-column:1/-1}
+ .footer-bottom-inner{flex-direction:column;text-align:center}
+ .page-header h1{font-size:2rem}
+ }
+ @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+ </style>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+ <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap"></noscript>
+ <link rel="stylesheet" href="css/style.css" media="all">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+ <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+<style id="footer-responsive">@media(max-width:992px){footer div[style*="grid-template-columns"]{grid-template-columns:repeat(2,1fr)!important}}@media(max-width:576px){footer div[style*="grid-template-columns"]{grid-template-columns:1fr!important}}</style>
+
+ <style>
+ body, h1, h2, h3, h4, h5, h6, p, a, button, span, div {
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ }
+ button, a[class*="btn"], .card-btn-v2, .pricing-btn {
+ font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+ letter-spacing: 0.01em;
+ }
+ </style>
 </head>
 <body>
 
-     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">AKO Digital</a>
-                <ul class="nav-menu">
-    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
-    <li class="nav-item"><a href="hizmetlerimiz.html"class="nav-link">Hizmetlerimiz</a></li>
-    <!-- YENİ EKLENDİ -->
-    <li class="nav-item"><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
-    <li class="nav-item"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-    <li class="nav-item"><a href="iletisim.html" class="nav-link active" aria-current="page">İletişim</a></li>
-    <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
-</ul>                
-     <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            </nav>
-        </div>
-    </header>
+<header class="header" role="banner">
+ <div class="container">
+ <nav class="navbar" role="navigation" aria-label="Ana Menü">
+ <a href="index.html" class="logo" aria-label="AKO Dijital – Ana Sayfa">AKO Dijital</a>
+ <ul class="nav-menu" id="navMenu">
+ <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+ <li><a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz</a></li>
+ <li class="nav-item"><a href="fiyatlandirma.html" class="nav-link">Fiyatlar</a></li>
+ <li><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+ <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+ <li><a href="blog.html" class="nav-link">Blog</a></li>
+ <li><a href="iletisim.html" class="nav-link active" aria-current="page">İletişim</a></li>
+ <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+ </ul>
+ <button class="hamburger" id="hamburger" type="button" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="navMenu">
+ <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+ </button>
+ </nav>
+ </div>
+</header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Bize Ulaşın</h1>
-                <p style="font-size:1.2rem; color:#666;">Dijital dünyadaki hedeflerinize giden yolda yanınızdayız.</p>
-            </div>
-        </section>
+<main id="main-content">
 
-        <section class="section-padding">
-    <div class="container">
-        <div class="contact-grid">
+ <!-- PAGE HEADER -->
+ <section class="page-header" aria-label="İletişim Sayfa Başlığı">
+ <div class="container">
+ <nav class="breadcrumb" aria-label="Breadcrumb">
+ <a href="index.html">Anasayfa</a>
+ <i class="fas fa-chevron-right" aria-hidden="true"></i>
+ <span>İletişim</span>
+ </nav>
+ <h1>Ücretsiz Analiz ve Teklif Alın</h1>
+ <p>İskenderun ve Hatay'da dijital büyüme için ilk adımı atın. 24 saat içinde yanıt garantisi.</p>
+ </div>
+ </section>
 
-            <form name="iletisim" method="POST" action="https://api.web3forms.com/submit">
-    <input type="hidden" name="access_key" value="f7d39b74-fd11-4e67-a582-5907a42954fe">
-    <input type="hidden" name="subject" value="AKO Digital - Yeni İletişim Formu">
-    <input type="hidden" name="redirect" value="https://www.akodijital.com/tesekkurler.html">
-    <input type="checkbox" name="botcheck" style="display:none;">
+ <!-- TRUST STRIP -->
+ <div class="trust-strip" aria-label="Güven göstergeleri">
+ <div class="container">
+ <div class="trust-strip-inner">
+ <div class="trust-item"><i class="fas fa-clock"></i> 24 Saat İçinde Yanıt</div>
+ <div class="trust-item"><i class="fas fa-gift"></i> Ücretsiz Site Analizi</div>
+ <div class="trust-item"><i class="fas fa-lock"></i> Gizlilik Güvencesi</div>
+ <div class="trust-item"><i class="fas fa-handshake"></i> Taahhütsüz Görüşme</div>
+ <div class="trust-item"><i class="fas fa-map-marker-alt"></i> İskenderun Merkezli</div>
+ </div>
+ </div>
+ </div>
 
-    <div class="form-group">
-        <label for="name">Adınız Soyadınız</label>
-        <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz">
-    </div>
-    <div class="form-group">
-        <label for="email">E-posta Adresiniz</label>
-        <input type="email" id="email" name="email" required placeholder="ahmet@sirket.com">
-    </div>
-    <div class="form-group">
-        <label for="message">Mesajınız / Proje Detayları</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Hangi konuda destek almak istersiniz?"></textarea>
-    </div>
-    <button type="submit" class="btn-primary" style="width:100%; border:none; padding:15px; border-radius:8px; font-weight:bold; cursor:pointer;">Formu Gönder</button>
-    <p style="font-size:12px; color:#888; margin-top:15px; text-align:center;">
-        <i class="fas fa-lock"></i> Form gönderimleriniz SSL ile uçtan uca korunmaktadır.
-    </p>
-</form>
-</div>
-                           <!-- İLETİŞİM BİLGİLERİ -->
-            <div class="contact-info">
-                <div class="contact-info-box">
-                    <h2 style="margin-bottom:20px; color:var(--brand-blue);">İletişim Bilgileri</h2>
-                    <div class="contact-info-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span><a href="mailto:info@akodijital.com" style="color:inherit; text-decoration:none;" aria-label="Bize e-posta gönderin">info@akodigital.com</a></span>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span><a href="tel:+905458213922" style="color:inherit; text-decoration:none;" aria-label="Bizi telefonla arayın">+90 545 821 39 22</a></span>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <span>İstanbul, Türkiye</span>
-                    </div>
-                    <p style="margin-top:30px; font-size:0.9rem; color:#666; border-top: 1px solid #ddd; padding-top:20px;">
-                        AKO Digital olarak tüm başvuruları ciddiyetle inceliyor ve en geç 24 saat içinde dönüş sağlıyoruz.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    </main>
+ <!-- CONTACT SECTION -->
+ <section class="contact-section" aria-labelledby="contact-title">
+ <div class="container">
+ <div class="contact-grid">
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col"><h3>AKO Digital</h3><p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p></div>
-                <div class="footer-col"><h3>Hizmetler</h3><ul><li><a href="hizmetlerimiz.html#seo">SEO</a></li><li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li><li><a href="hizmetlerimiz.html#ads">Google Ads</a></li><li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li></ul></div>
-                <div class="footer-col"><h3>Hızlı Menü</h3><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
-                <div class="footer-col"><h3>İletişim</h3><p>info@akodigital.com</p><p>+90 545 821 39 22</p></div>
-            </div>
-            <div class="footer-bottom"><p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p></div>
-        </div>
-    </footer>
+ <!-- FORM -->
+ <div>
+ <div class="form-card">
+ <h2 id="contact-title">Projenizi Anlatın</h2>
+ <p class="form-subtitle">Tüm başvurular Hüseyin tarafından kişisel olarak incelenir ve en geç 24 saat içinde yanıt verilir.</p>
 
-<!-- BUTONLAR (ERİŞİLEBİLİRLİK 100 FİKSİ) -->
-<a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden bizimle iletişime geçin">
-    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-</a>
-<a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın en üstüne geri dön">
-    <i class="fas fa-arrow-up" aria-hidden="true"></i>
-</a>
+ <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+ <input type="hidden" name="access_key" value="f7d39b74-fd11-4e67-a582-5907a42954fe">
+ <input type="hidden" name="redirect" value="https://www.akodijital.com/tesekkurler.html">
+ <input type="hidden" name="subject" value="Yeni İletişim Formu — AKO Dijital">
+ <input type="hidden" name="from_name" value="AKO Dijital Web Sitesi">
+ <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true">
 
-    <script src="script.js" defer></script>
+ <div class="form-row">
+ <div class="form-group">
+ <label for="name">Ad Soyad <span aria-label="zorunlu">*</span></label>
+ <input type="text" id="name" name="name" required placeholder="Ahmet Yılmaz" autocomplete="name">
+ </div>
+ <div class="form-group">
+ <label for="phone">Telefon <span aria-label="zorunlu">*</span></label>
+ <input type="tel" id="phone" name="phone" required placeholder="0555 000 00 00" autocomplete="tel">
+ </div>
+ </div>
+
+ <div class="form-group">
+ <label for="email">E-posta Adresi <span aria-label="zorunlu">*</span></label>
+ <input type="email" id="email" name="email" required placeholder="ahmet@sirket.com" autocomplete="email">
+ </div>
+
+ <div class="form-row">
+ <div class="form-group">
+ <label for="service">İlgilendiğiniz Hizmet</label>
+ <select id="service" name="service">
+ <option value="">Hizmet Seçin</option>
+ <option value="seo">SEO (Organik Arama)</option>
+ <option value="yerel-seo">Yerel SEO / Google Haritalar</option>
+ <option value="web-tasarim">Web Tasarım & Geliştirme</option>
+ <option value="google-ads">Google Ads Yönetimi</option>
+ <option value="sosyal-medya">Sosyal Medya Yönetimi</option>
+ <option value="icerik">İçerik Stratejisi</option>
+ <option value="paket">Kapsamlı Dijital Paket</option>
+ <option value="diger">Diğer / Birden Fazla</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="budget">Aylık Bütçe Aralığı</label>
+ <select id="budget" name="budget">
+ <option value="">Bütçe Seçin</option>
+ <option value="2k-5k">2.000 – 5.000 TL</option>
+ <option value="5k-10k">5.000 – 10.000 TL</option>
+ <option value="10k-20k">10.000 – 20.000 TL</option>
+ <option value="20k+">20.000 TL ve üzeri</option>
+ <option value="belirtmek-istemiyorum">Belirtmek İstemiyorum</option>
+ </select>
+ </div>
+ </div>
+
+ <div class="form-group">
+ <label for="website">Web Siteniz (varsa)</label>
+ <input type="url" id="website" name="website" placeholder="https://sirketniz.com" autocomplete="url">
+ </div>
+
+ <div class="form-group">
+ <label for="message">Mesajınız ve Proje Detayları <span aria-label="zorunlu">*</span></label>
+ <textarea id="message" name="message" rows="5" required placeholder="İşletmeniz, hedefleriniz ve beklentileriniz hakkında kısaca bilgi verin..."></textarea>
+ </div>
+
+ <button type="submit" class="submit-btn">
+ <i class="fas fa-paper-plane"></i> Formu Gönder — Ücretsiz Analiz İste
+ </button>
+ <div class="form-privacy">
+ <i class="fas fa-shield-alt"></i>
+ Bilgileriniz SSL ile korunmaktadır ve üçüncü taraflarla paylaşılmaz (KVKK).
+ </div>
+ </form>
+
+ <div class="form-success" id="formSuccess" role="alert">
+ <i class="fas fa-check-circle"></i>
+ <h4>Mesajınız Alındı!</h4>
+ <p>En geç 24 saat içinde size dönüş yapacağız. WhatsApp üzerinden daha hızlı yanıt almak için mesaj atabilirsiniz.</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- INFO PANEL -->
+ <div class="info-panel">
+
+ <div class="contact-info-card">
+ <h3><i class="fas fa-address-card" style="color:var(--accent-light);margin-right:8px"></i>İletişim Bilgileri</h3>
+ <div class="info-item">
+ <div class="info-icon"><i class="fas fa-phone"></i></div>
+ <div>
+ <div class="info-label">Telefon</div>
+ <div class="info-value"><a href="tel:+905458213922">+90 545 821 39 22</a></div>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-icon"><i class="fas fa-envelope"></i></div>
+ <div>
+ <div class="info-label">E-posta</div>
+ <div class="info-value"><a href="mailto:info@akodijital.com">info@akodijital.com</a></div>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+ <div>
+ <div class="info-label">Adres</div>
+ <div class="info-value">Cumhuriyet Mahallesi Sondurak Caddesi Kömür Sokak No: 2<br>Payas, Hatay 31900</div>
+ </div>
+ </div>
+ </div>
+
+ <div class="hours-card">
+ <h3><i class="fas fa-business-time" style="color:var(--accent-light)"></i> Çalışma Saatleri</h3>
+ <div class="hours-row">
+ <span class="hours-day">Pazartesi – Cuma</span>
+ <span class="hours-time">09:00 – 18:00 <span class="hours-badge"><i class="fas fa-circle"></i> Açık</span></span>
+ </div>
+ <div class="hours-row">
+ <span class="hours-day">Cumartesi</span>
+ <span class="hours-time" style="color:var(--text-muted)">Randevuyla</span>
+ </div>
+ <div class="hours-row">
+ <span class="hours-day">Pazar</span>
+ <span class="hours-time" style="color:var(--text-muted)">Kapalı</span>
+ </div>
+ <p style="font-size:.82rem;color:var(--text-muted);margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><i class="fab fa-whatsapp" style="color:#25D366;margin-right:4px"></i>Mesai dışı WhatsApp mesajlarına en kısa sürede dönüş yapılır.</p>
+ </div>
+
+ <a href="https://wa.me/905458213922?text=Merhaba%2C%20ücretsiz%20SEO%20analizi%20almak%20istiyorum." class="whatsapp-card" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geçin">
+ <i class="fab fa-whatsapp"></i>
+ <h4>WhatsApp ile Hemen Yazın</h4>
+ <p>Daha hızlı yanıt için WhatsApp mesajı gönderin.</p>
+ </a>
+
+ <!-- Harita aşağıya taşındı -->
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- FAQ MINI -->
+ <section class="faq-section" aria-labelledby="faq-title">
+ <div class="container" style="padding-bottom:60px">
+ <h2 style="font-family:'Poppins',sans-serif;font-size:1.9rem;color:var(--brand-blue);font-weight:800;text-align:center;margin-bottom:6px" id="faq-title">Sıkça Sorulan Sorular</h2>
+ <p style="text-align:center;color:var(--text-muted);font-size:.95rem;margin-bottom:0">Aklınızdaki soruların cevapları burada.</p>
+ <div class="faq-grid">
+ <div class="faq-card">
+ <h4><i class="fas fa-tag"></i> Teklif almak ücretli mi?</h4>
+ <p>Hayır. Ücretsiz 30 dakikalık keşif görüşmesi ve site analizi sunuyoruz. Hiçbir taahhüt veya bağlayıcılık söz konusu değil.</p>
+ </div>
+ <div class="faq-card">
+ <h4><i class="fas fa-reply"></i> Ne kadar sürede yanıt veriyorsunuz?</h4>
+ <p>Form başvurularına en geç 24 saat, WhatsApp mesajlarına ise genellikle 2 saat içinde yanıt veriyoruz.</p>
+ </div>
+ <div class="faq-card">
+ <h4><i class="fas fa-map"></i> Sadece İskenderun'a mı hizmet veriyorsunuz?</h4>
+ <p>İskenderun merkez olmak üzere Antakya, Dörtyol, Payas, Erzin, Arsuz ve tüm Hatay'a hizmet veriyoruz. Uzaktan destek ile Türkiye geneli de mümkün.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+
+ <!-- HARİTA - Tam Genişlik Alt -->
+ <section style="padding:50px 0 80px;background:#fff;">
+ <div class="container">
+ <div style="max-width:1100px;margin:0 auto;">
+ <h2 style="text-align:center;color:var(--brand-blue);font-family:'Poppins',sans-serif;font-size:1.7rem;margin-bottom:10px;">Bizi Ziyaret Edin</h2>
+ <p style="text-align:center;color:#666;margin-bottom:30px;">İskenderun merkezinde, kolayca ulaşabileceğiniz konumda hizmetinizdeyiz.</p>
+ <div style="border-radius:14px;overflow:hidden;border:1px solid #e8e8e8;box-shadow:0 8px 30px rgba(0,0,0,.08);">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.0!2d36.1740!3d36.5867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f624bea0e14cd%3A0x4d1e02b52d6ee944!2s%C4%B0skenderun%2C%20Hatay!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" width="100%" height="450" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AKO Dijital İskenderun Konum"></iframe>
+ <div style="padding:14px 20px;background:#f5f7fa;font-size:.9rem;color:#444;display:flex;align-items:center;gap:8px;">
+ <i class="fas fa-map-marker-alt" style="color:#0A4D68;"></i>
+ <strong>Cumhuriyet Mahallesi Sondurak Caddesi Kömür Sokak No: 2, Payas, Hatay 31900</strong>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ </main>
+
+<!-- FOOTER -->
+ <footer class="footer" style="background:#051923;color:#8aacba;padding:0;">
+ <div style="padding:60px 0 40px;">
+ <div class="container">
+ <div style="display:grid;grid-template-columns:1.8fr 1fr 1.2fr 1.4fr;gap:40px;">
+ 
+ <!-- MARKA -->
+ <div>
+ <a href="index.html" style="font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:14px;">AKO Dijital</a>
+ <p style="font-size:.9rem;line-height:1.8;color:#8aacba;max-width:280px;">İskenderun ve Hatay bölgesinde işletmelerin dijital potansiyelini veri odaklı SEO, web tasarım ve Google Ads stratejileriyle ortaya çıkarıyoruz.</p>
+ <div style="display:flex;gap:10px;margin-top:20px;">
+                            <a href="https://www.instagram.com/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/company/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/905458213922?text=Merhaba%2C%20m%C3%BC%C5%9Fteri%20getiren%20bir%20site%20yapt%C4%B1rmak%20istiyorum." target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+ </div>
+
+ <!-- HİZMETLER -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">Hizmetlerimiz</h4>
+ <ul style="list-style:none;padding:0;margin:0;">
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#seo" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Teknik SEO</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#seo" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Yerel SEO</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#web" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Web Tasarım</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#ads" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Google Ads</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#social" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Sosyal Medya</a></li>
+ <li style="margin-bottom:9px;"><a href="fiyatlandirma.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Fiyatlar</a></li>
+ </ul>
+ </div>
+
+ <!-- MENÜ + BÖLGESEL -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">Sayfalar</h4>
+ <ul style="list-style:none;padding:0;margin:0 0 20px;">
+ <li style="margin-bottom:9px;"><a href="hakkimizda.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Hakkımızda</a></li>
+ <li style="margin-bottom:9px;"><a href="portfolyo.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Portfolyo</a></li>
+ <li style="margin-bottom:9px;"><a href="blog.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Blog</a></li>
+ <li style="margin-bottom:9px;"><a href="iletisim.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">İletişim</a></li>
+ <li style="margin-bottom:9px;"><a href="iskenderun-web-tasarim.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">İskenderun Web Tasarım</a></li>
+ </ul>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:700;margin-bottom:12px;">Bölgesel</h4>
+ <p style="font-size:.82rem;color:#6b8fa0;line-height:1.8;margin:0;">İskenderun · Antakya · Dörtyol · Payas · Arsuz · Kırıkhan · Reyhanlı · Erzin</p>
+ </div>
+
+ <!-- İLETİŞİM -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">İletişim</h4>
+ <div style="margin-bottom:13px;display:flex;align-items:flex-start;gap:10px;font-size:.88rem;">
+ <i class="fas fa-map-marker-alt" style="color:#0A4D68;margin-top:3px;flex-shrink:0;" aria-hidden="true"></i>
+ <span>Cumhuriyet Mahallesi Sondurak Caddesi Kömür Sokak No: 2, Payas, Hatay 31900</span>
+ </div>
+ <div style="margin-bottom:13px;display:flex;align-items:center;gap:10px;font-size:.88rem;">
+ <i class="fas fa-phone" style="color:#0A4D68;flex-shrink:0;" aria-hidden="true"></i>
+ <a href="tel:+905458213922" style="color:#8aacba;text-decoration:none;">+90 545 821 39 22</a>
+ </div>
+ <div style="margin-bottom:13px;display:flex;align-items:center;gap:10px;font-size:.88rem;">
+ <i class="fas fa-envelope" style="color:#0A4D68;flex-shrink:0;" aria-hidden="true"></i>
+ <a href="mailto:info@akodijital.com" style="color:#8aacba;text-decoration:none;">info@akodijital.com</a>
+ </div>
+ <div style="background:rgba(255,255,255,.04);border-radius:8px;padding:12px 16px;margin-top:16px;border:1px solid rgba(255,255,255,.07);">
+ <p style="font-size:.82rem;color:#8aacba;margin:0;display:flex;align-items:center;gap:8px;"><i class="fas fa-circle" style="color:#4ade80;font-size:.5rem;" aria-hidden="true"></i> Pazartesi – Cuma: 09:00 – 18:00</p>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ <div style="border-top:1px solid rgba(255,255,255,.08);padding:20px 0;text-align:center;">
+ <div class="container">
+ <p style="font-size:.85rem;color:#6b8fa0;margin:0;">&copy; 2026 AKO Dijital. Tüm Hakları Saklıdır. | <a href="gizlilik.html" style="color:#6b8fa0;text-decoration:none;">Gizlilik Politikası</a></p>
+ </div>
+ </div>
+ </footer><script src="js/script.js" defer></script>
+<script>
+// Hamburger
+const hamburger=document.getElementById('hamburger');
+const navMenu=document.getElementById('navMenu');
+if(hamburger&&navMenu){
+ hamburger.addEventListener('click',()=>{
+ const isOpen=navMenu.classList.toggle('open');
+ hamburger.setAttribute('aria-expanded',isOpen);
+ hamburger.querySelectorAll('.bar').forEach((b,i)=>{
+ if(isOpen){if(i===0)b.style.cssText='transform:translateY(7.5px) rotate(45deg)';if(i===1)b.style.opacity='0';if(i===2)b.style.cssText='transform:translateY(-7.5px) rotate(-45deg)';}
+ else{b.style.cssText=''}
+ });
+ });
+}
+// Scroll top
+const scrollTopBtn=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{if(scrollTopBtn)scrollTopBtn.classList.toggle('visible',window.scrollY>400)});
+scrollTopBtn&&scrollTopBtn.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+// Form success demo
+document.getElementById('contactForm')&&document.getElementById('contactForm').addEventListener('submit',function(e){
+ // Form altyapımız gönderimi işler; bu anlık geri bildirim için başarı UI gösterir
+ setTimeout(()=>{
+ const s=document.getElementById('formSuccess');
+ if(s){s.style.display='block';this.style.display='none'}
+ },100);
+});
+</script>
+ <div class="vertical-contact" style="position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:10px;">
+ <a href="https://wa.me/905458213922?text=Merhaba%2C%20m%C3%BC%C5%9Fteri%20getiren%20bir%20site%20yapt%C4%B1rmak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişim" style="width:48px;height:48px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.3rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+ <a href="tel:+905458213922" aria-label="Telefon ile arama yap" style="width:48px;height:48px;border-radius:50%;background:#0A4D68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-phone" aria-hidden="true"></i></a>
+ <a href="mailto:info@akodijital.com" aria-label="E-posta gönder" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+ <a href="https://www.instagram.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Instagram sayfamız" style="width:48px;height:48px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Facebook sayfamız" style="width:48px;height:48px;border-radius:50%;background:#1877F2;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/akodijital" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn sayfamız" style="width:48px;height:48px;border-radius:50%;background:#0077B5;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+ <a href="#" class="scroll-top-btn" aria-label="Sayfanın başına dön" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;visibility:hidden;opacity:0;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+ </div>
+ <style>
+ @media(max-width:768px){
+ .vertical-contact{right:12px !important;gap:8px !important;}
+ .vertical-contact a{width:42px !important;height:42px !important;font-size:1.05rem !important;}
+ }
+ </style>
 </body>
 </html>

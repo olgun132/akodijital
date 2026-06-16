@@ -1,175 +1,942 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
-    <meta name="author" content="AKO Digital">
-    
-    <!-- SEO ETİKETLERİ -->
-    <title>Dijital Pazarlama Hizmetlerimiz | SEO, Web Tasarım ve Ads | AKO Digital</title>
-    <meta name="description" content="İşletmenizi dijitalin zirvesine taşıyacak profesyonel çözümler: Teknik SEO, dönüşüm odaklı web tasarım ve performanslı Google Ads yönetimi. Hemen inceleyin.">
-    <link rel="canonical" href="https://www.akodijital.com/hizmetlerimiz.html">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="index, follow">
+ <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw">
+ <meta name="author" content="Hüseyin Olgun">
+ <link rel="icon" type="image/png" href="images/favicon.png">
+ <title>SEO, Web Tasarım, Google Ads | AKO Dijital</title>
+ <meta name="description" content="İskenderun'da SEO, web tasarım, Google Ads ve sosyal medya hizmetleri. AKO Dijital ile dijitalde büyüyün.">
+ <link rel="canonical" href="https://www.akodijital.com/hizmetlerimiz.html">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="shortcut icon" href="images/favicon.png">
+ <!-- ========== SCHEMA: Service + FAQPage ========== -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@graph": [
+ {
+ "@type": "WebPage",
+ "@id": "https://www.akodijital.com/hizmetlerimiz.html",
+ "url": "https://www.akodijital.com/hizmetlerimiz.html",
+ "name": "Dijital Pazarlama Hizmetleri | AKO Dijital",
+ "description": "İskenderun ve Hatay için SEO, web tasarım, Google Ads ve sosyal medya hizmetleri.",
+ "inLanguage": "tr",
+ "isPartOf": { "@id": "https://www.akodijital.com/" }
+ },
+ {
+ "@type": "ItemList",
+ "name": "AKO Dijital Hizmetleri",
+ "itemListElement": [
+ { "@type": "ListItem", "position": 1, "name": "SEO Hizmetleri", "url": "https://www.akodijital.com/hizmetlerimiz.html#seo" },
+ { "@type": "ListItem", "position": 2, "name": "Web Tasarım", "url": "https://www.akodijital.com/hizmetlerimiz.html#web" },
+ { "@type": "ListItem", "position": 3, "name": "Google Ads Yönetimi", "url": "https://www.akodijital.com/hizmetlerimiz.html#ads" },
+ { "@type": "ListItem", "position": 4, "name": "Sosyal Medya Yönetimi", "url": "https://www.akodijital.com/hizmetlerimiz.html#social" }
+ ]
+ },
+ {
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "SEO çalışmaları ne kadar sürede sonuç verir?",
+ "acceptedAnswer": { "@type": "Answer", "text": "SEO, orta-uzun vadeli bir yatırımdır. Teknik düzeltmeler ve içerik optimizasyonu genellikle ilk 3-6 ay içinde ölçülebilir trafik artışı sağlar. Rekabetin yoğun olduğu sektörlerde 6-12 ay sürebilir. Kalıcı ve sürdürülebilir büyüme için sabırlı olmak önemlidir; ancak teknik SEO iyileştirmeleri genellikle ilk ayda fark yaratır." }
+ },
+ {
+ "@type": "Question",
+ "name": "Yerel SEO ile organik SEO arasındaki fark nedir?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Organik SEO, genel arama sıralamalarını hedeflerken, yerel SEO 'yakınımdaki' veya 'İskenderun' gibi konum bazlı aramalarda öne çıkmayı hedefler. Google Haritalar görünürlüğü, Google İşletme Profili optimizasyonu ve yerel atıflar (NAP tutarlılığı) yerel SEO'nun temel bileşenleridir. Fiziksel konumu olan işletmeler için ikisi birlikte uygulandığında en yüksek sonucu verir." }
+ },
+ {
+ "@type": "Question",
+ "name": "Web site tasarımı ne kadar sürer ve fiyatlar nedir?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Projenin kapsamına göre 2 ila 6 hafta arasında değişir. Kurumsal tanıtım siteleri, e-ticaret siteleri ve özel yazılım projeleri farklı fiyatlandırmaya tabidir. Tüm projelerimizde mobil uyumluluk, sayfa hızı optimizasyonu ve temel SEO kurulumu standarttır. Ücretsiz keşif görüşmesinde projenize özel teklif alabilirsiniz." }
+ },
+ {
+ "@type": "Question",
+ "name": "Google Ads için minimum bütçe ne olmalı?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Sektörünüze ve hedef kitlenize bağlı olarak aylık minimum 1.500-3.000 TL reklam bütçesi tavsiye edilir. Ajans yönetim ücreti bu tutara dahil değildir. Düşük bütçede de kampanya başlatılabilir; ancak anlamlı veri toplamak ve optimize etmek için yeterli bütçe kritik önem taşır." }
+ },
+ {
+ "@type": "Question",
+ "name": "Sosyal medya yönetiminde hangi platformları kapsıyorsunuz?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Ağırlıklı olarak Instagram, Facebook, LinkedIn ve TikTok platformlarını yönetiyoruz. Her platform farklı dinamikler içerdiğinden, işletmenizin hedef kitlesine ve sektörüne en uygun platformları birlikte belirleyerek odaklanıyoruz. 'Her yerde aktif ol' değil, 'doğru yerde güçlü ol' ilkesi ile çalışıyoruz." }
+ },
+ {
+ "@type": "Question",
+ "name": "Yerel bir işletmeyim, dijital pazarlama bana uygun mu?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Kesinlikle. Yerel SEO, Google Haritalar optimizasyonu ve bölgesel hedeflemeli reklamlar sayesinde İskenderun ve çevresindeki potansiyel müşterilere doğrudan ulaşabilirsiniz. Yerel işletmeler için en yüksek ROI'yi sağlayan kanal genellikle dijital pazarlamadır. Rakipleriniz henüz dijitale tam geçiş yapmamışsa bu sizin için büyük bir fırsat anlamına gelir." }
+ },
+ {
+ "@type": "Question",
+ "name": "Aylık raporlama yapıyor musunuz?",
+ "acceptedAnswer": { "@type": "Answer", "text": "Evet, tüm hizmetlerimizde aylık detaylı performans raporu sunuyoruz. Raporlarımız; trafik değişimleri, anahtar kelime sıralamalar, dönüşüm oranları ve reklam performansını içerir. Şeffaf iletişim bizim temel ilkemizdir; ne iyi gidiyor ne gitmiyor — her şeyi açıkça paylaşıyoruz." }
+ }
+ ]
+ },
+ {
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ { "@type": "ListItem", "position": 1, "name": "Anasayfa", "item": "https://www.akodijital.com/" },
+ { "@type": "ListItem", "position": 2, "name": "Hizmetlerimiz", "item": "https://www.akodijital.com/hizmetlerimiz.html" }
+ ]
+ }
+ ]
+ }
+ </script>
 
-    <!-- PERFORMANS: KRİTİK KAYNAKLAR -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <style>
+ :root{--brand-blue:#0A4D68;--accent-turquoise:#055a68;--white:#fff;--dark-text:#051923;--light-gray:#F5F7FA}
+ *,*::before,*::after{box-sizing:border-box}
+ body{margin:0;font-family:'Lato',sans-serif;line-height:1.6;color:var(--dark-text);background:#fff;overflow-x:hidden}
+ .header{background:#fff;height:75px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.05);display:flex;align-items:center}
+ .container{max-width:1100px;margin:0 auto;padding:0 20px;width:100%}
+ .navbar{display:flex;justify-content:space-between;align-items:center;width:100%;height:100%}
+ .logo{font-family:'Poppins',sans-serif;font-size:1.8rem;color:var(--brand-blue);font-weight:700;text-decoration:none;white-space:nowrap;display:flex;align-items:center;line-height:1}
+ .nav-menu{display:flex;gap:25px;list-style:none;margin:0;padding:0;align-items:center}
+ .nav-link{font-weight:700;color:var(--dark-text);text-decoration:none;font-size:1rem;transition:.3s;line-height:1;display:flex;align-items:center;border-bottom:3px solid transparent}
+ .nav-link:hover,.nav-link.active{color:var(--accent-turquoise);border-bottom-color:var(--accent-turquoise)}
+ .client-login-btn{background:var(--brand-blue)!important;color:#fff!important;border-radius:25px!important;padding:8px 18px!important;font-weight:600!important;display:inline-flex!important;align-items:center;gap:8px;font-size:.85rem!important;border-bottom:none!important}
+ .hamburger{display:none;background:none;border:none;cursor:pointer;padding:5px}
+ .bar{display:block;width:25px;height:3px;margin:5px auto;background:var(--brand-blue);transition:.3s;border-radius:3px}
+ .floating-btn{position:fixed;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:9999;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:.3s;font-size:1.4rem}
+ .whatsapp-btn{bottom:20px;right:20px;background-color:#25D366}
+ .scroll-top-btn{bottom:80px;right:20px;background-color:var(--accent-turquoise);visibility:hidden;opacity:0;font-size:1rem}
+ .scroll-top-btn.visible{visibility:visible;opacity:1}
+ .btn{display:inline-block;padding:12px 28px;border-radius:5px;font-weight:700;text-align:center;transition:all .3s ease;text-decoration:none;cursor:pointer}
+ .btn-primary{background-color:var(--accent-turquoise);color:#fff;border:2px solid var(--accent-turquoise)}
+ .btn-primary:hover{background-color:#044d55;color:#fff;transform:translateY(-2px)}
+ .footer{background-color:#051923;color:#a7c1cb;padding:60px 0 0}
+ .footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-bottom:40px}
+ .footer-col h3{color:#fff;font-family:'Poppins',sans-serif;font-size:1.1rem;margin-bottom:15px}
+ .footer-col ul{list-style:none;padding:0;margin:0}
+ .footer-col ul li{margin-bottom:8px}
+ .footer-col ul li a,.footer-col p a{color:#a7c1cb;text-decoration:none;transition:color .3s}
+ .footer-col ul li a:hover,.footer-col p a:hover{color:#fff}
+ .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;text-align:center;font-size:.9rem}
+ @media(max-width:768px){.footer-grid{grid-template-columns:repeat(2,1fr)}.nav-menu{display:none;position:fixed;top:75px;left:0;width:100%;background:#fff;flex-direction:column;padding:20px 0;box-shadow:0 10px 30px rgba(0,0,0,.1);gap:0;z-index:999}.nav-menu.open{display:flex}.nav-menu li{width:100%}.nav-link{padding:14px 30px;border-bottom:1px solid #f0f0f0!important}.hamburger{display:block}}
+ @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
 
-    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (FOUC, SARKMA VE NAVBAR FİKSİ) -->
-    <style>
-        :root { 
-            --brand-blue: #0A4D68; 
-            --accent-turquoise: #066a7a; 
-            --white: #FFFFFF; 
-            --dark-text: #051923; 
-            --light-gray: #F5F7FA; 
-        }
-        body { margin:0; font-family: sans-serif; line-height:1.6; color:var(--dark-text); background:#fff; display:block; overflow-x:hidden; }
-        
-        /* NAVBAR & HEADER: 75PX STANDARDI VE DİKEY MERKEZLEME */
-        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
-        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
-        .navbar { display:flex; justify-content:space-between; align-items:center; width:100%; height:100%; }
-        .logo { font-family: 'Poppins', sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
-        
-        .nav-menu { display:flex; gap:25px; list-style:none; margin:0; padding:0; align-items:center; }
-        .nav-link { font-weight:700; color:var(--dark-text); text-decoration:none; font-size:1rem; transition:0.3s; line-height:1; display:flex; align-items:center; border-bottom: 3px solid transparent !important; }
-        .nav-link:hover, .nav-link.active { color:var(--accent-turquoise); border-bottom-color: var(--accent-turquoise) !important; }
-        
-        /* PAGE HEADER (SİYAH YAZI ENGELLEYİCİ) */
-        .page-header { background-color: var(--light-gray); padding: 60px 0; text-align: center; width: 100%; border-bottom: 1px solid #eee; }
-        .page-header h1 { color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 2.8rem; margin: 0; line-height: 1.2; font-weight: 800; }
-        .lead-text { font-size: 1.25rem; color: #555; margin-top: 15px; font-weight: 500; }
+ /* PAGE HERO */
+ .page-hero{background:linear-gradient(135deg,#0A4D68 0%,#055a68 100%);padding:90px 0 80px;text-align:center;color:#fff;position:relative;overflow:hidden}
+ .page-hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+ .breadcrumb-nav{font-size:.85rem;color:rgba(255,255,255,.65);margin-bottom:18px;position:relative;z-index:1}
+ .breadcrumb-nav a{color:rgba(255,255,255,.65);text-decoration:none}
+ .breadcrumb-nav a:hover{color:#fff}
+ .breadcrumb-nav span{margin:0 6px}
+ .page-hero h1{font-family:'Poppins',sans-serif;font-size:3.2rem;font-weight:800;color:#fff;margin:0 0 18px;position:relative;z-index:1;line-height:1.15}
+ .page-hero p{font-size:1.18rem;color:rgba(255,255,255,.87);max-width:640px;margin:0 auto 28px;position:relative;z-index:1}
+ .hero-nav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+ .hero-nav-btn{background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.3);padding:9px 20px;border-radius:25px;font-size:.9rem;font-weight:700;text-decoration:none;transition:.3s;backdrop-filter:blur(4px)}
+ .hero-nav-btn:hover{background:#fff;color:var(--brand-blue);border-color:#fff}
+ @media(max-width:768px){.page-hero h1{font-size:2.3rem}.page-hero{padding:65px 0 55px}}
 
-        /* HİZMET KUTULARI (SARKMA ÖNLEYİCİ VE DİKEY HİZALAMA) */
-        .section-padding { padding: 80px 0; }
-        .info-box { display: flex; align-items: center; gap: 35px; background: #fff; padding: 45px; border-radius: 20px; margin-bottom: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; transition: 0.4s; }
-        .info-box:hover { transform: translateY(-5px); border-color: var(--accent-turquoise); box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
-        .info-icon { flex-shrink: 0; width: 75px; height: 75px; background: var(--brand-blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; }
-        .info-text h2 { margin: 0 0 12px 0; color: var(--brand-blue); font-family: 'Poppins', sans-serif; font-size: 1.7rem; }
-        .info-text p { margin: 0; font-size: 1.1rem; color: #444; line-height: 1.7; }
+ /* SERVICE NAV STRIP */
+ .service-nav-strip{background:#fff;border-bottom:2px solid #f0f0f0;position:sticky;top:75px;z-index:900;padding:0}
+ .service-nav-strip ul{display:flex;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+ .service-nav-strip ul::-webkit-scrollbar{display:none}
+ .service-nav-strip li a{display:flex;align-items:center;gap:8px;padding:16px 24px;font-weight:700;font-size:.9rem;color:#666;text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;transition:.3s}
+ .service-nav-strip li a:hover,.service-nav-strip li a.active-nav{color:var(--brand-blue);border-bottom-color:var(--brand-blue)}
 
-        /* BUTONLAR */
-        .floating-btn { position: fixed !important; width: 55px !important; height: 55px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #fff !important; z-index: 9999 !important; text-decoration: none !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; transition: 0.3s !important; }
-        .whatsapp-btn { bottom: 25px !important; right: 25px !important; background-color: #25D366 !important; }
-        .scroll-top-btn { bottom: 95px !important; right: 25px !important; background-color: var(--brand-blue) !important; visibility: hidden; opacity: 0; }
-        .scroll-top-btn.visible { visibility: visible !important; opacity: 1 !important; }
-        
-        @media (max-width:768px) { .nav-menu { display:none; } .logo { padding-right:0; } .info-box { flex-direction: column; text-align: center; padding: 35px 25px; } .page-header h1 { font-size: 2.2rem; } }
+ /* SERVICE CARD */
+ .services-section{padding:70px 0}
+ .service-block{margin-bottom:55px;background:#fff;border-radius:24px;border:1px solid #e8f0f3;box-shadow:0 8px 40px rgba(0,0,0,.06);overflow:hidden;scroll-margin-top:140px;transition:.3s}
+ .service-block:last-child{margin-bottom:0}
+ .service-block:hover{box-shadow:0 16px 55px rgba(0,0,0,.1);border-color:#c8dce4}
+ .service-header{display:flex;align-items:flex-start;gap:28px;padding:42px 48px 32px;border-bottom:1px solid #f0f0f0;position:relative}
+ .service-number{position:absolute;top:28px;right:40px;font-family:'Poppins',sans-serif;font-size:4rem;font-weight:800;color:rgba(10,77,104,.05);line-height:1}
+ .service-icon-wrap{flex-shrink:0;width:84px;height:84px;background:linear-gradient(135deg,#0A4D68,#055a68);border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:34px;color:#fff;box-shadow:0 10px 30px rgba(10,77,104,.25)}
+ .service-header-text h2{font-family:'Poppins',sans-serif;font-size:1.9rem;color:var(--brand-blue);margin:0 0 10px;text-align:left;line-height:1.2}
+ .service-header-text p{color:#666;font-size:1.04rem;margin:0;line-height:1.75;max-width:680px}
+ .service-body{padding:38px 48px}
+ .service-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+ .service-tag{background:rgba(10,77,104,.07);color:var(--brand-blue);padding:6px 14px;border-radius:20px;font-size:.82rem;font-weight:700;transition:.2s}
+ .service-tag:hover{background:var(--brand-blue);color:#fff}
+ .service-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:16px}
+ .service-detail h3{font-family:'Poppins',sans-serif;font-size:1.05rem;color:var(--brand-blue);margin:0 0 16px;display:flex;align-items:center;gap:9px}
+ .service-detail ul{list-style:none;padding:0;margin:0}
+ .service-detail ul li{padding:8px 0 8px 24px;position:relative;color:#555;font-size:.97rem;border-bottom:1px solid #f5f5f5;line-height:1.6}
+ .service-detail ul li:last-child{border-bottom:none}
+ .service-detail ul li::before{content:'✓';position:absolute;left:0;color:var(--accent-turquoise);font-weight:800;font-size:1rem}
+ .service-result-box{background:linear-gradient(135deg,rgba(10,77,104,.05),rgba(5,90,104,.08));border:1px solid rgba(10,77,104,.12);border-radius:14px;padding:22px 28px;margin-bottom:28px;display:flex;align-items:center;gap:18px}
+ .result-icon{width:48px;height:48px;background:linear-gradient(135deg,#0A4D68,#055a68);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;flex-shrink:0}
+ .result-text{font-size:.95rem;color:var(--brand-blue);font-weight:700;line-height:1.5}
+ .result-text span{display:block;font-weight:400;color:#555;font-size:.9rem;margin-top:2px}
+ .service-cta{display:flex;align-items:center;gap:22px;padding-top:22px;border-top:1px solid #f0f0f0;flex-wrap:wrap}
+ .service-price{font-family:'Poppins',sans-serif;font-size:.93rem;color:#888;font-weight:600}
+ .service-price strong{color:var(--brand-blue);font-size:1.08rem}
+
+ /* FAQ */
+ .faq-section{background:var(--light-gray);padding:32px 48px 40px;border-top:1px solid #eee}
+ .faq-title{font-family:'Poppins',sans-serif;font-size:1.08rem;color:var(--brand-blue);margin:0 0 20px;display:flex;align-items:center;gap:9px}
+ .faq-item{background:#fff;border-radius:12px;margin-bottom:10px;overflow:hidden;border:1px solid #e8f0f3;transition:.2s}
+ .faq-item:last-child{margin-bottom:0}
+ .faq-item:hover{border-color:#c8dce4}
+ .faq-question{width:100%;background:none;border:none;padding:18px 24px;text-align:left;cursor:pointer;font-family:'Lato',sans-serif;font-size:.97rem;font-weight:700;color:var(--dark-text);display:flex;justify-content:space-between;align-items:center;gap:15px;transition:.2s}
+ .faq-question:hover{background:rgba(10,77,104,.025)}
+ .faq-icon{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--light-gray);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--brand-blue);transition:.3s;font-style:normal}
+ .faq-question[aria-expanded="true"] .faq-icon{background:var(--brand-blue);color:#fff;transform:rotate(45deg)}
+ .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease-out}
+        details[open] .faq-answer{max-height:1000px;transition:max-height .5s ease-in}
+        details summary{list-style:none;cursor:pointer}
+        details summary::-webkit-details-marker{display:none}
+        details summary::after{content:"+";font-size:1.5rem;font-weight:300;color:var(--brand-blue);transition:transform .3s}
+        details[open] summary::after{content:"−"}
+ .faq-answer-inner{padding:0 24px 20px;color:#555;font-size:.95rem;line-height:1.85}
+ .faq-item.open .faq-answer{max-height:600px}
+
+ @media(max-width:900px){.service-detail-grid{grid-template-columns:1fr}.service-header{flex-direction:column;padding:30px 28px 22px}.service-body,.faq-section{padding-left:28px;padding-right:28px}.service-number{display:none}}
+ @media(max-width:480px){.service-header{padding:22px 18px 18px}.service-body,.faq-section{padding-left:18px;padding-right:18px}}
+
+ /* PROCESS */
+ .process-section{padding:80px 0;background:var(--light-gray)}
+ .section-header{text-align:center;margin-bottom:50px}
+ .section-header h2{font-family:'Poppins',sans-serif;font-size:2.1rem;color:var(--brand-blue);margin:0 0 12px}
+ .section-header p{color:#666;font-size:1.05rem;max-width:580px;margin:0 auto}
+ .section-label{display:inline-block;background:rgba(10,77,104,.08);color:var(--brand-blue);padding:6px 16px;border-radius:20px;font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px}
+ .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:50px}
+ .process-steps::before{content:'';position:absolute;top:35px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--brand-blue),var(--accent-turquoise));z-index:0}
+ .process-step{text-align:center;position:relative;z-index:1;padding:0 15px}
+ .step-circle{width:70px;height:70px;background:#fff;border:3px solid var(--brand-blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:800;color:var(--brand-blue);position:relative;z-index:1;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+ .step-circle.active{background:linear-gradient(135deg,#0A4D68,#055a68);color:#fff;border-color:transparent;box-shadow:0 8px 25px rgba(10,77,104,.3)}
+ .process-step h3{font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--brand-blue);margin:0 0 8px}
+ .process-step p{font-size:.85rem;color:#888;line-height:1.6;margin:0}
+ @media(max-width:768px){.process-steps{grid-template-columns:1fr;gap:24px}.process-steps::before{display:none}.step-circle{width:55px;height:55px;font-size:1.1rem}}
+
+ /* CTA */
+ .cta-banner{background:linear-gradient(135deg,#0A4D68 0%,#055a68 100%);padding:75px 0;text-align:center;color:#fff;position:relative;overflow:hidden}
+ .cta-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+ .cta-banner h2{font-family:'Poppins',sans-serif;font-size:2.3rem;color:#fff;margin:0 0 16px;position:relative;z-index:1}
+ .cta-banner p{font-size:1.1rem;color:rgba(255,255,255,.87);margin:0 0 32px;max-width:580px;margin-left:auto;margin-right:auto;position:relative;z-index:1}
+ .btn-white{background:#fff;color:var(--brand-blue);border:2px solid #fff;padding:14px 34px;border-radius:5px;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block;transition:.3s;position:relative;z-index:1}
+ .btn-white:hover{background:transparent;color:#fff;transform:translateY(-2px)}
+ 
+        /* FAQ details/summary - JS'siz açılır */
+        details.faq-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:12px;padding:0;overflow:hidden;transition:all .3s}
+        details.faq-item summary.faq-question{padding:18px 24px;cursor:pointer;font-weight:600;color:var(--brand-blue,#0A4D68);font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;align-items:center;position:relative}
+        details.faq-item summary.faq-question::-webkit-details-marker{display:none}
+        details.faq-item summary.faq-question::after{content:"+";font-size:1.4rem;font-weight:700;color:var(--brand-blue,#0A4D68);transition:transform .3s;flex-shrink:0;margin-left:15px}
+        details.faq-item[open] summary.faq-question::after{transform:rotate(45deg)}
+        details.faq-item[open]{border-color:var(--brand-blue,#0A4D68);box-shadow:0 4px 18px rgba(10,77,104,.08)}
+        details.faq-item .faq-answer{padding:0 24px 18px}
+        details.faq-item .faq-answer-inner{color:#555;line-height:1.75;margin:0;font-size:.95rem}
     </style>
 
-    <!-- ASENKRON KAYNAKLAR -->
-    <link rel="stylesheet" href="style.css" media="all">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <link rel="stylesheet" href="css/style.css" media="all">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+ <meta property="og:locale" content="tr_TR">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="Dijital Pazarlama Hizmetlerimiz | AKO Dijital İskenderun">
+ <meta property="og:description" content="SEO, web tasarım, Google Ads ve sosyal medya yönetimi. İskenderun ve Hatay'da kanıtlanmış sonuçlar.">
+ <meta property="og:url" content="https://www.akodijital.com/hizmetlerimiz.html">
+ <meta property="og:image" content="https://www.akodijital.com/images/ako-digital-og.jpg">
+<style id="footer-responsive">@media(max-width:992px){footer div[style*="grid-template-columns"]{grid-template-columns:repeat(2,1fr)!important}}@media(max-width:576px){footer div[style*="grid-template-columns"]{grid-template-columns:1fr!important}}</style>
 
-    <!-- JSON-LD SCHEMA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Dijital Pazarlama",
-      "provider": { "@type": "ProfessionalService", "name": "AKO Digital" },
-      "areaServed": { "@type": "Country", "name": "TR" }
-    }
-    </script>
+ <style>
+ body, h1, h2, h3, h4, h5, h6, p, a, button, span, div {
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ }
+ button, a[class*="btn"], .card-btn-v2, .pricing-btn {
+ font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+ letter-spacing: 0.01em;
+ }
+ </style>
+
+    <style id="service-icon-gradients">
+        /* Hizmet ikonu canlı renkli gradient'ler */
+        .service-block#seo .service-icon-wrap{background:linear-gradient(135deg,#667eea,#764ba2)!important;color:#fff!important;box-shadow:0 8px 25px rgba(102,126,234,.4)!important}
+        .service-block#web .service-icon-wrap{background:linear-gradient(135deg,#f093fb,#f5576c)!important;color:#fff!important;box-shadow:0 8px 25px rgba(245,87,108,.4)!important}
+        .service-block#ads .service-icon-wrap{background:linear-gradient(135deg,#4facfe,#00f2fe)!important;color:#fff!important;box-shadow:0 8px 25px rgba(79,172,254,.4)!important}
+        .service-block#social .service-icon-wrap{background:linear-gradient(135deg,#fa709a,#fee140)!important;color:#fff!important;box-shadow:0 8px 25px rgba(250,112,154,.4)!important}
+        .service-icon-wrap{transition:transform .3s ease}
+        .service-block:hover .service-icon-wrap{transform:scale(1.08) rotate(-5deg)}
+    </style>
+
+    <style>
+        /* FAQ açılır panel - details elementi düzgün çalışsın */
+        .faq-item summary { 
+            list-style: none; 
+            cursor: pointer;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::marker { display: none; }
+        .faq-item .faq-answer { 
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.4s ease, padding 0.3s ease; 
+            padding: 0 24px;
+        }
+        .faq-item[open] .faq-answer { 
+            max-height: 1000px; 
+            padding: 0 24px 20px;
+        }
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--brand-blue, #0A4D68);
+            font-weight: 300;
+            transition: transform 0.3s ease;
+            margin-left: 12px;
+        }
+        .faq-item[open] .faq-question::after {
+            content: "−";
+            transform: rotate(0);
+        }
+        .faq-item[open] {
+            border-color: var(--brand-blue, #0A4D68);
+            box-shadow: 0 4px 15px rgba(10, 77, 104, 0.08);
+        }
+    </style>
+
+    <style>
+        /* Hizmet tab navigasyonu - renkli ikonlar */
+        .hero-nav-btn {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+        }
+        .hero-nav-btn i {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.95rem;
+            transition: transform 0.3s;
+        }
+        .hero-nav-btn:hover i {
+            transform: scale(1.1) rotate(-5deg);
+        }
+        .hero-nav-btn[href="#seo"] i {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .hero-nav-btn[href="#web"] i {
+            background: linear-gradient(135deg, #0A4D68, #055a68);
+            box-shadow: 0 4px 12px rgba(10, 77, 104, 0.4);
+        }
+        .hero-nav-btn[href="#ads"] i {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+        }
+        .hero-nav-btn[href="#social"] i {
+            background: linear-gradient(135deg, #fa709a, #fee140);
+            box-shadow: 0 4px 12px rgba(250, 112, 154, 0.4);
+        }
+        /* Hero nav - canlı animasyon */
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); }
+            50% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.7); }
+        }
+    </style>
+
+    <style>
+        /* Servis ikonları - canlı animasyon */
+        .service-icon-wrap {
+            transition: transform 0.4s ease;
+            position: relative;
+        }
+        .service-icon-wrap::before {
+            content: "";
+            position: absolute;
+            inset: -3px;
+            border-radius: inherit;
+            background: inherit;
+            opacity: 0.4;
+            filter: blur(8px);
+            z-index: -1;
+            transition: opacity 0.4s;
+        }
+        .service-block:hover .service-icon-wrap {
+            transform: scale(1.05) rotate(-3deg);
+        }
+        .service-block:hover .service-icon-wrap::before {
+            opacity: 0.7;
+        }
+    
+        .tab-icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;color:#fff;font-size:.85rem;margin-right:8px;box-shadow:0 3px 10px rgba(0,0,0,.15);vertical-align:middle}
+</style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">AKO Digital</a>
-                <ul class="nav-menu">
-    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
-    <li class="nav-item"><a href="hizmetlerimiz.html" class="nav-link active" aria-current="page">Hizmetlerimiz</a></li>
-    <!-- YENİ EKLENDİ -->
-    <li class="nav-item"><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
-    <li class="nav-item"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-    <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
-    <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
-</ul>               
-     <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            </nav>
-        </div>
-    </header>
+ <header class="header">
+ <div class="container">
+ <nav class="navbar" role="navigation" aria-label="Ana Menü">
+ <a href="index.html" class="logo">AKO Dijital</a>
+ <ul class="nav-menu" id="navMenu">
+ <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+ <li class="nav-item"><a href="hizmetlerimiz.html" class="nav-link active" aria-current="page">Hizmetlerimiz</a></li>
+ <li class="nav-item"><a href="fiyatlandirma.html" class="nav-link">Fiyatlar</a></li>
+ <li class="nav-item"><a href="portfolyo.html" class="nav-link">Portfolyo</a></li>
+ <li class="nav-item"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+ <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+ <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+ <li><a href="portal.html" class="nav-link client-login-btn"><i class="fas fa-user-shield" aria-hidden="true"></i> Müşteri Girişi</a></li>
+ </ul>
+ <button class="hamburger" type="button" aria-label="Menüyü Aç" aria-expanded="false" id="hamburger">
+ <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+ </button>
+ </nav>
+ </div>
+ </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Hizmetlerimiz</h1>
-                <p class="lead-text">İşletmenizin ihtiyaçlarına özel tasarlanmış, sonuç odaklı dijital pazarlama çözümleri.</p>
-            </div>
-        </section>
+ <!-- SERVICE NAV STRIP -->
+ <nav class="service-nav-strip" aria-label="Hizmetler İçi Navigasyon">
+ <div class="container">
+ <ul>
+ <li><a href="#seo" class="active-nav"><span class="tab-icon" style="background:linear-gradient(135deg,#0A4D68,#055a68);"><i class="fas fa-search"></i></span> SEO</a></li>
+ <li><a href="#web"><span class="tab-icon" style="background:linear-gradient(135deg,#667eea,#764ba2);"><i class="fas fa-laptop-code"></i></span> Web Tasarım</a></li>
+ <li><a href="#ads"><span class="tab-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);"><i class="fab fa-google"></i></span> Google Ads</a></li>
+ <li><a href="#social"><span class="tab-icon" style="background:linear-gradient(135deg,#fa709a,#fee140);"><i class="fas fa-share-nodes"></i></span> Sosyal Medya</a></li>
+ </ul>
+ </div>
+ </nav>
 
-        <section class="section-padding">
-            <div class="container">
-                <!-- SEO -->
-                <div class="info-box" id="seo">
-                    <div class="info-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
-                    <div class="info-text">
-                        <h2>SEO (Arama Motoru Optimizasyonu)</h2>
-                        <p>Web sitenizin organik arama sonuçlarında en üst sıralarda yer alması için kapsamlı teknik SEO, içerik stratejisi ve link inşası çalışmaları yürütüyoruz. Rakiplerinizin önüne geçin ve hedef kitlenizin sizi kolayca bulmasını sağlayın.</p>
-                    </div>
-                </div>
-                
-                <!-- WEB -->
-                <div class="info-box" id="web">
-                    <div class="info-icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
-                    <div class="info-text">
-                        <h2>Web Tasarım ve Geliştirme</h2>
-                        <p>Marka kimliğinizi yansıtan, modern, hızlı ve tüm cihazlarla uyumlu (responsive) web siteleri tasarlıyoruz. Kullanıcı deneyimini (UX) ön planda tutarak ziyaretçilerinizi müşteriye dönüştüren tasarımlar yaratıyoruz.</p>
-                    </div>
-                </div>
+ <main>
 
-                <!-- ADS -->
-                <div class="info-box" id="ads">
-                    <div class="info-icon"><i class="fa-solid fa-magnifying-glass-dollar" aria-hidden="true"></i></div>
-                    <div class="info-text">
-                        <h2>Google Ads Yönetimi</h2>
-                        <p>Google Ads kampanyalarınızı profesyonelce yöneterek reklam bütçenizi en verimli şekilde kullanmanızı sağlıyoruz. Anahtar kelime araştırması ve hedef kitle optimizasyonu ile yatırım getirinizi (ROI) maksimize ediyoruz.</p>
-                    </div>
-                </div>
+ <section class="page-hero">
+ <div class="container">
+ <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+ <a href="index.html">Anasayfa</a>
+ <span aria-hidden="true">›</span>
+ <span aria-current="page">Hizmetlerimiz</span>
+ </nav>
+ <h1>Dijital Pazarlama Hizmetlerimiz</h1>
+ <p>İskenderun ve Hatay'da işletmenizi büyütmek için veri odaklı, sonuç garantili dijital çözümler.</p>
+ <div class="hero-nav">
+ <a href="#seo" class="hero-nav-btn"><i class="fas fa-search"></i> SEO</a>
+ <a href="#web" class="hero-nav-btn"><i class="fas fa-laptop-code"></i> Web Tasarım</a>
+ <a href="#ads" class="hero-nav-btn"><i class="fab fa-google"></i> Google Ads</a>
+ <a href="#social" class="hero-nav-btn"><i class="fas fa-share-nodes"></i> Sosyal Medya</a>
+ </div>
+ </div>
+ </section>
 
-                <!-- SOCIAL -->
-                <div class="info-box" id="social">
-                    <div class="info-icon"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></div>
-                    <div class="info-text">
-                        <h2>Sosyal Medya Yönetimi</h2>
-                        <p>Markanızın sosyal medyadaki sesini oluşturuyor ve yönetiyoruz. Hedef kitlenizle etkileşim kurarak marka bilinirliğinizi artırıyor ve sadık bir topluluk oluşturmanıza yardımcı oluyoruz.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+ <section class="services-section">
+ <div class="container">
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col"><h3>AKO Digital</h3><p>Markanızın dijital potansiyelini ortaya çıkarıyor, hedeflerinize ulaşmanız için stratejik çözümler sunuyoruz.</p></div>
-                <div class="footer-col"><h3>Hizmetler</h3><ul><li><a href="hizmetlerimiz.html#seo">SEO</a></li><li><a href="hizmetlerimiz.html#web">Web Tasarım</a></li><li><a href="hizmetlerimiz.html#ads">Google Ads</a></li><li><a href="hizmetlerimiz.html#social">Sosyal Medya</a></li></ul></div>
-                <div class="footer-col"><h3>Hızlı Menü</h3><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
-                <div class="footer-col"><h3>İletişim</h3><p>info@akodigital.com</p><p>+90 545 821 39 22</p></div>
-            </div>
-            <div class="footer-bottom"><p>© 2026 AKO Digital. Tüm Hakları Saklıdır.</p></div>
-        </div>
-    </footer>
+ <!-- SEO -->
+ <article class="service-block" id="seo">
+ <div class="service-header">
+ <div class="service-icon-wrap" aria-hidden="true" style="background:linear-gradient(135deg,#0A4D68,#055a68);box-shadow:0 10px 30px rgba(10,77,104,.4);"><i class="fas fa-search"></i></div>
+ <div class="service-header-text">
+ <h2>SEO — Arama Motoru Optimizasyonu</h2>
+ <p>Google'da kalıcı olarak üst sıralara çıkın. Teknik SEO, içerik stratejisi ve yerel SEO ile organik trafiğinizi sürdürülebilir şekilde artırıyoruz. Reklam bütçesine bağımlı kalmadan müşteri çekin.</p>
+ </div>
+ <div class="service-number" aria-hidden="true">01</div>
+ </div>
+ <div class="service-body">
+ <div class="service-result-box">
+ <div class="result-icon"><i class="fas fa-chart-line"></i></div>
+ <div class="result-text">PageSpeed 100/100 hız skoru <span>Yayındaki projelerimizde ölçülebilir, herkesin test edebileceği gerçek sonuç — İskenderun ve Hatay bölgesi</span></div>
+ </div>
+ <div class="service-tags" aria-label="SEO hizmet kapsamı">
+ <span class="service-tag">Teknik SEO Denetimi</span>
+ <span class="service-tag">Anahtar Kelime Araştırması</span>
+ <span class="service-tag">On-Page Optimizasyon</span>
+ <span class="service-tag">İçerik Stratejisi</span>
+ <span class="service-tag">Link Building</span>
+ <span class="service-tag">Yerel SEO</span>
+ <span class="service-tag">Schema Markup</span>
+ <span class="service-tag">Google İşletme Profili</span>
+ </div>
+ <div class="service-detail-grid">
+ <div class="service-detail">
+ <h3><i class="fas fa-wrench" aria-hidden="true"></i> Teknik SEO</h3>
+ <ul>
+ <li>Site hızı optimizasyonu (Core Web Vitals)</li>
+ <li>Mobil uyumluluk ve indeksleme kontrolü</li>
+ <li>Kanonik URL ve hata sayfası düzeltmeleri</li>
+ <li>XML sitemap ve robots.txt optimizasyonu</li>
+ <li>Yapılandırılmış veri (Schema Markup) entegrasyonu</li>
+ </ul>
+ </div>
+ <div class="service-detail">
+ <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Yerel SEO</h3>
+ <ul>
+ <li>Google İşletme Profili optimizasyonu ve yönetimi</li>
+ <li>NAP tutarlılığı (isim, adres, telefon)</li>
+ <li>Yerel anahtar kelime stratejisi</li>
+ <li>Google Haritalar sıralama iyileştirmesi</li>
+ <li>Bölgesel atıf (citation) oluşturma</li>
+ </ul>
+ </div>
+ </div>
+ <div class="service-detail-grid">
+ <div class="service-detail">
+ <h3><i class="fas fa-pen-nib" aria-hidden="true"></i> İçerik ve On-Page SEO</h3>
+ <ul>
+ <li>Rakip ve anahtar kelime boşluk analizi</li>
+ <li>Başlık etiketleri, meta açıklamalar optimizasyonu</li>
+ <li>SEO uyumlu içerik yazımı ve güncellenmesi</li>
+ <li>Dahili linkleme mimarisinin güçlendirilmesi</li>
+ <li>Görsel alt metin ve dosya adı optimizasyonu</li>
+ </ul>
+ </div>
+ <div class="service-detail">
+ <h3><i class="fas fa-link" aria-hidden="true"></i> Off-Page ve Raporlama</h3>
+ <ul>
+ <li>Kaliteli backlink kazanım stratejisi</li>
+ <li>Zararlı link tespiti ve disavow işlemi</li>
+ <li>Aylık Search Console ve Analytics raporu</li>
+ <li>Anahtar kelime sıralama takibi</li>
+ <li>Rakip performans karşılaştırması</li>
+ </ul>
+ </div>
+ </div>
+ <div class="service-cta">
+ <a href="iletisim.html" class="btn btn-primary">Ücretsiz SEO Analizi Al</a>
+ <span class="service-price">Aylık SEO paketi: <strong>Fiyat teklifi için arayın</strong></span>
+ </div>
+ </div>
+ <div class="faq-section">
+ <p class="faq-title"><i class="fas fa-question-circle" aria-hidden="true"></i> SEO Hakkında Sıkça Sorulan Sorular</p>
+ <details class="faq-item">
+                <summary class="faq-question">SEO çalışmaları ne kadar sürede sonuç verir?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">SEO orta-uzun vadeli bir yatırımdır. Teknik düzeltmeler ve içerik optimizasyonu genellikle ilk 3-6 ay içinde ölçülebilir trafik artışı sağlar. Rekabetin yoğun olduğu sektörlerde bu süre 6-12 aya kadar uzayabilir. Ancak önemli olan şu: Google Ads'in aksine SEO etkisi birikimli ve kalıcıdır — bir kez kazandığınız sıralama, sürdürülebilir ücretsiz trafik anlamına gelir.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Yerel SEO ile genel SEO arasındaki fark nedir?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Genel SEO tüm Türkiye veya dünya genelinde arama sıralamalarını hedeflerken, yerel SEO "İskenderun" veya "yakınımdaki" gibi konum bazlı aramalarda öne çıkmayı sağlar. Google Haritalar 3'lü paketi, Google İşletme Profili yönetimi ve NAP tutarlılığı yerel SEO'nun temelini oluşturur. Fiziksel bir mağazanız veya ofisiniz varsa yerel SEO sizin için en hızlı sonuç veren yöntemdir.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Rakiplerim zaten ilk sıradaysa SEO işe yarar mı?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Evet, kesinlikle. Önce detaylı bir rakip analizi yapıyor, onların göz ardı ettiği anahtar kelime fırsatlarını ve içerik boşluklarını tespit ediyoruz. Rakiplerinizin zayıf noktalarına odaklanarak nişe özgü, yüksek dönüşümlü sorgularda hızla ilerlemeniz mümkündür. Ayrıca yerel SEO'da büyük rakipler çoğunlukla zayıf kalır — bu sizin için büyük bir avantaj.</p></div>
+            </details>
+ </div>
+ </article>
 
-    <!-- BUTONLAR (KUSURSUZ ERİŞİLEBİLİRLİK) -->
-    <a href="https://wa.me/905458213922" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden bizimle iletişime geçin">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-    <a href="#" class="floating-btn scroll-top-btn" aria-label="Sayfanın başına dön">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </a>
+ <!-- WEB TASARIM -->
+ <article class="service-block" id="web">
+ <div class="service-header">
+ <div class="service-icon-wrap" aria-hidden="true" style="background:linear-gradient(135deg,#667eea,#764ba2);box-shadow:0 10px 30px rgba(102,126,234,.4);"><i class="fas fa-laptop-code"></i></div>
+ <div class="service-header-text">
+ <h2>Web Tasarım & Geliştirme</h2>
+ <p>Görsel açıdan etkileyici, hızlı yüklenen ve dönüşüm odaklı web siteleri tasarlıyoruz. Her proje mobil öncelikli, SEO uyumlu ve Google Core Web Vitals standartlarında teslim edilir.</p>
+ </div>
+ <div class="service-number" aria-hidden="true">02</div>
+ </div>
+ <div class="service-body">
+ <div class="service-result-box">
+ <div class="result-icon"><i class="fas fa-tachometer-alt"></i></div>
+ <div class="result-text">Ortalama 95+ PageSpeed skoru <span>Her proje Google PageSpeed Insights'ta 95 üzeri skor hedefiyle teslim edilir</span></div>
+ </div>
+ <div class="service-tags" aria-label="Web tasarım hizmet kapsamı">
+ <span class="service-tag">Kurumsal Web Site</span>
+ <span class="service-tag">E-Ticaret Sitesi</span>
+ <span class="service-tag">Landing Page</span>
+ <span class="service-tag">Mobil Öncelikli Tasarım</span>
+ <span class="service-tag">WordPress</span>
+ <span class="service-tag">Hız Optimizasyonu</span>
+ <span class="service-tag">SEO Altyapısı</span>
+ <span class="service-tag">SSL & Güvenlik</span>
+ </div>
+ <div class="service-detail-grid">
+ <div class="service-detail">
+ <h3><i class="fas fa-paint-brush" aria-hidden="true"></i> Tasarım ve UI/UX</h3>
+ <ul>
+ <li>Sektörünüze özel özgün tasarım (şablon değil)</li>
+ <li>Mobil öncelikli (mobile-first) yaklaşım</li>
+ <li>Dönüşüm odaklı kullanıcı deneyimi (UX)</li>
+ <li>Marka kimliğinize uygun renk ve tipografi</li>
+ <li>Erişilebilirlik standartlarına (WCAG) uyumluluk</li>
+ </ul>
+ </div>
+ <div class="service-detail">
+ <h3><i class="fas fa-code" aria-hidden="true"></i> Teknik Altyapı</h3>
+ <ul>
+ <li>Hızlı yükleme — Core Web Vitals optimizasyonu</li>
+ <li>SSL sertifikası ve temel güvenlik önlemleri</li>
+ <li>Temel SEO kurulumu (meta etiketler, sitemap, schema)</li>
+ <li>Google Analytics 4 ve Search Console entegrasyonu</li>
+ <li>İletişim formu, WhatsApp entegrasyonu</li>
+ </ul>
+ </div>
+ </div>
+ <div class="service-cta">
+ <a href="iletisim.html" class="btn btn-primary">Web Site Teklifi Al</a>
+ <span class="service-price">Teslim süresi: <strong>2–6 hafta</strong> (kapsama göre)</span>
+ </div>
+ </div>
+ <div class="faq-section">
+ <p class="faq-title"><i class="fas fa-question-circle" aria-hidden="true"></i> Web Tasarım Hakkında Sıkça Sorulan Sorular</p>
+ <details class="faq-item">
+                <summary class="faq-question">Web site yapıldıktan sonra nasıl güncelleyebilirim?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">WordPress altyapısıyla geliştirdiğimiz sitelerde kullanıcı dostu bir yönetim paneli teslim ediyoruz. Temel içerik güncellemelerini (metin, görsel, ürün) teknik bilgi gerektirmeden kendiniz yapabilirsiniz. İstediğinizde aylık bakım-güncelleme paketi de sunuyoruz; bu paket güvenlik güncellemeleri, yedekleme ve performans takibini kapsar.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Mevcut sitemin yenilenmesi kaç sürer?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Mevcut içeriklerinizi koruyarak yeniden tasarım projelerinde genellikle 2-3 hafta yeterlidir. Süreç şöyle işler: ücretsiz keşif görüşmesi → tasarım prototipi onayı → geliştirme → test ve revizyon → yayına alma. Siz onaylamadan hiçbir adım atılmaz; tüm revizyonlar proje kapsamına dahildir.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Site fiyatlarınız neden bu kadar farklılık gösteriyor?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Tasarladığımız her site özgündür; hazır şablon kullanmıyoruz. Fiyat; sayfa sayısı, fonksiyonellik (rezervasyon sistemi, e-ticaret, üyelik vb.), içerik üretimi ve entegrasyonlara göre değişir. 5 sayfalık bir tanıtım sitesi ile 200 ürünlü bir e-ticaret sitesinin maliyeti doğal olarak farklıdır. Ücretsiz görüşmede projenize özel şeffaf bir teklif hazırlıyoruz.</p></div>
+            </details>
+ </div>
+ </article>
 
-    <script src="script.js" defer></script>
+ <!-- GOOGLE ADS -->
+ <article class="service-block" id="ads">
+ <div class="service-header">
+ <div class="service-icon-wrap" aria-hidden="true" style="background:linear-gradient(135deg,#f093fb,#f5576c);box-shadow:0 10px 30px rgba(245,87,108,.4);"><i class="fab fa-google"></i></div>
+ <div class="service-header-text">
+ <h2>Google Ads Yönetimi</h2>
+ <p>Reklam bütçenizi israf etmeden, doğru kitleye doğru anda ulaşıyoruz. Her kuruşun hesabını veriyoruz; sadece tıklama değil, dönüşüm odaklı kampanyalar kuruyoruz.</p>
+ </div>
+ <div class="service-number" aria-hidden="true">03</div>
+ </div>
+ <div class="service-body">
+ <div class="service-result-box">
+ <div class="result-icon"><i class="fas fa-coins"></i></div>
+ <div class="result-text">Ortalama 3x ROAS iyileştirmesi <span>Mevcut kampanyaları devraldığımız müşterilerde ölçülen ortalama reklam getirisi artışı</span></div>
+ </div>
+ <div class="service-tags" aria-label="Google Ads hizmet kapsamı">
+ <span class="service-tag">Arama Ağı Reklamları</span>
+ <span class="service-tag">Görüntülü Reklamlar</span>
+ <span class="service-tag">Alışveriş Reklamları</span>
+ <span class="service-tag">Yeniden Hedefleme</span>
+ <span class="service-tag">Dönüşüm Takibi</span>
+ <span class="service-tag">A/B Testi</span>
+ <span class="service-tag">Aylık Raporlama</span>
+ </div>
+ <div class="service-detail-grid">
+ <div class="service-detail">
+ <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Kampanya Kurulumu</h3>
+ <ul>
+ <li>Derinlemesine anahtar kelime araştırması</li>
+ <li>Rakip analizi ve teklifleme stratejisi</li>
+ <li>Hedef kitle segmentasyonu ve demografik ayarlar</li>
+ <li>Reklam metni ve uzantı optimizasyonu</li>
+ <li>Landing page önerileri ve dönüşüm hunisi kurulumu</li>
+ </ul>
+ </div>
+ <div class="service-detail">
+ <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Yönetim ve Optimizasyon</h3>
+ <ul>
+ <li>Haftalık performans kontrolü ve optimizasyon</li>
+ <li>Negatif anahtar kelime yönetimi</li>
+ <li>Kalite puanı (Quality Score) iyileştirme</li>
+ <li>A/B reklam testi ve analiz raporlaması</li>
+ <li>Aylık detaylı ROI raporu ve strateji toplantısı</li>
+ </ul>
+ </div>
+ </div>
+ <div class="service-cta">
+ <a href="iletisim.html" class="btn btn-primary">Kampanya Başlat</a>
+ <span class="service-price">Min. reklam bütçesi: <strong>1.500 TL/ay</strong> (ajans ücreti ayrı)</span>
+ </div>
+ </div>
+ <div class="faq-section">
+ <p class="faq-title"><i class="fas fa-question-circle" aria-hidden="true"></i> Google Ads Hakkında Sıkça Sorulan Sorular</p>
+ <details class="faq-item">
+                <summary class="faq-question">Google Ads için minimum bütçe ne olmalı?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Sektörünüze ve hedef kitlenize bağlı olarak aylık minimum 1.500-3.000 TL reklam bütçesi tavsiye ederiz. Bu tutar doğrudan Google'a ödenir; ajans yönetim ücreti bunun dışındadır. Düşük bütçeyle kampanya başlatılabilir ancak anlamlı veri toplamak, optimize etmek ve gerçek bir dönüşüm verisine ulaşmak için yeterli bütçe önemlidir.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Reklam durdurulursa trafiğim de durur mu?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Evet, Google Ads'i kapattığınızda ücretli trafik anında durur. Bu nedenle yalnızca reklama bağımlı kalmayı değil, paralelde SEO çalışmasıyla organik trafik inşa etmeyi öneriyoruz. İki kanalı birlikte yönetmek hem kısa vadeli hem uzun vadeli büyümeyi dengeler ve reklam maliyetlerini zamanla düşürür.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Kampanya sonuçlarını nasıl takip edebilirim?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Her ay detaylı bir performans raporu gönderiyoruz; tıklama sayısı, dönüşümler, ortalama tıklama başı maliyet (CPC) ve reklam harcamasından elde edilen gelir (ROAS) gibi metrikleri içerir. Google Ads hesabına okuma yetkisiyle doğrudan erişim de sağlıyoruz — tam şeffaflık.</p></div>
+            </details>
+ </div>
+ </article>
+
+ <!-- SOSYAL MEDYA -->
+ <article class="service-block" id="social">
+ <div class="service-header">
+ <div class="service-icon-wrap" aria-hidden="true" style="background:linear-gradient(135deg,#fa709a,#fee140);box-shadow:0 10px 30px rgba(250,112,154,.4);"><i class="fa-solid fa-share-nodes"></i></div>
+ <div class="service-header-text">
+ <h2>Sosyal Medya Yönetimi</h2>
+ <p>Markanızın sesini sosyal medyada güçlendiriyoruz. Düzenli içerik, aktif topluluk yönetimi ve büyümeye odaklı stratejiyle hedef kitlenizle kalıcı bağ kuruyoruz.</p>
+ </div>
+ <div class="service-number" aria-hidden="true">04</div>
+ </div>
+ <div class="service-body">
+ <div class="service-result-box">
+ <div class="result-icon"><i class="fas fa-heart"></i></div>
+ <div class="result-text">Ortalama 3,5x etkileşim artışı <span>İlk 3 ayda organik erişim ve beğeni/yorum metriklerinde ölçülen büyüme</span></div>
+ </div>
+ <div class="service-tags" aria-label="Sosyal medya hizmet kapsamı">
+ <span class="service-tag">Instagram</span>
+ <span class="service-tag">Facebook</span>
+ <span class="service-tag">LinkedIn</span>
+ <span class="service-tag">TikTok</span>
+ <span class="service-tag">İçerik Üretimi</span>
+ <span class="service-tag">Reels & Video</span>
+ <span class="service-tag">Topluluk Yönetimi</span>
+ <span class="service-tag">Meta Reklam</span>
+ </div>
+ <div class="service-detail-grid">
+ <div class="service-detail">
+ <h3><i class="fas fa-images" aria-hidden="true"></i> İçerik ve Strateji</h3>
+ <ul>
+ <li>Aylık içerik takvimi ve yayın planlaması</li>
+ <li>Marka sesine uygun profesyonel görsel tasarım</li>
+ <li>Reels / kısa video üretimi ve kurgu</li>
+ <li>Hashtag araştırması ve keşfet optimizasyonu</li>
+ <li>Rakip analizi ve trend takibi</li>
+ </ul>
+ </div>
+ <div class="service-detail">
+ <h3><i class="fas fa-comments" aria-hidden="true"></i> Topluluk ve Büyüme</h3>
+ <ul>
+ <li>Yorum ve DM yönetimi (hafta içi mesai saatleri)</li>
+ <li>Organik büyüme stratejisi</li>
+ <li>Influencer işbirlikleri danışmanlığı</li>
+ <li>Meta (Facebook/Instagram) reklam yönetimi</li>
+ <li>Aylık analitik rapor ve strateji güncellemesi</li>
+ </ul>
+ </div>
+ </div>
+ <div class="service-cta">
+ <a href="iletisim.html" class="btn btn-primary">Sosyal Medyanı Güçlendir</a>
+ <span class="service-price">Aylık paketler — <strong>platforma ve içerik sıklığına göre fiyatlandırma</strong></span>
+ </div>
+ </div>
+ <div class="faq-section">
+ <p class="faq-title"><i class="fas fa-question-circle" aria-hidden="true"></i> Sosyal Medya Hakkında Sıkça Sorulan Sorular</p>
+ <details class="faq-item">
+                <summary class="faq-question">Hangi platformları yönetiyorsunuz?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Ağırlıklı olarak Instagram, Facebook, LinkedIn ve TikTok platformlarını yönetiyoruz. Sektörünüze ve hedef kitlenize en uygun platformları birlikte belirleyerek kaynaklarınızı doğru yere odaklıyoruz. Her işletme için "her platformda aktif olun" değil, "doğru platformda güçlü olun" stratejisini uyguluyoruz.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Ayda kaç içerik paylaşılacak?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Paketinize bağlı olarak aylık 8 ile 20 içerik arasında paylaşım yapıyoruz. Her içerik onayınız alınarak yayımlanır — sürpriz paylaşım olmaz. Aylık içerik takvimi aylık başında paylaşılır, geri bildirimlerinize göre güncellenir. Acil paylaşım ihtiyacı için WhatsApp hattımız açıktır.</p></div>
+            </details>
+ <details class="faq-item">
+                <summary class="faq-question">Takipçi sayısı garantisi veriyor musunuz?</summary>
+                <div class="faq-answer"><p class="faq-answer-inner">Sahte takipçi veya bot kullanmıyoruz — bu hem platforma aykırıdır hem de işletmenize uzun vadede zarar verir. Organik büyüme hedefliyoruz: gerçek, ilgilenen takipçiler. Etkileşim oranı, erişim ve web sitesi yönlendirme gibi metrikleri düzenli olarak raporluyoruz. Sayı değil, kalite odaklıyız.</p></div>
+            </details>
+ </div>
+ </article>
+
+ </div>
+ </section>
+
+ <!-- PROCESS -->
+ <section class="process-section">
+ <div class="container">
+ <div class="section-header">
+ <span class="section-label">Çalışma Şeklimiz</span>
+ <h2>Nasıl Çalışıyoruz?</h2>
+ <p>Danışmanlıktan teslimata kadar şeffaf ve sistematik bir süreç. Her adımda siz onaylamadan bir sonraki adıma geçmiyoruz.</p>
+ </div>
+ <div class="process-steps" aria-label="Çalışma süreci adımları">
+ <div class="process-step">
+ <div class="step-circle active">1</div>
+ <h3>Ücretsiz Keşif</h3>
+ <p>İşletmenizi, hedeflerinizi ve mevcut durumu dinliyoruz. Hiçbir bağlayıcılık yok.</p>
+ </div>
+ <div class="process-step">
+ <div class="step-circle">2</div>
+ <h3>Analiz ve Strateji</h3>
+ <p>Rakip analizi ve veri incelemesiyle size özel strateji hazırlıyoruz.</p>
+ </div>
+ <div class="process-step">
+ <div class="step-circle">3</div>
+ <h3>Teklif ve Onay</h3>
+ <p>Şeffaf fiyatlandırma ve kapsam tanımıyla anlaşıyoruz. Sürpriz maliyet yok.</p>
+ </div>
+ <div class="process-step">
+ <div class="step-circle">4</div>
+ <h3>Uygulama</h3>
+ <p>Onaylanan stratejiyi hızla ve titizlikle hayata geçiriyoruz.</p>
+ </div>
+ <div class="process-step">
+ <div class="step-circle">5</div>
+ <h3>Raporlama</h3>
+ <p>Aylık sonuçları paylaşıp stratejimizi sürekli iyileştiriyoruz.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA -->
+ <section class="cta-banner">
+ <div class="container">
+ <h2>Hangi Hizmetten Başlamalısınız?</h2>
+ <p>Ücretsiz 30 dakikalık görüşmede işletmenizi analiz ediyor, en yüksek ROI'yi sağlayacak hizmetleri öneriyoruz. Hiçbir bağlayıcılık yok.</p>
+ <a href="iletisim.html" class="btn-white">Ücretsiz Danışmanlık Görüşmesi Al</a>
+ </div>
+ </section>
+
+ </main>
+
+ <footer class="footer" style="background:#051923;color:#8aacba;padding:0;">
+ <div style="padding:60px 0 40px;">
+ <div class="container">
+ <div style="display:grid;grid-template-columns:1.8fr 1fr 1.2fr 1.4fr;gap:40px;">
+ 
+ <!-- MARKA -->
+ <div>
+ <a href="index.html" style="font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:14px;">AKO Dijital</a>
+ <p style="font-size:.9rem;line-height:1.8;color:#8aacba;max-width:280px;">İskenderun ve Hatay bölgesinde işletmelerin dijital potansiyelini veri odaklı SEO, web tasarım ve Google Ads stratejileriyle ortaya çıkarıyoruz.</p>
+ <div style="display:flex;gap:10px;margin-top:20px;">
+                            <a href="https://www.instagram.com/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/company/akodijital" target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/905458213922?text=Merhaba%2C%20m%C3%BC%C5%9Fteri%20getiren%20bir%20site%20yapt%C4%B1rmak%20istiyorum." target="_blank" rel="noopener" style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#8aacba;text-decoration:none;transition:.3s;font-size:1.05rem;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+ </div>
+
+ <!-- HİZMETLER -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">Hizmetlerimiz</h4>
+ <ul style="list-style:none;padding:0;margin:0;">
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#seo" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Teknik SEO</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#seo" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Yerel SEO</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#web" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Web Tasarım</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#ads" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Google Ads</a></li>
+ <li style="margin-bottom:9px;"><a href="hizmetlerimiz.html#social" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Sosyal Medya</a></li>
+ <li style="margin-bottom:9px;"><a href="fiyatlandirma.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Fiyatlar</a></li>
+ </ul>
+ </div>
+
+ <!-- MENÜ + BÖLGESEL -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">Sayfalar</h4>
+ <ul style="list-style:none;padding:0;margin:0 0 20px;">
+ <li style="margin-bottom:9px;"><a href="hakkimizda.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Hakkımızda</a></li>
+ <li style="margin-bottom:9px;"><a href="portfolyo.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Portfolyo</a></li>
+ <li style="margin-bottom:9px;"><a href="blog.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">Blog</a></li>
+ <li style="margin-bottom:9px;"><a href="iletisim.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">İletişim</a></li>
+ <li style="margin-bottom:9px;"><a href="iskenderun-web-tasarim.html" style="color:#8aacba;text-decoration:none;font-size:.9rem;">İskenderun Web Tasarım</a></li>
+ </ul>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:700;margin-bottom:12px;">Bölgesel</h4>
+ <p style="font-size:.82rem;color:#6b8fa0;line-height:1.8;margin:0;">İskenderun · Antakya · Dörtyol · Payas · Arsuz · Kırıkhan · Reyhanlı · Erzin</p>
+ </div>
+
+ <!-- İLETİŞİM -->
+ <div>
+ <h4 style="color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #0A4D68;display:inline-block;">İletişim</h4>
+ <div style="margin-bottom:13px;display:flex;align-items:flex-start;gap:10px;font-size:.88rem;">
+ <i class="fas fa-map-marker-alt" style="color:#0A4D68;margin-top:3px;flex-shrink:0;" aria-hidden="true"></i>
+ <span>Cumhuriyet Mahallesi Sondurak Caddesi Kömür Sokak No: 2, Payas, Hatay 31900</span>
+ </div>
+ <div style="margin-bottom:13px;display:flex;align-items:center;gap:10px;font-size:.88rem;">
+ <i class="fas fa-phone" style="color:#0A4D68;flex-shrink:0;" aria-hidden="true"></i>
+ <a href="tel:+905458213922" style="color:#8aacba;text-decoration:none;">+90 545 821 39 22</a>
+ </div>
+ <div style="margin-bottom:13px;display:flex;align-items:center;gap:10px;font-size:.88rem;">
+ <i class="fas fa-envelope" style="color:#0A4D68;flex-shrink:0;" aria-hidden="true"></i>
+ <a href="mailto:info@akodijital.com" style="color:#8aacba;text-decoration:none;">info@akodijital.com</a>
+ </div>
+ <div style="background:rgba(255,255,255,.04);border-radius:8px;padding:12px 16px;margin-top:16px;border:1px solid rgba(255,255,255,.07);">
+ <p style="font-size:.82rem;color:#8aacba;margin:0;display:flex;align-items:center;gap:8px;"><i class="fas fa-circle" style="color:#4ade80;font-size:.5rem;" aria-hidden="true"></i> Pazartesi – Cuma: 09:00 – 18:00</p>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ <div style="border-top:1px solid rgba(255,255,255,.08);padding:20px 0;text-align:center;">
+ <div class="container">
+ <p style="font-size:.85rem;color:#6b8fa0;margin:0;">&copy; 2026 AKO Dijital. Tüm Hakları Saklıdır. | <a href="gizlilik.html" style="color:#6b8fa0;text-decoration:none;">Gizlilik Politikası</a></p>
+ </div>
+ </div>
+ </footer><script src="js/script.js" defer></script>
+ <script>
+ // Hamburger
+ const ham = document.getElementById('hamburger');
+ const menu = document.getElementById('navMenu');
+ if(ham && menu){
+ ham.addEventListener('click', () => {
+ const open = menu.classList.toggle('open');
+ ham.setAttribute('aria-expanded', open);
+ });
+ }
+ // Scroll top
+ const scrollBtn = document.getElementById('scrollTopBtn');
+ window.addEventListener('scroll', () => {
+ if(window.scrollY > 400) scrollBtn.classList.add('visible');
+ else scrollBtn.classList.remove('visible');
+ });
+ scrollBtn.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
+ // FAQ accordion - tek seferde çalışır
+ function initFAQ(){
+ document.querySelectorAll('.faq-question').forEach(btn => {
+ if(btn.dataset.faqInit) return;
+ btn.dataset.faqInit = '1';
+ btn.addEventListener('click', () => {
+ const item = btn.closest('.faq-item');
+ if(!item) return;
+ const isOpen = item.classList.contains('open');
+ // Aynı service-block veya container içindeki diğerlerini kapat
+ const container = btn.closest('.service-block') || btn.closest('section') || document;
+ container.querySelectorAll('.faq-item').forEach(i => {
+ i.classList.remove('open');
+ const q = i.querySelector('.faq-question');
+ if(q) q.setAttribute('aria-expanded', 'false');
+ const ico = i.querySelector('.faq-icon');
+ if(ico) ico.textContent = '+';
+ });
+ if(!isOpen){
+ item.classList.add('open');
+ btn.setAttribute('aria-expanded', 'true');
+ const ico = btn.querySelector('.faq-icon');
+ if(ico) ico.textContent = '−';
+ }
+ });
+ });
+ }
+ if(document.readyState === 'loading'){
+ document.addEventListener('DOMContentLoaded', initFAQ);
+ } else {
+ initFAQ();
+ }
+ // Active nav strip on scroll
+ const sections = ['seo','web','ads','social'];
+ const navLinks = document.querySelectorAll('.service-nav-strip a');
+ window.addEventListener('scroll', () => {
+ let current = '';
+ sections.forEach(id => {
+ const el = document.getElementById(id);
+ if(el && window.scrollY >= el.offsetTop - 160) current = id;
+ });
+ navLinks.forEach(a => {
+ a.classList.toggle('active-nav', a.getAttribute('href') === '#' + current);
+ });
+ });
+ </script>
+ <div class="vertical-contact" style="position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:10px;">
+ <a href="https://wa.me/905458213922?text=Merhaba%2C%20m%C3%BC%C5%9Fteri%20getiren%20bir%20site%20yapt%C4%B1rmak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişim" style="width:48px;height:48px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.3rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+ <a href="tel:+905458213922" aria-label="Telefon ile arama yap" style="width:48px;height:48px;border-radius:50%;background:#0A4D68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-phone" aria-hidden="true"></i></a>
+ <a href="mailto:info@akodijital.com" aria-label="E-posta gönder" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+ <a href="https://www.instagram.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Instagram sayfamız" style="width:48px;height:48px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Facebook sayfamız" style="width:48px;height:48px;border-radius:50%;background:#1877F2;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/akodijital" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn sayfamız" style="width:48px;height:48px;border-radius:50%;background:#0077B5;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+ <a href="#" class="scroll-top-btn" aria-label="Sayfanın başına dön" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;visibility:hidden;opacity:0;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+ </div>
+ <style>
+ @media(max-width:768px){
+ .vertical-contact{right:12px !important;gap:8px !important;}
+ .vertical-contact a{width:42px !important;height:42px !important;font-size:1.05rem !important;}
+ }
+ 
+        /* Renkli service ikonları - index ile uyumlu */
+        #seo .service-icon-wrap{background:linear-gradient(135deg,#0A4D68,#055a68)!important;color:#fff!important;box-shadow:0 6px 20px rgba(10,77,104,.35)}
+        #web .service-icon-wrap{background:linear-gradient(135deg,#667eea,#764ba2)!important;color:#fff!important;box-shadow:0 6px 20px rgba(102,126,234,.35)}
+        #ads .service-icon-wrap{background:linear-gradient(135deg,#f093fb,#f5576c)!important;color:#fff!important;box-shadow:0 6px 20px rgba(245,87,108,.35)}
+        #social .service-icon-wrap{background:linear-gradient(135deg,#fa709a,#fee140)!important;color:#fff!important;box-shadow:0 6px 20px rgba(250,112,154,.35)}
+        .service-icon-wrap i{color:#fff!important}
+
+        .hero-nav-btn[href="#seo"] i{background:linear-gradient(135deg,#0A4D68,#055a68);color:#fff;width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;margin-right:6px;font-size:.85rem}
+        .hero-nav-btn[href="#web"] i{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;margin-right:6px;font-size:.85rem}
+        .hero-nav-btn[href="#ads"] i{background:linear-gradient(135deg,#f093fb,#f5576c);color:#fff;width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;margin-right:6px;font-size:.85rem}
+        .hero-nav-btn[href="#social"] i{background:linear-gradient(135deg,#fa709a,#fee140);color:#fff;width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;margin-right:6px;font-size:.85rem}
+</style>
+
+
 </body>
 </html>

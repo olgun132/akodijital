@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /portal.html
+Disallow: /tesekkurler.html
+Disallow: /gizlilik.html
+
+Sitemap: https://www.akodijital.com/sitemap.xml

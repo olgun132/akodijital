@@ -1,100 +1,97 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- 1. TEKNİK TEMEL VE DOĞRULAMA (SABİT BLOK) -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ÖNEMLİ: Portal sayfası özeldir, Google'da çıkmaması için noindex yapıldı -->
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="google-site-verification" content="mOmVdhvxKv0FUCtOHcjoCePnQfLOz4HPdsF8BfB7fTw" />
-    <meta name="author" content="AKO Digital">
-    
-    <!-- FAVICON SİSTEMİ -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="shortcut icon" href="images/favicon.png">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="noindex, nofollow">
+ <meta name="author" content="AKO Dijital">
+ <link rel="icon" type="image/png" href="images/favicon.png">
+ <title>Müşteri Portali | AKO Dijital</title>
+ <link rel="canonical" href="https://www.akodijital.com/portal.html">
+ <style>
+ :root{--brand-blue:#0A4D68;--accent-turquoise:#055a68;--white:#fff;--dark-text:#051923;--light-gray:#F5F7FA}
+ body{margin:0;font-family:sans-serif;line-height:1.6;background:linear-gradient(180deg,#0A4D68 0%,#051923 100%);min-height:100vh;color:var(--dark-text);overflow-x:hidden}
+ .header{background:#fff;height:75px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.05);display:flex;align-items:center}
+ .container{max-width:1100px;margin:0 auto;padding:0 20px;width:100%;box-sizing:border-box}
+ .navbar{display:flex;justify-content:space-between;align-items:center;height:100%;width:100%}
+ .logo{font-family:sans-serif;font-size:1.8rem;color:var(--brand-blue);font-weight:700;text-decoration:none;display:flex;align-items:center;line-height:1}
+ .portal-wrapper{display:flex;align-items:center;justify-content:center;padding:60px 20px;min-height:calc(100vh - 150px)}
+ .portal-card{background:white;max-width:500px;width:100%;border-radius:20px;padding:40px;box-shadow:0 15px 35px rgba(0,0,0,.3);text-align:center}
+ .portal-header{margin-bottom:30px}
+ .portal-header h1{font-size:1.5rem;color:var(--brand-blue);margin-bottom:10px;font-weight:800}
+ .welcome-box{background:#f0f4f8;padding:20px;border-radius:12px;border-left:4px solid var(--brand-blue);font-size:.95rem;text-align:left;margin-bottom:30px;color:#444;line-height:1.6}
+ .client-btn{display:flex;align-items:center;padding:18px 20px;background:white;border:2px solid #e2e8f0;border-radius:15px;text-decoration:none;color:var(--dark-text);transition:.3s;margin-bottom:15px;text-align:left}
+ .client-btn:hover{transform:translateY(-3px);border-color:var(--brand-blue);box-shadow:0 5px 15px rgba(0,0,0,.05)}
+ .client-icon{width:40px;height:40px;background:var(--brand-blue);color:white;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-right:15px;font-weight:bold;font-size:1.1rem;flex-shrink:0}
+ .client-info b{display:block;font-size:1rem;color:var(--brand-blue)}
+ .client-info span{font-size:.85rem;color:#718096}
+ .portal-footer{margin-top:30px;font-size:.85rem;color:#a0aec0;border-top:1px solid #eee;padding-top:20px}
+ </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
 
-    <title>Müşteri Portali | AKO Digital</title>
-
-    <!-- GELİŞTİRİLMİŞ KRİTİK CSS (NAVBAR VE PORTAL DÜZENİ) -->
-    <style>
-        :root { 
-            --brand-blue: #0A4D68; 
-            --accent-turquoise: #066a7a; 
-            --white: #FFFFFF; 
-            --dark-text: #051923; 
-            --light-gray: #F5F7FA; 
-        }
-        body { margin:0; font-family: sans-serif; line-height:1.6; background: linear-gradient(180deg, #0A4D68 0%, #051923 100%); min-height:100vh; color:var(--dark-text); overflow-x:hidden; }
-        
-        /* NAVBAR & HEADER: 75PX STANDARDI */
-        .header { background:#fff; height:75px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; align-items:center; }
-        .container { max-width:1100px; margin:0 auto; padding:0 20px; width:100%; box-sizing: border-box; }
-        .navbar { display:flex; justify-content:space-between; align-items:center; height:100%; width:100%; }
-        .logo { font-family: sans-serif; font-size:1.8rem; color:var(--brand-blue); font-weight:700; text-decoration:none; padding-right:40px; white-space:nowrap; display:flex; align-items:center; line-height:1; }
-        
-        /* PORTAL KARTI DÜZENİ */
-        .portal-wrapper { display: flex; align-items: center; justify-content: center; padding: 60px 20px; min-height: calc(100vh - 150px); }
-        .portal-card { background: white; max-width: 500px; width: 100%; border-radius: 20px; padding: 40px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); text-align: center; }
-        .portal-header { margin-bottom: 30px; }
-        .portal-header h1 { font-size: 1.5rem; color: var(--brand-blue); margin-bottom: 10px; font-weight: 800; }
-        .welcome-box { background: #f0f4f8; padding: 20px; border-radius: 12px; border-left: 4px solid var(--brand-blue); font-size: 0.95rem; text-align: left; margin-bottom: 30px; color: #444; line-height: 1.6; }
-        
-        /* MÜŞTERİ LİSTESİ BUTONLARI */
-        .client-btn { display: flex; align-items: center; padding: 18px 20px; background: white; border: 2px solid #e2e8f0; border-radius: 15px; text-decoration: none; color: var(--dark-text); transition: 0.3s; margin-bottom: 15px; text-align: left; }
-        .client-btn:hover { transform: translateY(-3px); border-color: var(--brand-blue); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .client-icon { width: 40px; height: 40px; background: var(--brand-blue); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.1rem; flex-shrink: 0; }
-        .client-info b { display: block; font-size: 1rem; color: var(--brand-blue); }
-        .client-info span { font-size: 0.85rem; color: #718096; }
-
-        .portal-footer { margin-top: 30px; font-size: 0.85rem; color: #a0aec0; border-top: 1px solid #eee; padding-top: 20px; }
-
-        @media (max-width:768px) { .logo { padding-right:0; } .portal-card { padding: 30px 20px; } }
-    </style>
-
-    <!-- ASENKRON KAYNAKLAR -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+ <style>
+ body, h1, h2, h3, h4, h5, h6, p, a, button, span, div {
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ }
+ button, a[class*="btn"], .card-btn-v2, .pricing-btn {
+ font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+ letter-spacing: 0.01em;
+ }
+ </style>
 </head>
 <body>
-
-    <!-- Header (Sitenin geneliyle uyumlu hale getirildi) -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="Portal Menü">
-                <a href="index.html" class="logo">AKO Digital</a>
-                <a href="index.html" style="text-decoration:none; color:var(--accent-turquoise); font-weight:bold; font-size:0.9rem;">
-                    <i class="fas fa-chevron-left"></i> Siteye Dön
-                </a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="portal-wrapper">
-        <div class="portal-card">
-            <div class="portal-header">
-                <h1>Müşteri Portali</h1>
-                <p style="color:#718096; font-size:0.9rem;">Profesyonel Yönetim Paneline Hoş Geldiniz</p>
-            </div>
-
-            <div class="welcome-box">
-                <strong>Sayın İş Ortağımız,</strong><br><br>
-                Bu güvenli alan üzerinden projenizin yönetim ekranına erişebilirsiniz. Tüm hesaplar birbirinden tamamen bağımsız ve SSL sertifikası ile korunmaktadır.
-            </div>
-
-            <div class="client-list">
-                <!-- MÜŞTERİ 1 -->
-                <a href="https://stkdanismanlik.com/admin" class="client-btn" target="_blank" rel="noopener">
-                    <div class="client-icon">SH</div>
-                    <div class="client-info">
-                        <b>SH Danışmanlık</b>
-                        <span>Yönetim Paneli Girişi</span>
-                    </div>
-                    <i class="fas fa-chevron-right" style="margin-left:auto; color:#cbd5e0;"></i>
-                </a>
-                
-                <!-- Yeni müşterileri buraya ekleyebilirsin -->
-            </div>
-
-            <div class="portal-footer">
-                Herhangi bir teknik sorun için:<br>
-                <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="abc2c5cdc4ebcac0c4cfc2ccc2dfcac785c8c4c6">[email&#160;protected]</a></strong><br><br>
-                © 2026 AKO Digital. Tüm Hakla
+ <header class="header">
+ <div class="container">
+ <nav class="navbar">
+ <a href="index.html" class="logo">AKO Dijital</a>
+ <a href="index.html" style="text-decoration:none;color:var(--accent-turquoise);font-weight:bold;font-size:.9rem;"><i class="fas fa-chevron-left"></i> Siteye Dön</a>
+ </nav>
+ </div>
+ </header>
+ <main class="portal-wrapper">
+ <div class="portal-card">
+ <div class="portal-header">
+ <h1>Müşteri Portali</h1>
+ <p style="color:#718096;font-size:.9rem;">Profesyonel Yönetim Paneline Hoş Geldiniz</p>
+ </div>
+ <div class="welcome-box">
+ <strong>Sayın İş Ortağımız,</strong><br><br>
+ Projenizin yönetim paneli adresi, güvenlik gereği size özel olarak iletilmiştir. Tüm hesaplar birbirinden tamamen bağımsızdır ve SSL sertifikası ile korunmaktadır.
+ </div>
+ <div class="client-list">
+ <a href="https://wa.me/905458213922?text=Merhaba%2C%20y%C3%B6netim%20paneli%20giri%C5%9Fi%20i%C3%A7in%20destek%20istiyorum." class="client-btn" target="_blank" rel="noopener noreferrer">
+ <div class="client-icon"><i class="fas fa-headset"></i></div>
+ <div class="client-info">
+ <b>Panel Erişimi & Destek</b>
+ <span>Giriş adresinizi öğrenmek için tıklayın</span>
+ </div>
+ <i class="fas fa-chevron-right" style="margin-left:auto;color:#cbd5e0;"></i>
+ </a>
+ </div>
+ <div class="portal-footer">
+ Herhangi bir teknik sorun için:<br>
+ <strong>info@akodijital.com</strong><br><br>
+ &copy; 2026 AKO Dijital. Tüm Hakları Saklıdır.
+ </div>
+ </div>
+ </main>
+ <script src="js/script.js" defer></script>
+ <div class="vertical-contact" style="position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:10px;">
+ <a href="https://wa.me/905458213922?text=Merhaba%2C%20m%C3%BC%C5%9Fteri%20getiren%20bir%20site%20yapt%C4%B1rmak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişim" style="width:48px;height:48px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.3rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+ <a href="tel:+905458213922" aria-label="Telefon ile arama yap" style="width:48px;height:48px;border-radius:50%;background:#0A4D68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-phone" aria-hidden="true"></i></a>
+ <a href="mailto:info@akodijital.com" aria-label="E-posta gönder" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+ <a href="https://www.instagram.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Instagram sayfamız" style="width:48px;height:48px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+ <a href="https://www.facebook.com/akodijital" target="_blank" rel="noopener noreferrer" aria-label="Facebook sayfamız" style="width:48px;height:48px;border-radius:50%;background:#1877F2;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+ <a href="https://www.linkedin.com/company/akodijital" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn sayfamız" style="width:48px;height:48px;border-radius:50%;background:#0077B5;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.2rem;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+ <a href="#" class="scroll-top-btn" aria-label="Sayfanın başına dön" style="width:48px;height:48px;border-radius:50%;background:#055a68;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;font-size:1.1rem;transition:transform .2s;visibility:hidden;opacity:0;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+ </div>
+ <style>
+ @media(max-width:768px){
+ .vertical-contact{right:12px !important;gap:8px !important;}
+ .vertical-contact a{width:42px !important;height:42px !important;font-size:1.05rem !important;}
+ }
+ </style>
+</body>
+</html>
