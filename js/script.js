@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', () => {
             const isActive = hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            navMenu.classList.toggle('open');
+            hamburger.querySelectorAll('.bar').forEach((b, i) => {
+                if (isActive) {
+                    if (i === 0) b.style.cssText = 'transform:translateY(7.5px) rotate(45deg)';
+                    if (i === 1) b.style.opacity = '0';
+                    if (i === 2) b.style.cssText = 'transform:translateY(-7.5px) rotate(-45deg)';
+                } else { b.style.cssText = ''; b.style.opacity = ''; }
+            });
             hamburger.setAttribute('aria-expanded', isActive);
         }, {passive: true}); // PASSIVE: INP için kritik
 
@@ -22,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                navMenu.classList.remove('open');
+                hamburger.querySelectorAll('.bar').forEach(b => { b.style.cssText=''; b.style.opacity=''; });
                 hamburger.setAttribute('aria-expanded', 'false');
             }, {passive: true});
         });
@@ -79,28 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ═══════════════════════════════════════════════════════════════════
-    // 4. HERO BACKGROUND LAZY LOAD (LCP OPTİMİZASYONU)
-    // ═══════════════════════════════════════════════════════════════════
-    const heroSection = document.getElementById('hero');
-    
-    if (heroSection) {
-        const heroImage = new Image();
-        heroImage.src = 'images/hero-background.webp';
-        heroImage.decoding = 'async';
-        heroImage.fetchPriority = 'high';
-        
-        heroImage.onload = () => {
-            heroSection.classList.add('loaded');
-        };
-        
-        // Fallback: 3 saniye sonra yine de yükle
-        setTimeout(() => {
-            heroSection.classList.add('loaded');
-        }, 3000);
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // 5. AI-DRIVEN PREFETCH (HOVER-BASED INTELLIGENT LOADING)
+    // 4. AI-DRIVEN PREFETCH (HOVER-BASED INTELLIGENT LOADING)
     // ═══════════════════════════════════════════════════════════════════
     // Kullanıcı bir linke hover yaptığında arka planda o sayfayı yükle
     const internalLinks = document.querySelectorAll('a[href^="/"], a[href^="hizmetlerimiz"], a[href^="iletisim"], a[href^="blog"], a[href^="hakkimizda"]');
@@ -162,53 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, {passive: true});
 
-    // ═══════════════════════════════════════════════════════════════════
-    // 7. PERFORMANCE MONITORING (OPSİYONEL - PRODUCTION'DA SİLEBİLİRSİNİZ)
-    // ═══════════════════════════════════════════════════════════════════
-    if ('PerformanceObserver' in window) {
-        // LCP (Largest Contentful Paint) Ölçümü
-        const lcpObserver = new PerformanceObserver((entryList) => {
-            const entries = entryList.getEntries();
-            const lastEntry = entries[entries.length - 1];
-            // console.log('🚀 LCP:', lastEntry.renderTime || lastEntry.loadTime);
-        });
-        
-        try {
-            lcpObserver.observe({entryTypes: ['largest-contentful-paint']});
-        } catch(e) {
-            // Tarayıcı desteklemiyorsa sessizce geç
-        }
-        
-        // INP (Interaction to Next Paint) - Chrome 96+
-        const inpObserver = new PerformanceObserver((entryList) => {
-            for (const entry of entryList.getEntries()) {
-                // console.log('⚡ INP:', entry.duration);
-            }
-        });
-        
-        try {
-            inpObserver.observe({type: 'event', buffered: true});
-        } catch(e) {
-            // Tarayıcı desteklemiyorsa sessizce geç
-        }
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // 8. CRITICAL RESOURCE LOADING STATUS
-    // ═══════════════════════════════════════════════════════════════════
-    if ('loading' in HTMLImageElement.prototype) {
-        // Lazy loading destekleniyor
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            if (img.complete) {
-                // Görsel zaten yüklü
-            } else {
-                img.addEventListener('load', () => {
-                    // Görsel yüklendi
-                }, {once: true, passive: true});
-            }
-        });
-    }
-
 }); // DOMContentLoaded sonu
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -227,13 +169,6 @@ window.addEventListener('load', () => {
     }
 }, {once: true, passive: true});
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// 10. ERROR HANDLING - CONSOLE HATALARINI YAKALAMA (OPSİYONEL)
-// ═══════════════════════════════════════════════════════════════════════════════
-window.addEventListener('error', (event) => {
-    // Production'da hataları loglamak için
-    // console.error('❌ Global Error:', event.message);
-}, {passive: true});
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // NOT: Bu dosya DEFER ile yüklendiği için DOMContentLoaded'den önce çalışmayacak

@@ -3,7 +3,7 @@
 // Network-first stratejisi, offline PWA desteği, sıfır layout shift
 // ═══════════════════════════════════════════════════════════════════════════════
 
-const CACHE_VERSION = 'ako-digital-v2';
+const CACHE_VERSION = 'ako-digital-v8';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -11,8 +11,12 @@ const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/css/style.css',
+    '/css/icons.css',
     '/js/script.js',
+    '/fonts/poppins-latin-800-normal.woff2',
+    '/fonts/poppins-latin-ext-800-normal.woff2',
+    '/fonts/lato-latin-400-normal.woff2',
+    '/fonts/lato-latin-ext-400-normal.woff2',
     '/images/favicon.png'
 ];
 
